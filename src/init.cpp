@@ -355,6 +355,7 @@ std::string HelpMessage(HelpMessageMode mode)
     strUsage += HelpMessageOpt("-prune=<n>", strprintf(_("Reduce storage requirements by enabling pruning (deleting) of old blocks. This allows the pruneblockchain RPC to be called to delete specific blocks, and enables automatic pruning of old blocks if a target size in MiB is provided. This mode is incompatible with -txindex and -rescan. "
             "Warning: Reverting this setting requires re-downloading the entire blockchain. "
             "(default: 0 = disable pruning blocks, 1 = allow manual pruning via RPC, >%u = automatically prune block files to stay under the specified target size in MiB)"), MIN_DISK_SPACE_FOR_BLOCK_FILES / 1024 / 1024));
+    strUsage += HelpMessageOpt("-maxdesync=<n>", _("When running in pruning mode, enable network but limit peer block height to be behind n blocks at most."));
     strUsage += HelpMessageOpt("-reindex-chainstate", _("Rebuild chain state from the currently indexed blocks"));
     strUsage += HelpMessageOpt("-reindex", _("Rebuild chain state and block index from the blk*.dat files on disk"));
 #ifndef WIN32
@@ -935,6 +936,11 @@ bool AppInitParameterInteraction()
     if (IsArgSet("-blockminsize"))
         InitWarning("Unsupported argument -blockminsize ignored.");
 
+    if (GetArg("-maxdesync", 0) > 0) {
+        if (GetArg("-prune", 0) < 1)
+            InitWarning("Igoring argument -maxdesync because -prune is not set.");
+    }
+
     // Checkmempool and checkblockindex default to true in regtest mode
     int ratio = std::min<int>(std::max<int>(GetArg("-checkmempool", chainparams.DefaultConsistencyChecks() ? 1 : 0), 0), 1000000);
     if (ratio != 0) {
@@ -989,6 +995,8 @@ bool AppInitParameterInteraction()
         }
         LogPrintf("Prune configured to target %uMiB on disk for block and undo files.\n", nPruneTarget / 1024 / 1024);
         fPruneMode = true;
+
+        nMaxDesync = GetArg("-maxdesync", 0);
     }
 
     RegisterAllCoreRPCCommands(tableRPC);
@@ -1570,8 +1578,11 @@ bool AppInitMain(boost::thread_group& threadGroup, CScheduler& scheduler)
     // if pruning, unset the service bit and perform the initial blockstore prune
     // after any wallet rescanning has taken place.
     if (fPruneMode) {
-        LogPrintf("Unsetting NODE_NETWORK on prune mode\n");
-        nLocalServices = ServiceFlags(nLocalServices & ~NODE_NETWORK);
+
+        if (nMaxDesync == 0) {
+          LogPrintf("Unsetting NODE_NETWORK on prune mode\n");
+          nLocalServices = ServiceFlags(nLocalServices & ~NODE_NETWORK);
+        }
         if (!fReindex) {
             uiInterface.InitMessage(_("Pruning blockstore..."));
             PruneAndFlush();

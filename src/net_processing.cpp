@@ -1289,6 +1289,15 @@ bool static ProcessMessage(CNode* pfrom, const std::string& strCommand, CDataStr
             return true;
         }
 
+        if (fPruneMode && nMaxDesync > 0 && nStartingHeight < connman.GetBestHeight() - nMaxDesync)
+        {
+            LogPrintf("plddr: non-sync %s at height %d, disconnecting, peer=%d\n",
+                      cleanSubVer, nStartingHeight, pfrom->id);
+            LOCK(cs_main);
+            Misbehaving(pfrom->GetId(), 100);
+            return false;
+        }
+
         if (pfrom->fInbound && addrMe.IsRoutable())
         {
             SeenLocal(addrMe);
