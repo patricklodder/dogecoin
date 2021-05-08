@@ -74,6 +74,7 @@ CCriticalSection cs_mapLocalHost;
 std::map<CNetAddr, LocalServiceInfo> mapLocalHost;
 static bool vfLimited[NET_MAX] = {};
 std::string strSubVersion;
+int64_t nMaxDesync = 0;
 
 // Signals for message handling
 static CNodeSignals g_signals;
