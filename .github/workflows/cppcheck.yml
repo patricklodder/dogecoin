@@ -1,0 +1,50 @@
+name: cppcheck-action
+on:
+  push:
+    branches:
+      - '*-dev'
+  pull_request:
+    branches:
+      - '*-dev'
+    paths:
+      - 'src/**.cpp'
+      - 'src/**.h'
+
+jobs:
+  build:
+    name: cppcheck
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install deps
+        run: |
+          apt update -y
+          apt install -y build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils
+          apt install -y libboost-system-dev libboost-filesystem-dev libboost-chrono-dev libboost-program-options-dev libboost-test-dev libboost-thread-dev
+          apt install -y libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev protobuf-compiler libqrencode-dev
+          apt install -y libdb5.3++-dev libdb5.3++ libdb5.3-dev
+          apt install -y libzmq3-dev
+          apt install -y libminiupnpc-dev
+
+      - name: Configure
+        run: ./autogen.sh && ./configure --enable-reduce-exports --enable-glibc-back-compat
+
+      - name: Run Cppcheck
+        uses: Bedzior/cppcheck-action@v1.0
+        with:
+          enabled checks: all
+          enable inconclusive: true
+          generate report: true
+          report name: cppcheck.txt
+          path: ./src
+
+      - name: 'PR Comment'
+        uses: actions/github-script@0.3.0
+        if: github.event_name == 'pull_request'
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const { issue: { number: issue_number }, repo: { owner, repo }  } = context;
+            const { stdout } = await execa('cat', ['./cppcheck.txt']);
+            github.issues.createComment({ issue_number, owner, repo, body: "cppcheck report" + stdout });
