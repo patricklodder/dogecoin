@@ -51,6 +51,8 @@ static const int PING_INTERVAL = 2 * 60;
 static const int TIMEOUT_INTERVAL = 20 * 60;
 /** Run the feeler connection loop once every 2 minutes or 120 seconds. **/
 static const int FEELER_INTERVAL = 120;
+/** Run the tolerance check loop once every 5 minutes. **/
+static const int TOLERANCE_INTERVAL = 5 * 60;
 /** The maximum number of entries in an 'inv' protocol message */
 static const unsigned int MAX_INV_SZ = 50000;
 /** The maximum number of new addresses to accumulate before announcing. */
@@ -65,6 +67,10 @@ static const int MAX_OUTBOUND_CONNECTIONS = 8;
 static const int MAX_ADDNODE_CONNECTIONS = 8;
 /** Number of peers protected from eviction: 4 random, 8 with lowest ping, 4 that sent recent tx, 4 that sent recent blocks */
 static const int PROTECTED_INBOUND_PEERS = 4 + 8 + 4 + 4;
+/** -targettolerantpeers default */
+static const bool DEFAULT_TARGET_TOLERANT_PEERS = false;
+/** Minimum number of tolerant peers to target */
+static const int MIN_TOLERANT_PEER_TARGET = 2;
 /** -listen default */
 static const bool DEFAULT_LISTEN = true;
 /** -upnp default */
@@ -149,6 +155,7 @@ public:
         unsigned int nReceiveFloodSize = 0;
         uint64_t nMaxOutboundTimeframe = 0;
         uint64_t nMaxOutboundLimit = 0;
+        int nTargetToleratingPeers = 0;
     };
     CConnman(uint64_t seed0, uint64_t seed1);
     ~CConnman();
@@ -343,6 +350,8 @@ private:
     // Whether the node should be passed out in ForEach* callbacks
     static bool NodeFullyConnected(const CNode* pnode);
 
+    bool AttemptToEvictIntolerantPeer();
+
     // Network usage totals
     CCriticalSection cs_totalBytesRecv;
     CCriticalSection cs_totalBytesSent;
@@ -354,6 +363,7 @@ private:
     uint64_t nMaxOutboundCycleStartTime;
     uint64_t nMaxOutboundLimit;
     uint64_t nMaxOutboundTimeframe;
+    int nTargetToleratingPeers;
 
     // Whitelisted ranges. Any node connecting from these is automatically
     // whitelisted (as well as those connecting to whitelisted binds).
@@ -477,6 +487,7 @@ CAddress GetLocalAddress(const CNetAddr *paddrPeer, ServiceFlags nLocalServices)
 extern bool fDiscover;
 extern bool fListen;
 extern bool fRelayTxes;
+extern CFeeRate minRelayTxFeeRate;
 
 extern limitedmap<uint256, int64_t> mapAlreadyAskedFor;
 
@@ -840,6 +851,18 @@ public:
     std::string GetAddrName() const;
     //! Sets the addrName only if it was not previously set
     void MaybeSetAddrName(const std::string& addrNameIn);
+
+    //! Check if this peer tolerates our fee policy
+    bool ToleratesOurFeePolicy()
+    {
+      /* If we sent a higher fee filter to this peer than our minimum relay fee,
+       * for example because our mempool is full, compare that against their fee
+       * filter. Otherwise, in case we haven't sent a fee filter message or our
+       * fee filter is 0 because we have unused free transaction space, compare
+       * their fee filter against our minimum relay fee.
+       */
+      return minFeeFilter <= std::max(::minRelayTxFeeRate.GetFeePerK(), lastSentFeeFilter);
+    }
 };
 
 

@@ -1735,6 +1735,9 @@ void CConnman::ThreadOpenConnections()
 
     // Minimum time before next feeler connection (in microseconds).
     int64_t nNextFeeler = PoissonNextSend(nStart*1000*1000, FEELER_INTERVAL);
+
+    // Minimum time before next check for tolerant peers
+    int64_t nNextToleranceCheck = PoissonNextSend(nStart*1000*1000, TOLERANCE_INTERVAL);
     while (!interruptNet)
     {
         ProcessOneShot();
@@ -1806,6 +1809,10 @@ void CConnman::ThreadOpenConnections()
             if (nTime > nNextFeeler) {
                 nNextFeeler = PoissonNextSend(nTime, FEELER_INTERVAL);
                 fFeeler = true;
+            } else if (nTargetToleratingPeers > 0 && nTime > nNextToleranceCheck) {
+                nNextToleranceCheck = PoissonNextSend(nTime, TOLERANCE_INTERVAL);
+                if (!AttemptToEvictIntolerantPeer())
+                    continue;
             } else {
                 continue;
             }
@@ -2275,6 +2282,8 @@ bool CConnman::Start(CScheduler& scheduler, std::string& strNodeError, Options c
 
     nMaxOutboundLimit = connOptions.nMaxOutboundLimit;
     nMaxOutboundTimeframe = connOptions.nMaxOutboundTimeframe;
+
+    nTargetToleratingPeers = connOptions.nTargetToleratingPeers;
 
     SetBestHeight(connOptions.nBestHeight);
 
@@ -2869,4 +2878,96 @@ uint64_t CConnman::CalculateKeyedNetGroup(const CAddress& ad) const
     std::vector<unsigned char> vchNetGroup(ad.GetGroup());
 
     return GetDeterministicRandomizer(RANDOMIZER_ID_NETGROUP).Write(&vchNetGroup[0], vchNetGroup.size()).Finalize();
+}
+
+bool CConnman::AttemptToEvictIntolerantPeer()
+{
+    int nTolerantPeersFound = 0;
+    int nOutboundPeersFound = 0;
+    std::vector<NodeEvictionCandidate> vEvictionCandidates;
+    {
+        LOCK(cs_vNodes);
+
+        BOOST_FOREACH(CNode *node, vNodes) {
+            if (node->fInbound)
+                continue;
+            if (node->fDisconnect)
+                continue;
+
+            nOutboundPeersFound += 1;
+
+            // never evict whitelisted peers
+            if (node->fWhitelisted)
+                continue;
+
+            // never evict addnode nodes
+            if (node->fAddnode)
+                continue;
+
+            // never evict feelers
+            if (node->fFeeler)
+                continue;
+
+            // we don't want to evict nodes that tolerate our policy
+            if (node->ToleratesOurFeePolicy())
+            {
+                nTolerantPeersFound += 1;
+                continue;
+            }
+
+            NodeEvictionCandidate candidate = {node->id, node->nTimeConnected, node->nMinPingUsecTime,
+                                               node->nLastBlockTime, node->nLastTXTime,
+                                               (node->nServices & nRelevantServices) == nRelevantServices,
+                                               node->fRelayTxes, node->pfilter != NULL, node->addr, node->nKeyedNetGroup};
+            vEvictionCandidates.push_back(candidate);
+        }
+    }
+
+    // if we have enough peers that tolerate our policy, carry on
+    if (nTolerantPeersFound >= nTargetToleratingPeers)
+        return false;
+
+    // if we have free slots we don't need to evict
+    if (nOutboundPeersFound < nMaxOutbound)
+        return false;
+
+    // We don't have free slots but all outbound nodes are whitelisted, addnode,
+    // tolerant or feelers, so we don't have anything to evict right now.
+    if (vEvictionCandidates.empty())
+    {
+        LogPrint("net", "%s: No suitable non-conformant outbound peers to evict\n", __func__);
+        return false;
+    }
+
+    // Protect half the peers in the list that most recently sent us blocks.
+    // An attacker must do real work to be considered part of this segment.
+    if (vEvictionCandidates.size() > 1) {
+        std::sort(vEvictionCandidates.begin(), vEvictionCandidates.end(), CompareNodeBlockTime);
+        vEvictionCandidates.erase(vEvictionCandidates.end() - (static_cast<int>(vEvictionCandidates.size()) >> 1), vEvictionCandidates.end());
+
+        // Pick a random candidate from the remaining list
+        NodeId evicted = vEvictionCandidates[GetRand(vEvictionCandidates.size() - 1)].id;
+    } else {
+        // We only have one candidate, so we evict that.
+        NodeId evicted = vEvictionCandidates.first().id;
+    }
+
+    // Evict the selected peer
+    LOCK(cs_vNodes);
+    auto it = std::find_if(vNodes.begin(), vNodes.end(),
+              [=](CNode *node){ return node->GetId() == evicted; });
+
+    if (it != vNodes.end())
+    {
+      LogPrint("net", "%s: Evicting outbound peer with feefilter=%u, peer=%u\n", __func__, evicted, it->minFeeFilter);
+      it->fDisconnect = true;
+      return true;
+    }
+
+    // We'll only make it here if another condition disconnected and purged the
+    // peer between the 2 cs_vNodes locks. In that case, the eviction was
+    // already done for us and we've got our desired result anyway.
+    // To be safe we signal failure and let the connection loop do its thing
+    LogPrint("net", "%s: Failed to evict peer=%u\n", __func__, evicted);
+    return false;
 }
