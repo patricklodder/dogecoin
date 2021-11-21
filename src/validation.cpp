@@ -23,6 +23,7 @@
 #include "primitives/block.h"
 #include "primitives/pureheader.h"
 #include "primitives/transaction.h"
+#include "pubkey.h"
 #include "random.h"
 #include "script/script.h"
 #include "script/sigcache.h"
@@ -1090,6 +1091,36 @@ bool ReadTransaction(CTransactionRef &txOut, const CDiskTxPos &pos, uint256 &has
 
     hashBlock = header.GetHash();
 
+    return true;
+}
+
+bool FindTransactionsByDestination(const CTxDestination &dest, std::set<CExtDiskTxPos> &setpos)
+{
+
+    if (!fAddrIndex)
+        return false;
+
+    uint160 addrid;
+    const CKeyID *pkeyid = boost::get<CKeyID>(&dest);
+
+    if (pkeyid) {
+        addrid = static_cast<uint160>(*pkeyid);
+    } else {
+        const CScriptID *pscriptid = boost::get<CScriptID>(&dest);
+
+        if (pscriptid) {
+            addrid = static_cast<uint160>(*pscriptid);
+        } else {
+            return false;
+        }
+    }
+
+    LOCK(cs_main);
+    std::vector<CExtDiskTxPos> vPos;
+    if (!pblocktree->ReadAddrIndex(addrid, vPos))
+        return false;
+
+    setpos.insert(vPos.begin(), vPos.end());
     return true;
 }
 

@@ -45,6 +45,8 @@ class CTxMemPool;
 class CValidationInterface;
 class CValidationState;
 struct ChainTxData;
+struct CExtDiskTxPos;
+struct CDiskTxPos;
 
 struct PrecomputedTransactionData;
 struct LockPoints;
@@ -285,6 +287,10 @@ bool IsInitialBlockDownload();
  * This function only returns the highest priority warning of the set selected by strFor.
  */
 std::string GetWarnings(const std::string& strFor);
+/** Read a transaction from disk */
+bool ReadTransaction(CTransactionRef &txOut, const CDiskTxPos &pos, uint256 &hashBlock);
+/** Find transactions by its indexed destination (with -addrindex) */
+bool FindTransactionsByDestination(const CTxDestination &dest, std::set<CExtDiskTxPos> &setpos);
 /** Retrieve a transaction (from memory pool, or from disk, if possible) */
 bool GetTransaction(const uint256 &hash, CTransactionRef &tx, const Consensus::Params& params, uint256 &hashBlock, bool fAllowSlow = false);
 /** Find the best known block, and make it the tip of the block chain */

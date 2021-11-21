@@ -86,7 +86,7 @@ struct CExtDiskTxPos : public CDiskTxPos
      unsigned int nHeight;
 
      template <typename Stream, typename Operation>
-     inline void SerializationOp(Stream& s, Operation ser_action, int nType, int nVersion) {
+     inline void SerializationOp(Stream& s, Operation ser_action) {
          READWRITE(*(CDiskTxPos*)this);
          READWRITE(VARINT(nHeight));
      }

@@ -21,6 +21,7 @@
 #include "script/script_error.h"
 #include "script/sign.h"
 #include "script/standard.h"
+#include "txdb.h"
 #include "txmempool.h"
 #include "uint256.h"
 #include "utilstrencodings.h"
@@ -215,7 +216,7 @@ UniValue getrawtransaction(const JSONRPCRequest& request)
         }
         else {
             throw JSONRPCError(RPC_TYPE_ERROR, "Invalid type provided. Verbose parameter must be a boolean.");
-        } 
+        }
     }
 
     CTransactionRef tx;
@@ -234,6 +235,80 @@ UniValue getrawtransaction(const JSONRPCRequest& request)
     UniValue result(UniValue::VOBJ);
     result.pushKV("hex", strHex);
     TxToJSON(*tx, hashBlock, result);
+    return result;
+}
+
+UniValue searchrawtransactions(const JSONRPCRequest& request)
+{
+    if (request.fHelp || request.params.size() < 1 || request.params.size() > 4)
+        throw runtime_error(
+            "searchrawtransactions \"address\" ( verbose ) ( skip ) ( limit )\n"
+            "\nNOTE: This only works if the -txindex option is enabled.\n"
+            "\nReturn raw transactions associated with the given address"
+        );
+
+     if (!fAddrIndex)
+         throw JSONRPCError(RPC_MISC_ERROR, "Address index not enabled");
+
+     CBitcoinAddress address(request.params[0].get_str());
+     if (!address.IsValid())
+         throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid address");
+     CTxDestination dest = address.Get();
+
+     std::set<CExtDiskTxPos> setpos;
+     if (!FindTransactionsByDestination(dest, setpos))
+         throw JSONRPCError(RPC_DATABASE_ERROR, "Cannot search for address");
+
+     int nSkip = 0;
+     int nLimit = 100;
+     bool fVerbose = false;
+
+     if (request.params.size() > 1) {
+         if (request.params[1].isNum()) {
+             if (request.params[1].get_int() != 0) {
+                 fVerbose = true;
+             }
+         } else if(request.params[1].isBool()) {
+             if(request.params[1].isTrue()) {
+                 fVerbose = true;
+             }
+         }
+     }
+     if (request.params.size() > 2)
+         nSkip = request.params[2].get_int();
+     if (request.params.size() > 3)
+         nLimit = request.params[3].get_int();
+
+     if (nSkip < 0)
+         nSkip += setpos.size();
+     if (nSkip < 0)
+         nSkip = 0;
+     if (nLimit < 0)
+         nLimit = 0;
+
+    std::set<CExtDiskTxPos>::const_iterator it = setpos.begin();
+    while (it != setpos.end() && nSkip-- > 0) it++;
+
+    UniValue result(UniValue::VARR);
+    while (it != setpos.end() && nLimit--) {
+        CTransactionRef tx;
+        uint256 hashBlock;
+        if (!ReadTransaction(tx, *it, hashBlock))
+            throw JSONRPCError(RPC_DESERIALIZATION_ERROR, "Cannot read transaction from disk");
+
+        string strHex = EncodeHexTx(*tx, RPCSerializationFlags());
+
+        if (fVerbose) {
+            UniValue object(UniValue::VOBJ);
+            TxToJSON(*tx, hashBlock, object);
+            object.pushKV("hex", strHex);
+            result.push_back(object);
+        } else {
+            result.push_back(strHex);
+        }
+        it++;
+    }
+
     return result;
 }
 
@@ -938,6 +1013,7 @@ static const CRPCCommand commands[] =
     { "rawtransactions",    "decoderawtransaction",   &decoderawtransaction,   true,  {"hexstring"} },
     { "rawtransactions",    "decodescript",           &decodescript,           true,  {"hexstring"} },
     { "rawtransactions",    "sendrawtransaction",     &sendrawtransaction,     false, {"hexstring","allowhighfees"} },
+    { "rawtransactions",    "searchrawtransactions",  &searchrawtransactions,  true,  {"address", "verbose", "skip", "limit"} },
     { "rawtransactions",    "signrawtransaction",     &signrawtransaction,     false, {"hexstring","prevtxs","privkeys","sighashtype"} }, /* uses wallet if enabled */
 
     { "blockchain",         "gettxoutproof",          &gettxoutproof,          true,  {"txids", "blockhash"} },
