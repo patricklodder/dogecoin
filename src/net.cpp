@@ -2939,17 +2939,18 @@ bool CConnman::AttemptToEvictIntolerantPeer()
         return false;
     }
 
-    // Protect half the peers in the list that most recently sent us blocks.
-    // An attacker must do real work to be considered part of this segment.
+    NodeId evicted;
     if (vEvictionCandidates.size() > 1) {
+        // Protect half the peers in the list that most recently sent us blocks.
+        // An attacker must do real work to be considered part of this segment.
         std::sort(vEvictionCandidates.begin(), vEvictionCandidates.end(), CompareNodeBlockTime);
         vEvictionCandidates.erase(vEvictionCandidates.end() - (static_cast<int>(vEvictionCandidates.size()) >> 1), vEvictionCandidates.end());
 
         // Pick a random candidate from the remaining list
-        NodeId evicted = vEvictionCandidates[GetRand(vEvictionCandidates.size() - 1)].id;
+        evicted = vEvictionCandidates[GetRand(vEvictionCandidates.size() - 1)].id;
     } else {
         // We only have one candidate, so we evict that.
-        NodeId evicted = vEvictionCandidates.first().id;
+        evicted = vEvictionCandidates[0].id;
     }
 
     // Evict the selected peer
