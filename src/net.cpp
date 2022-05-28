@@ -2960,8 +2960,8 @@ bool CConnman::AttemptToEvictIntolerantPeer()
 
     if (it != vNodes.end())
     {
-      LogPrint("net", "%s: Evicting outbound peer with feefilter=%u, peer=%u\n", __func__, evicted, it->minFeeFilter);
-      it->fDisconnect = true;
+      LogPrint("net", "%s: Evicting outbound peer with feefilter=%u, peer=%u\n", __func__, evicted, (*it)->minFeeFilter);
+      (*it)->fDisconnect = true;
       return true;
     }
 
