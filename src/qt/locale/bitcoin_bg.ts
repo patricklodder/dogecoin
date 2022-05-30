@@ -14,6 +14,8 @@
     <message>
         <source>Be careful! Do not blindly trust anyone that tells you to add their node.</source>
         <translation type="unfinished"></translation>
+        <translation>Внимателно! Не се доверявайте сляпо всеки който ви каже да добавите техния възел.</translation>
+
     </message>
     <message>
         <source>Enter the peer&apos;s address</source>
