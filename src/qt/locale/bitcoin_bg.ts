@@ -6,15 +6,17 @@
     <message>
         <source>Add Peer</source>
         <translation type="unfinished"></translation>
+        <translation>Добави връстник<translation>
     </message>
     <message>
         <source>Enter the peer details below.</source>
         <translation type="unfinished"></translation>
+        <translation>Добави детайлите за връстника долу.<translation>
     </message>
     <message>
         <source>Be careful! Do not blindly trust anyone that tells you to add their node.</source>
         <translation type="unfinished"></translation>
-        <translation>Внимателно! Не се доверявайте сляпо всеки който ви каже да добавите техния възел.</translation>
+        <translation>Внимателно! Не се доверявайте сляпо на всеки който ви каже да добавите техния възел.</translation>
 
     </message>
     <message>
