@@ -5,39 +5,36 @@
     <name>AddPeerDialog</name>
     <message>
         <source>Add Peer</source>
-        <translation type="unfinished"></translation>
-        <translation>Добави връстник<translation>
+        <translation>Добави връстник.</translation>
     </message>
     <message>
         <source>Enter the peer details below.</source>
-        <translation type="unfinished"></translation>
-        <translation>Добави детайлите за връстника долу.<translation>
+        <translation>Добави детайлите за връстника долу.</translation>
     </message>
     <message>
         <source>Be careful! Do not blindly trust anyone that tells you to add their node.</source>
-        <translation type="unfinished"></translation>
-        <translation>Внимателно! Не се доверявайте сляпо на всеки който ви каже да добавите техния възел.</translation>
+        <translation>Внимателно! Не се доверявай сляпо на всеки който ви каже да добавите техния възел.</translation>
 
     </message>
     <message>
         <source>Enter the peer&apos;s address</source>
-        <translation type="unfinished"></translation>
+        <translation>Вкарай адреса на връстника.</translation>
     </message>
     <message>
         <source>Enter the peer&apos;s port</source>
-        <translation type="unfinished"></translation>
+        <translation>Вкарай порт-а на връстника.</translation>
     </message>
     <message>
         <source>Add!</source>
-        <translation type="unfinished"></translation>
+        <translation>Добави!</translation>
     </message>
     <message>
         <source>Please enter an address.</source>
-        <translation type="unfinished"></translation>
+        <translation>Моля въведи адрес.</translation>
     </message>
     <message>
         <source>Please enter a valid peer address.</source>
-        <translation type="unfinished"></translation>
+        <translation>Моля въведи валиден адрес на връстник.</translation>
     </message>
 </context>
 <context>
@@ -56,14 +53,14 @@
     </message>
     <message>
         <source>Copy the currently selected address to the system clipboard</source>
-        <translation>Копиране на избрания адрес към клипборда</translation>
+        <translation>Копиране на избрания адрес в клипборда</translation>
     </message>
     <message>
         <source>&amp;Copy</source>
         <translation>Копирай</translation>
     </message>
     <message>
-        <source>C&amp;lose</source>
+        <source>&amp;Close</source>
         <translation>Затвори</translation>
     </message>
     <message>
@@ -72,7 +69,7 @@
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
-        <translation>Запишете данните от текущия раздел във файл</translation>
+        <translation>Изнеси данните от текущия раздел във файл</translation>
     </message>
     <message>
         <source>&amp;Export</source>
@@ -84,31 +81,31 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>Изберете адрес, на който да се изпращат монети</translation>
+        <translation>Изберете адреса на който искате да изпратите монети</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>Изберете адрес, на който ще получавате монети</translation>
+        <translation>Избери адреса на който ще получавате монети</translation>
     </message>
     <message>
-        <source>C&amp;hoose</source>
+        <source>&amp;Choose</source>
         <translation>Избери</translation>
     </message>
     <message>
         <source>Such sending addresses</source>
-        <translation>Адреси за изпращане</translation>
+        <translation>Няма такива адреси за изпращане!:)</translation>
     </message>
     <message>
         <source>Much receiving addresses</source>
-        <translation>Адреси за получаване</translation>
+        <translation>Яки адреси за получаване!:)</translation>
     </message>
     <message>
         <source>These are your Dogecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Това са адресите на получателите на плащания. Винаги проверявайте размера на сумата и адреса на получателя, преди да изпратите монети.</translation>
+        <translation>Това са адресите ви за изпращане на плащания. Винаги проверявайте размера на сумата и адреса на получателя, преди да изпратите монети.</translation>
     </message>
     <message>
         <source>These are your Dogecoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Това са Вашите Биткойн адреси,благодарение на които ще получавате плащания.Препоръчително е да използвате нови адреси за получаване на всяка транзакция.</translation>
+        <translation>Това са адресите ви за получаване на плащания. Препоръчително е да използвате нов адрес на получаване за всяка транзакция.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -128,7 +125,7 @@
     </message>
     <message>
         <source>Comma separated file (*.csv)</source>
-        <translation>CSV файл (*.csv)</translation>
+        <translation>Файл разделен със запетаи (*.csv)</translation>
     </message>
     <message>
         <source>Exporting Failed</source>
@@ -136,7 +133,7 @@
     </message>
     <message>
         <source>There was an error trying to save the address list to %1. Please try again.</source>
-        <translation>Възникна грешка при опита за запазване на списъка с адреси в %1.Моля опитайте отново.</translation>
+        <translation>Възникна грешка при опита за запазване на списъка с адреси в %1. Моля опитайте отново.</translation>
     </message>
 </context>
 <context>
@@ -162,7 +159,7 @@
     </message>
     <message>
         <source>Enter passphrase</source>
-        <translation>Въведете текущата парола</translation>
+        <translation>Въведете парола</translation>
     </message>
     <message>
         <source>New passphrase</source>
@@ -170,7 +167,7 @@
     </message>
     <message>
         <source>Repeat new passphrase</source>
-        <translation>Въведете новата парола повторно</translation>
+        <translation>Повторете новата парола</translation>
     </message>
     <message>
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
@@ -206,15 +203,15 @@
     </message>
     <message>
         <source>Confirm wallet encryption</source>
-        <translation>Потвърдете на шифрирането на портфейла</translation>
+        <translation>Потвърдете шифрирането на портфейла</translation>
     </message>
     <message>
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR DOGECOINS&lt;/b&gt;!</source>
-        <translation>ВНИМАНИЕ: Ако шифрирате вашият портфейл и изгубите паролата си, &lt;b&gt;ЩЕ ИЗГУБИТЕ ВСИЧКИТЕ СИ БИТКОИНИ&lt;/b&gt;!</translation>
+        <translation>ВНИМАНИЕ: Ако шифрирате вашият портфейл и изгубите паролата си, &lt;b&gt;ЩЕ ИЗГУБИТЕ ВСИЧКИТЕ СИ ДОДЖКОИНИ&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
-        <translation>Наистина ли желаете да шифрирате портфейла си?</translation>
+        <translation>Сигурни ли сте, че желаете да шифрирате портфейла си?</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -222,15 +219,15 @@
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
-        <translation>ВАЖНО: Всички стари запазвания, които сте направили на Вашият портфейл трябва да замените с запазване на новополучения, шифриран портфейл. От съображения за сигурност, предишните запазвания на нешифрирани портфейли ще станат неизползваеми веднага, щом започнете да използвате новият, шифриран портфейл.</translation>
+        <translation>ВАЖНО: Всички предишни архиви които сте направили на Вашият портфейлен файл трябва да бъдат заменени с прясно копие на новосъздадения шифрован фаил на портфейла . От съображения за сигурност, предишните копия на нешифрирани портфейлни файлове ще станат неизползваеми веднага, когато започнете да използвате новият, шифриран портфейл.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
-        <translation>Шифрирането беше неуспешно</translation>
+        <translation>Шифрирането на портфейла беше неуспешно</translation>
     </message>
     <message>
         <source>Wallet encryption failed due to an internal error. Your wallet was not encrypted.</source>
-        <translation>Шифрирането на портфейла беше неуспешно, поради софтуерен проблем. Портфейлът не е шифриран.</translation>
+        <translation>Шифрирането на портфейла беше неуспешно, поради софтуерен проблем. Портфейлът не бе шифриран.</translation>
     </message>
     <message>
         <source>The supplied passphrases do not match.</source>
@@ -238,7 +235,7 @@
     </message>
     <message>
         <source>Wallet unlock failed</source>
-        <translation>Неуспешно отключване на портфейла</translation>
+        <translation>Отключването на портфейла бе неуспешно</translation>
     </message>
     <message>
         <source>The passphrase entered for the wallet decryption was incorrect.</source>
@@ -254,11 +251,11 @@
     </message>
     <message>
         <source>Warning: The Caps Lock key is on!</source>
-        <translation>Внимание: Caps Lock (главни букви) е включен.</translation>
+        <translation>Внимание: Бутонът за главни букви (Caps Lock) е включен!</translation>
     </message>
     <message>
         <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your dogecoins from being stolen by malware infecting your computer.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 ще се затвори за да завъши процеса на шифрирането. Помнете, че шифрирането на вашият портфейл не може напълно да предпази вашите доджкоини в случаи на кражба чрез зловреден софтуер или вирус. </translation>
     </message>
 </context>
 <context>
@@ -269,7 +266,7 @@
     </message>
     <message>
         <source>Banned Until</source>
-        <translation>Със забранен достъп до</translation>
+        <translation>Забранен достъп до</translation>
     </message>
 </context>
 <context>
@@ -284,7 +281,7 @@
     </message>
     <message>
         <source>&amp;Wow</source>
-        <translation>&amp;Баланс</translation>
+        <translation>&amp;Уау! Такъв Баланс!</translation>
     </message>
     <message>
         <source>Node</source>
@@ -292,7 +289,7 @@
     </message>
     <message>
         <source>Show general overview of wallet</source>
-        <translation>Обобщена информация за портфейла</translation>
+        <translation>Покажи обобщена информация за портфейла</translation>
     </message>
     <message>
         <source>&amp;Transactions</source>
@@ -348,11 +345,11 @@
     </message>
     <message>
         <source>Such &amp;sending addresses...</source>
-        <translation type="vanished">&amp;Изпращане на адресите...</translation>
+        <translatioн>Такова! &amp;изпращане на адреси...</translation>
     </message>
     <message>
         <source>Much &amp;receiving addresses...</source>
-        <translation type="vanished">&amp;Получаване на адресите...</translation>
+        <translation>Яко! &amp;получаване на адреси...</translation>
     </message>
     <message>
         <source>Open &amp;URI...</source>
@@ -360,11 +357,11 @@
     </message>
     <message>
         <source>Reindexing blocks on disk...</source>
-        <translation>Повторно индексиране на блоковете на диска...</translation>
+        <translation>Повторно индексиране на блоковете в диска...</translation>
     </message>
     <message>
         <source>Send coins to a Dogecoin address</source>
-        <translation>Изпращане към Биткоин адрес</translation>
+        <translation>Изпращане на монети към Доджкоин адрес</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -372,23 +369,23 @@
     </message>
     <message>
         <source>Change the passphrase used for wallet encryption</source>
-        <translation>Променя паролата за портфейла</translation>
+        <translation>Промяна на паролата за шифрирането на портфейла</translation>
     </message>
     <message>
         <source>&amp;Debug window</source>
-        <translation>&amp;Прозорец за отстраняване на грешки</translation>
+        <translation>&amp;Прозорец за диагностика</translation>
     </message>
     <message>
         <source>Open debugging and diagnostic console</source>
-        <translation>Отворете конзолата за диагностика и отстраняване на грешки</translation>
+        <translation>Отворете конзолата за диагностика и поддъжка</translation>
     </message>
     <message>
         <source>&amp;Verify message...</source>
-        <translation>&amp;Проверка на съобщение...</translation>
+        <translation>&amp;Потвърди съобщение...</translation>
     </message>
     <message>
         <source>Dogecoin</source>
-        <translation>Биткоин</translation>
+        <translation>Доджкоин</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -396,11 +393,11 @@
     </message>
     <message>
         <source>&amp;Such Send</source>
-        <translation>&amp;Изпращане</translation>
+        <translation>&amp;Такова Изпращане!;)</translation>
     </message>
     <message>
-        <source>&amp;Much Receive</source>
-        <translation>&amp;Получаване</translation>
+        <source>&amp;Much Receive :)</source>
+        <translation>&amp;Яко Получаване!</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
@@ -408,7 +405,7 @@
     </message>
     <message>
         <source>Show or hide the main Window</source>
-        <translation>Показване и скриване на основния прозорец</translation>
+        <translation>Показване/Скриване на основния прозорец</translation>
     </message>
     <message>
         <source>Encrypt the private keys that belong to your wallet</source>
@@ -416,11 +413,11 @@
     </message>
     <message>
         <source>Sign messages with your Dogecoin addresses to prove you own them</source>
-        <translation>Пишете съобщения със своя Биткойн адрес за да докажете,че е ваш.</translation>
+        <translation>Подпиши съобщения със своя Доджкоин адрес за да докажете,че ви принадлежат.</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Dogecoin addresses</source>
-        <translation>Потвърждаване на съобщения  за да се знае,че са написани с дадените Биткойн адреси.</translation>
+        <translation>Потвърди, че тези съобщения са подписани с посочените Доджкоин адреси.</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -436,23 +433,23 @@
     </message>
     <message>
         <source>Tabs toolbar</source>
-        <translation>Раздели</translation>
+        <translation>Лента "Раздели"</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and dogecoin: URIs)</source>
-        <translation>Изискване на плащания(генерира QR кодове и биткойн: URIs)</translation>
+        <translation>Изискване на плащания(генерира QR кодове и доджкоин: URIs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
-        <translation>Показване на списъка с използвани адреси и имена</translation>
+        <translation>Показване на списъка с използвани адреси за изпращане и имена.</translation>
     </message>
     <message>
         <source>Show the list of used receiving addresses and labels</source>
-        <translation>Покажи списък с използваните адреси и имена.</translation>
+        <translation>Покаване на списъка с използваните адреси за получаване и имена.</translation>
     </message>
     <message>
         <source>Open a dogecoin: URI or payment request</source>
-        <translation>Отворете биткойн: URI  или заявка за плащане</translation>
+        <translation>Отворете доджкоин: URI  или заявка за плащане</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -460,23 +457,23 @@
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
-        <translation>Индексиране на блокове на диска...</translation>
+        <translation>Индексиране на блокове в диска...</translation>
     </message>
     <message>
         <source>Processing blocks on disk...</source>
-        <translation>Обработване на блокове на диска...</translation>
+        <translation>Обработване на блокове в диска...</translation>
     </message>
     <message>
         <source>%1 behind</source>
-        <translation>%1 зад</translation>
+        <translation>%1 назад</translation>
     </message>
     <message>
         <source>Last received block was generated %1 ago.</source>
-        <translation>Последния получен блок е генериран преди %1.</translation>
+        <translation>Последния получен блок бе генериран преди %1.</translation>
     </message>
     <message>
         <source>Transactions after this will not yet be visible.</source>
-        <translation>Транзакции след това няма все още да бъдат видими.</translation>
+        <translation>Транзакции след това няма да бъдат видими все още.</translation>
     </message>
     <message>
         <source>Error</source>
@@ -496,7 +493,7 @@
     </message>
     <message>
         <source>Show the %1 help message to get a list with possible Dogecoin command-line options</source>
-        <translation>Покажи %1 помощно съобщение за да получиш лист с възможни Биткойн команди</translation>
+        <translation>Покажи %1 помощно съобщение за лист с възможни Доджкоин команди</translation>
     </message>
     <message>
         <source>%1 client</source>
@@ -507,34 +504,24 @@
         <translation>Зарежда блокове...</translation>
     </message>
     <message>
-        <source>Date: %1
-</source>
-        <translation>Дата: %1
-</translation>
+        <source>Date: %1</source>
+        <translation>Дата: %1</translation>
     </message>
     <message>
-        <source>Amount: %1
-</source>
-        <translation>Сума: %1
-</translation>
+        <source>Amount: %1</source>
+        <translation>Сума: %1</translation>
     </message>
     <message>
-        <source>Type: %1
-</source>
-        <translation>Тип: %1
-</translation>
+        <source>Type: %1</source>
+        <translation>Тип: %1</translation>
     </message>
     <message>
-        <source>Label: %1
-</source>
-        <translation>Етикет: %1
-</translation>
+        <source>Label: %1</source>
+        <translation>Етикет: %1</translation>
     </message>
     <message>
-        <source>Address: %1
-</source>
-        <translation>Адрес: %1
-</translation>
+        <source>Address: %1</source>
+        <translation>Адрес: %1</translation>
     </message>
     <message>
         <source>Sent transaction</source>
@@ -546,85 +533,85 @@
     </message>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
-        <translation>Портфейлът е &lt;b&gt;криптиран&lt;/b&gt; и &lt;b&gt;отключен&lt;/b&gt;</translation>
+        <translation>Портфейлът е &lt;b&gt;криптиран&lt;/b&gt; и понастоящем&lt;b&gt;отключен&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
-        <translation>Портфейлът е &lt;b&gt;криптиран&lt;/b&gt; и &lt;b&gt;заключен&lt;/b&gt;</translation>
+        <translation>Портфейлът е &lt;b&gt;криптиран&lt;/b&gt; и понастоящем&lt;b&gt;заключен&lt;/b&gt;</translation>
     </message>
     <message>
         <source>&amp;Print paper wallets</source>
-        <translation type="unfinished"></translation>
+        <translation>Печатане на хартиен портфейл</translation>
     </message>
     <message>
         <source>Print paper wallets</source>
-        <translation type="unfinished"></translation>
+        <translation>Печатане на хартиен портфейл</translation>
     </message>
     <message>
         <source>&amp;Such sending addresses...</source>
-        <translation type="unfinished"></translation>
+        <translation>Няма такива адреси за изпращане!...</translation>
     </message>
     <message>
         <source>&amp;Much receiving addresses...</source>
-        <translation type="unfinished"></translation>
+        <translation>Супер Яки адреси за получаване!...</translation>
     </message>
     <message>
         <source>&amp;Import Private Key...</source>
-        <translation type="unfinished"></translation>
+        <translation>Добави Секретен Ключ...</translation>
     </message>
     <message>
         <source>Import a Dogecoin private key</source>
-        <translation type="unfinished"></translation>
+        <translation>Добави Доджкоин секретен ключ</translation>
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to Dogecoin network</source>
-        <translation type="unfinished">
+        <translation>%n активна/и връзка/и към Доджкоин мрежата</translation>
             <numerusform></numerusform>
             <numerusform></numerusform>
         </translation>
     </message>
     <message>
         <source>Click to disable network activity.</source>
-        <translation type="unfinished"></translation>
+        <translation>Деактивиране на мрежовата дейност</translation>
     </message>
     <message>
         <source>Network activity disabled.</source>
-        <translation type="unfinished"></translation>
+        <translation>Мрежовата дейност деактивирана.</translation>
     </message>
     <message>
         <source>Click to enable network activity again.</source>
-        <translation type="unfinished"></translation>
+        <translation>Активиране отново на мрежовата дейност.</translation>
     </message>
     <message>
         <source>Syncing Headers (%1%)...</source>
-        <translation type="unfinished"></translation>
+        <translation>Синхронизиране на заглавки</translation>
     </message>
     <message>
         <source>Connecting to peers...</source>
-        <translation type="unfinished"></translation>
+        <translation>Свързване към връсници</translation>
     </message>
     <message numerus="yes">
         <source>Processed %n block(s) of transaction history.</source>
-        <translation type="unfinished">
+        <translation>Обработени %n блок(ове) с транзакции.</translation>
             <numerusform></numerusform>
             <numerusform></numerusform>
         </translation>
     </message>
     <message>
         <source>HD key generation is &lt;b&gt;enabled&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>Съдаването на ЙД ключ е &lt;b&gt;активирано&lt;/b&gt;</translation>
     </message>
     <message>
         <source>HD key generation is &lt;b&gt;disabled&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>Съдаването на ЙД ключ е &lt;b&gt;деактивирано&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Runaway exception</source>
-        <translation type="unfinished"></translation>
+        <translation>Избягало изключение</translation>
     </message>
     <message>
         <source>A fatal error occurred. Dogecoin can no longer continue safely and will quit.</source>
-        <translation type="unfinished"></translation>
+        <translation>Фатална грешка! Доджкоин не може да продължи безопасно и ще се затвори. :(</translation>
     </message>
 </context>
 <context>
@@ -655,7 +642,7 @@
     </message>
     <message>
         <source>After Fee:</source>
-        <translation>След прилагане на ДДС</translation>
+        <translation>След прилагане на таксата</translation>
     </message>
     <message>
         <source>Change:</source>
@@ -663,7 +650,7 @@
     </message>
     <message>
         <source>(un)select all</source>
-        <translation>(Пре)махни всички</translation>
+        <translation>(Пре)махни избора на всички</translation>
     </message>
     <message>
         <source>Tree mode</source>
@@ -711,7 +698,7 @@
     </message>
     <message>
         <source>Copy transaction ID</source>
-        <translation>Копирай транзакция с ID</translation>
+        <translation>Копирай ID на транзакцията</translation>
     </message>
     <message>
         <source>Lock unspent</source>
@@ -727,11 +714,11 @@
     </message>
     <message>
         <source>Copy fee</source>
-        <translation>Копиране на данък добавена стойност</translation>
+        <translation>Копиране на таксата</translation>
     </message>
     <message>
         <source>Copy after fee</source>
-        <translation>Копиране след прилагане на данък добавена стойност</translation>
+        <translation>Копиране след прилагане на таксата</translation>
     </message>
     <message>
         <source>Copy bytes</source>
@@ -771,11 +758,11 @@
     </message>
     <message>
         <source>This label turns red if any recipient receives an amount smaller than the current dust threshold.</source>
-        <translation type="unfinished"></translation>
+        <translation>Този етикет се превръща червен ако някой от получателите получи сума в размер по малкък от сегашния праг на праха.</translation>
     </message>
     <message>
         <source>Can vary +/- %1 koinu per input.</source>
-        <translation type="unfinished"></translation>
+        <translation>Може да варира +/- %1 коину на вход.</translation>
     </message>
 </context>
 <context>
