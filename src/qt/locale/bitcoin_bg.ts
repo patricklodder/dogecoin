@@ -805,11 +805,11 @@
     </message>
     <message>
         <source>The entered address &quot;%1&quot; is not a valid Dogecoin address.</source>
-        <translation>&quot;%1&quot; не е валиден Биткоин адрес.</translation>
+        <translation>Въведения адрес &quot;%1&quot; не е валиден Доджкоин адрес.</translation>
     </message>
     <message>
         <source>The entered address &quot;%1&quot; is already in the address book.</source>
-        <translation>Вече има адрес &quot;%1&quot; в списъка с адреси.</translation>
+        <translation>Въведения адрес &quot;%1&quot; вече е наличен в списъка с адреси.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -817,14 +817,14 @@
     </message>
     <message>
         <source>New key generation failed.</source>
-        <translation>Създаването на ключ беше неуспешно.</translation>
+        <translation>Създаването на нов ключ беше неуспешно.</translation>
     </message>
 </context>
 <context>
     <name>FreespaceChecker</name>
     <message>
         <source>A new data directory will be created.</source>
-        <translation>Ще се създаде нова папка за данни.</translation>
+        <translation>Ще се създаде нова директория за данни.</translation>
     </message>
     <message>
         <source>name</source>
@@ -832,11 +832,11 @@
     </message>
     <message>
         <source>Directory already exists. Add %1 if you intend to create a new directory here.</source>
-        <translation>Директорията вече съществува.Добавете %1 ако желаете да добавите нова директория тук.</translation>
+        <translation>Директорията вече съществува. Добавете %1 ако желаете да създадете нова директория тук.</translation>
     </message>
     <message>
         <source>Path already exists, and is not a directory.</source>
-        <translation>Пътят вече съществува и не е папка.</translation>
+        <translation>Пътят вече съществува, и не е директория.</translation>
     </message>
     <message>
         <source>Cannot create data directory here.</source>
@@ -871,15 +871,15 @@
     </message>
     <message>
         <source>UI Options:</source>
-        <translation>Опции на интерфейс:</translation>
+        <translation>Опции на интерфейса:</translation>
     </message>
     <message>
         <source>Choose data directory on startup (default: %u)</source>
-        <translation>Избери директория за данни при стартирване (по подразбиране: %u)</translation>
+        <translation>Изберане на директория за данни при стартиране (по подразбиране: %u)</translation>
     </message>
     <message>
         <source>Set language, for example &quot;de_DE&quot; (default: system locale)</source>
-        <translation>Избери език, примерно &quot;de_DE&quot; (по подразбиране: system locale)</translation>
+        <translation>Избор на език, примерно &quot;de_DE&quot; (по подразбиране: локал на системата)</translation>
     </message>
     <message>
         <source>Start minimized</source>
@@ -887,46 +887,46 @@
     </message>
     <message>
         <source>Set SSL root certificates for payment request (default: -system-)</source>
-        <translation>Задай SSL root сертификат за молба за изплащане (по подразбиране: -system-)</translation>
+        <translation>Задай SSL root сертификати за молби за изплащане (по подразбиране: -система-)</translation>
     </message>
     <message>
         <source>Show splash screen on startup (default: %u)</source>
-        <translation>Покажи splash екран при стартирване (по подразбиране %u)</translation>
+        <translation>Покажи начален екран при стартиране (по подразбиране %u)</translation>
     </message>
     <message>
         <source>Reset all settings changed in the GUI</source>
-        <translation>Нулиране на всички настройки променени в GUI</translation>
+        <translation>Нулиране на всички промени в GUI настройките</translation>
     </message>
 </context>
 <context>
     <name>ImportKeysDialog</name>
     <message>
         <source>Import Private Key</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавяне на Секретен Ключ</translation>
     </message>
     <message>
         <source>&amp;Import Private Key</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Добавяне на Секретен Ключ</translation>
     </message>
     <message>
         <source>Private Key:</source>
-        <translation type="unfinished"></translation>
+        <translation>Секретен Ключ:</translation>
     </message>
     <message>
         <source>Private key to import into your wallet</source>
-        <translation type="unfinished"></translation>
+        <translation>Секретен Ключ който да бъде въведен във Вашия портфейл</translation>
     </message>
     <message>
         <source>Label for this private key in your wallet</source>
-        <translation type="unfinished"></translation>
+        <translation>Име за този секретен Ключ във Вашия портфейл</translation>
     </message>
     <message>
         <source>Label (optional):</source>
-        <translation type="unfinished"></translation>
+        <translation>Име (по избор)</translation>
     </message>
     <message>
         <source>Rescan</source>
-        <translation type="unfinished"></translation>
+        <translation>Повторно Сканиране</translation>
     </message>
     <message>
         <source>Reset this form.</source>
@@ -934,31 +934,31 @@
     </message>
     <message>
         <source>&amp;Reset</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Нулиране</translation>
     </message>
     <message>
         <source>&amp;Import</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Внасяне</translation>
     </message>
     <message>
         <source>&amp;Cancel</source>
-        <translation type="unfinished">Отказ</translation>
+        <translation>&amp;Отказ</translation>
     </message>
     <message>
         <source>Invalid private key; please check and try again!</source>
-        <translation type="unfinished"></translation>
+        <translation>Невалиден секретен ключ; моля проверете за грешки и опитайте отново!</translation>
     </message>
     <message>
         <source>Invalid address generated from private key; please check and try again!</source>
-        <translation type="unfinished"></translation>
+        <translation>Невалиден адрес бе генериран от секретния ключ; моля проверете за грешки и опитайте отново!</translation>
     </message>
     <message>
         <source>Failed to add private key.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавянето на секретен ключ бе неуспешно.</translation>
     </message>
     <message>
         <source>Rescanning...</source>
-        <translation type="unfinished">Преразглеждане на последовтелността от блокове...</translation>
+        <translation>Сканиране на ново...</translation>
     </message>
 </context>
 <context>
@@ -973,11 +973,11 @@
     </message>
     <message>
         <source>Use the default data directory</source>
-        <translation>Използване на директория по подразбиране</translation>
+        <translation>Използване на директорията по подразбиране</translation>
     </message>
     <message>
         <source>Use a custom data directory:</source>
-        <translation>Използване на директория ръчно</translation>
+        <translation>Използване на зададена директория</translation>
     </message>
     <message>
         <source>Error</source>
@@ -985,33 +985,33 @@
     </message>
     <message>
         <source>As this is the first time the program is launched, you can choose where %1 will store its data.</source>
-        <translation type="unfinished"></translation>
+        <translation>Тъй като това е първото стартиране на програмата, можете да изберете къде %1 да се съхраняват данните. </translation>
     </message>
     <message>
         <source>%1 will download and store a copy of the Dogecoin block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 ще изтегли и съхрани копие на Доджкоин блокчейн. Поне %2GB данни ще бъдат съхранени в тази директория, и с течение на времето нейния размер ще расте. Портфейлът също ще бъде съхранен в тази директория. </translation>
     </message>
     <message>
         <source>Error: Specified data directory &quot;%1&quot; cannot be created.</source>
-        <translation type="unfinished"></translation>
+        <translation>Грешка: Посочената директория &quot;%1&quot; не може да бъде създадена.</translation>
     </message>
     <message numerus="yes">
         <source>%n GB of free space available</source>
-        <translation type="unfinished">
+        <translation>%n GB налично свободно място</translation>
             <numerusform></numerusform>
             <numerusform></numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <source>(of %n GB needed)</source>
-        <translation type="unfinished">
+        <translation>(от %n GB необходими)</translation>
             <numerusform></numerusform>
             <numerusform></numerusform>
         </translation>
     </message>
     <message>
         <source>Choose data directory</source>
-        <translation type="unfinished"></translation>
+        <translation>Избор на директория за данни</translation>
     </message>
 </context>
 <context>
@@ -1030,7 +1030,7 @@
     </message>
     <message>
         <source>Recent transactions may not yet be visible, and therefore your wallet&apos;s balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the dogecoin network, as detailed below.</source>
-        <translation type="unfinished"></translation>
+        <translation>Последните транзакции може да са все още невидими, затова баланса във Вашия портфейл може да е  </translation>
     </message>
     <message>
         <source>Attempting to spend dogecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
