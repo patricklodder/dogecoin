@@ -1264,79 +1264,79 @@
     </message>
     <message>
         <source>Prune &amp;block storage to</source>
-        <translation type="unfinished"></translation>
+        <translation>Окастри &amp;съхранилището на блокове до</translation>
     </message>
     <message>
         <source>GB</source>
-        <translation type="unfinished"></translation>
+        <translation>Гигабайта</translation>
     </message>
     <message>
         <source>Reverting this setting requires re-downloading the entire blockchain.</source>
-        <translation type="unfinished"></translation>
+        <translation>Връщането на тази настройка изисква повторно изтегляне на целия блокчейн.</translation>
     </message>
     <message>
         <source>(0 = auto, &lt;0 = leave that many cores free)</source>
-        <translation type="unfinished"></translation>
+        <translation>(0 = авто, &lt;0 = остави толкова ядра свободни)</translation>
     </message>
     <message>
         <source>If you disable the spending of unconfirmed change, the change from a transaction cannot be used until that transaction has at least one confirmation. This also affects how your balance is computed.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ако изключите похарчването на непотвърдено ресто, рестото от една транзакция не може да бъде използвано докато тази транзакция има поне едно потвърждение. Това също има влияние на това как баланса Ви е изчислен.</translation>
     </message>
     <message>
         <source>Used for reaching peers via:</source>
-        <translation type="unfinished"></translation>
+        <translation>Изполва се за достиг до връстници чрез:</translation>
     </message>
     <message>
         <source>Shows, if the supplied default SOCKS5 proxy is used to reach peers via this network type.</source>
-        <translation type="unfinished"></translation>
+        <translation>Показва се когато предоставеният по подравбиране SOCKS5 прокси е изполван за достиг до връстници чрез този тип мрежа.</translation>
     </message>
     <message>
         <source>IPv4</source>
-        <translation type="unfinished"></translation>
+        <translation>IPv4</translation>
     </message>
     <message>
         <source>IPv6</source>
-        <translation type="unfinished"></translation>
+        <translation>IPv6</translation>
     </message>
     <message>
         <source>Tor</source>
-        <translation type="unfinished"></translation>
+        <translation>Тор</translation>
     </message>
     <message>
         <source>Connect to the Dogecoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation type="unfinished"></translation>
+        <translation>Свързване към Доджкоин мрежата чрез отделен SOCKS5 прокси към Тор услуги за укриване.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services:</source>
-        <translation type="unfinished"></translation>
+        <translation>Използване на отделен SOCKS5 прокси за достъп към връстници чрез Тор услуги за укриване.</translation>
     </message>
     <message>
         <source>&amp;Hide the icon from the system tray.</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Скриване на иконата от системния трей.</translation>
     </message>
     <message>
         <source>Hide tray icon</source>
-        <translation type="unfinished"></translation>
+        <translation>Скриване на трей иконата</translation>
     </message>
     <message>
         <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Exit in the menu.</source>
-        <translation type="unfinished"></translation>
+        <translation>Минимизиране (не изход) на апликацията когато прозореца е затворен. Когато тази опция е избрана, приложението ще бъде затворено само след избиране на Изход в менюто.</translation>
     </message>
     <message>
         <source>The user interface language can be set here. This setting will take effect after restarting %1.</source>
-        <translation type="unfinished"></translation>
+        <translation>Езика на интерфейса може да бъде избран тук. Тази опция ще влезе в сила след рестартиране %1.</translation>
     </message>
     <message>
         <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
-        <translation type="unfinished"></translation>
+        <translation>Линкове на трети лица (пр. блок търсачка) които са налични в раздела транзакции като предмети в контекстни менюта. %s в линка е заменен от хеш на транзакциите. Многократни линкове са разделени с вертикална линия |.</translation>
     </message>
     <message>
         <source>Active command-line options that override above options:</source>
-        <translation type="unfinished"></translation>
+        <translation>Активни командни опции които отменят по- горните опциите:</translation>
     </message>
     <message>
         <source>Client will be shut down. Do you want to proceed?</source>
-        <translation type="unfinished"></translation>
+        <translation>Клиента/програмата ще се затвори. Желаете ли да продължите?</translation>
     </message>
 </context>
 <context>
