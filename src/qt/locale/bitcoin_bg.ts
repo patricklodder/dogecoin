@@ -5,11 +5,11 @@
     <name>AddPeerDialog</name>
     <message>
         <source>Add Peer</source>
-        <translation>Добави връстник.</translation>
+        <translation>Добавяне на връстник.</translation>
     </message>
     <message>
         <source>Enter the peer details below.</source>
-        <translation>Добави детайлите за връстника долу.</translation>
+        <translation>Добавяне на детайлите за връстника.</translation>
     </message>
     <message>
         <source>Be careful! Do not blindly trust anyone that tells you to add their node.</source>
