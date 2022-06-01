@@ -1347,35 +1347,35 @@
     </message>
     <message>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Dogecoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Текущата информация на екрана може да не е актуална. Вашият портфейл ще се синхронизира автоматично с мрежата на Биткоин, щом поне една връзката с нея се установи; този процес все още не е приключил.</translation>
+        <translation>Показаната на екрана информация може да не е актуална. Вашият портфейл се синхронизира автоматично с Доджкоин мрежата когато връзка е установена, но този процес все още не е приключил.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
-        <translation>В наблюдателен режим:</translation>
+        <translation>Само-Наблюдавани:</translation>
     </message>
     <message>
         <source>Available:</source>
-        <translation>Налично:</translation>
+        <translation>Налични:</translation>
     </message>
     <message>
         <source>Your current spendable balance</source>
-        <translation>Вашата текуща сметка за изразходване</translation>
+        <translation>Баланс който да бъде изразходван</translation>
     </message>
     <message>
         <source>Pending:</source>
-        <translation>Изчакващо:</translation>
+        <translation>Изчакване:</translation>
     </message>
     <message>
         <source>Immature:</source>
-        <translation>Неразвит:</translation>
+        <translation>Неготови:</translation>
     </message>
     <message>
         <source>Mined balance that has not yet matured</source>
-        <translation>Миниран баланс,който все още не се е развил</translation>
+        <translation>Обработен баланс,който все още не е готов</translation>
     </message>
     <message>
         <source>Balances</source>
-        <translation>Баланс</translation>
+        <translation>Баланси</translation>
     </message>
     <message>
         <source>Total:</source>
@@ -1383,11 +1383,11 @@
     </message>
     <message>
         <source>Your current total balance</source>
-        <translation>Текущият ви общ баланс</translation>
+        <translation>Текущият Ви общ баланс</translation>
     </message>
     <message>
         <source>Spendable:</source>
-        <translation>За харчене:</translation>
+        <translation>Могат да се похарчат:</translation>
     </message>
     <message>
         <source>Recent transactions</source>
@@ -1395,138 +1395,138 @@
     </message>
     <message>
         <source>Unconfirmed transactions to watch-only addresses</source>
-        <translation type="unfinished"></translation>
+        <translation>Непотвърдени транзакции към само-наблюдавани адреси</translation>
     </message>
     <message>
         <source>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</source>
-        <translation type="unfinished"></translation>
+        <translation>Общо транзакции които все още не са потвърдени, и не са все още добавени към баланса който може да се харче</translation>
     </message>
     <message>
         <source>Mined balance in watch-only addresses that has not yet matured</source>
-        <translation type="unfinished"></translation>
+        <translation>Обработен баланс в само-наблюдавани адреси който все още не е готов</translation>
     </message>
     <message>
         <source>Current total balance in watch-only addresses</source>
-        <translation type="unfinished"></translation>
+        <translation>Текущ общ баланс в само-наблюдавани адреси</translation>
     </message>
     <message>
         <source>Your current balance in watch-only addresses</source>
-        <translation type="unfinished"></translation>
+        <translation>Вашия текущ баланс в само-наблюдавани адреси</translation>
     </message>
     <message>
         <source>Helpful tip of the day:</source>
-        <translation type="unfinished"></translation>
+        <translation>Помощен съвет на деня:</translation>
     </message>
     <message>
         <source>Tip</source>
-        <translation type="unfinished"></translation>
+        <translation>Съвет</translation>
     </message>
     <message>
         <source>Never share your wallet.dat file with anyone</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Никога не споделяйте Вашия wallet.dat файл и/или Ващият секретен ключ с никого</translation>
     </message>
     <message>
         <source>For advanced operations, use the console in &apos;Help&apos; -&gt; &apos;Debug Window&apos;</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">За достъп до опции за напреднали използвайте конзолата в &apos;Помощ&apos; -&gt; &apos;Прозорец за диагностика&apos;</translation>
     </message>
     <message>
         <source>Encrypt your wallet with a strong passphrase for maximum security</source>
-        <translation type="unfinished"></translation>
+        <translation>Шифровайте вашият портфейл със силна парола за максимум сигурност.</translation>
     </message>
     <message>
         <source>Make sure to keep your wallet software updated</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Бъдете сигурни да поддържате Вашия портфейл актуализиран</translation>
     </message>
     <message>
         <source>Backup your private key to recover your coins, using &apos;File&apos; &gt; &apos;Backup Wallet&apos;</source>
-        <translation type="unfinished"></translation>
+        <translation>Запазете копие от Вашия секретния ключ за достъп до вашите монети; използвайте &apos;Файл&apos; &gt; &apos;Запазване на портфейла&apos;</translation>
     </message>
     <message>
         <source>Always do your own research before using an external cryptocurrency service</source>
-        <translation type="unfinished"></translation>
+        <translation>Винаги проверявайте и разследвайте преди да решите да изполвате външна криптовалутна услуга.</translation>
     </message>
     <message>
         <source>Never share your private key with anyone</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Никога не споделяйте Вашия секретен ключ със някой на когото не можете да се доверите</translation>
     </message>
     <message>
         <source>Who owns the private keys, owns the coins</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Този който притежава секретните ключове притежава монетите</translation>
     </message>
     <message>
         <source>To see ongoing development and contribute, check out the Dogecoin Core repository on GitHub</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">За да видите как върви развитието и да допринесете, посетете Доджкоин хранилището в GitHub!</translation>
     </message>
     <message>
         <source>Services that claim to double your dogecoins are always ponzi schemes</source>
-        <translation type="unfinished"></translation>
+        <translation>Услуги които обещават да удвоят вашите доджкоини винаги са пирамиди.</translation>
     </message>
 </context>
 <context>
     <name>PaperWalletDialog</name>
     <message>
         <source>Print Your Paper Wallets</source>
-        <translation type="unfinished"></translation>
+        <translation>Изпечатайте Вашите Хартиени Портфейли</translation>
     </message>
     <message>
         <source>Very New Address</source>
-        <translation type="unfinished"></translation>
+        <translation>Супер Нов Адрес</translation>
     </message>
     <message>
         <source>So Print</source>
-        <translation type="unfinished"></translation>
+        <translation>Яко Принтиране</translation>
     </message>
     <message>
         <source>Many Wallets?</source>
-        <translation type="unfinished"></translation>
+        <translation>Много Портфейли?</translation>
     </message>
     <message>
         <source>1</source>
-        <translation type="unfinished"></translation>
+        <translation>1</translation>
     </message>
     <message>
         <source>2</source>
-        <translation type="unfinished"></translation>
+        <translation>2</translation>
     </message>
     <message>
         <source>3</source>
-        <translation type="unfinished"></translation>
+        <translation>3</translation>
     </message>
     <message>
         <source>4</source>
-        <translation type="unfinished"></translation>
+        <translation>4</translation>
     </message>
     <message>
         <source>5</source>
-        <translation type="unfinished"></translation>
+        <translation>5</translation>
     </message>
     <message>
         <source>6</source>
-        <translation type="unfinished"></translation>
+        <translation>6</translation>
     </message>
     <message>
         <source>7</source>
-        <translation type="unfinished"></translation>
+        <translation>7</translation>
     </message>
     <message>
         <source>8</source>
-        <translation type="unfinished"></translation>
+        <translation>8</translation>
     </message>
     <message>
         <source>9</source>
-        <translation type="unfinished"></translation>
+        <translation>9</translation>
     </message>
     <message>
         <source>10</source>
-        <translation type="unfinished"></translation>
+        <translation>10</translation>
     </message>
     <message>
         <source>11</source>
-        <translation type="unfinished"></translation>
+        <translation>11</translation>
     </message>
     <message>
         <source>12</source>
-        <translation type="unfinished"></translation>
+        <translation>12</translation>
     </message>
     <message>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
@@ -1534,23 +1534,27 @@
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Public Key:</source>
-        <translation type="unfinished"></translation>
+        <translation>Публичен Ключ:</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="unfinished"></translation>
+        <translation>Затвори</translation>
     </message>
     <message>
         <source>Warning: Network Activity Detected</source>
-        <translation type="unfinished"></translation>
+        <translation>Внимание: Открита е активност по мрежата</translation>
     </message>
     <message>
         <source>It is recommended to disconnect from the internet before printing paper wallets. Even though paper wallets are generated on your local computer, it is still possible to unknowingly have malware that transmits your screen to a remote location. It is also recommended to print to a local printer vs a network printer since that network traffic can be monitored. Some advanced printers also store copies of each printed document. Proceed with caution relative to the amount of value you plan to store on each address.</source>
-        <translation type="unfinished"></translation>
+        <translation>Препоръчително е да прекъснете връзката към интернет преди да печатате хартиени портфейли. Въпреки че хартиените портфейли са създадени на вашия компютър, все пак е възможно наличието на зловреден софтвер който без Вашето знание да предаде екрана Ви на трети лица. Също така е препоръчително да печатате на принтер който директно е свързан към Вашия компютър, вместо с мрежов принтер, тъй като трафика може да бъде наблюдаван. Някои принтери също съхраняват копия на всеки принтиран документ. Продължете с повишено внимание, особено в зависимост на сумите които смятате да съхранявате на всеки един адрес.</translation>
     </message>
     <message>
         <source>Error encoding Address into QR Code.</source>
@@ -1558,23 +1562,23 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Error encoding private key into QR Code.</source>
-        <translation type="unfinished"></translation>
+        <translation>Възникна грешка в превръщането на секретния ключ в QR Код.</translation>
     </message>
     <message>
         <source>Printing Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Грешка при принтирането</translation>
     </message>
     <message>
         <source>failed to open file, is it writable?</source>
-        <translation type="unfinished"></translation>
+        <translation>не успя да отвори файл, дали може да се пише на него?</translation>
     </message>
     <message>
         <source>Load Paper Wallets</source>
-        <translation type="unfinished"></translation>
+        <translation>Зареди Хартиени Портфейли</translation>
     </message>
     <message>
         <source>The paper wallet printing process has begun.&lt;br/&gt;Please wait for the wallets to print completely and verify that everything printed correctly.&lt;br/&gt;Check for misalignments, ink bleeding, smears, or anything else that could make the private keys unreadable.&lt;br/&gt;Now, enter the number of DOGE you wish to send to each wallet:</source>
-        <translation type="unfinished"></translation>
+        <translation>Принтирането на хартиени портфейли е започнало.&lt;br/&gt;Моля изчакайте порфейлите да се изпечатат напълно и удостоверете че всичко е изпечатано правилно.&lt;br/&gt;Проверете за протекло или размазано мастило, неподравнености или други проблеми коийто биха могли да направят секретните ключове нечетими.&lt;br/&gt;Добре, сега вкарайте колко Додж искате да изпратите на всеки един портфейл:</translation>
     </message>
     <message>
         <source>Paper wallet %1</source>
