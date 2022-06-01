@@ -1037,39 +1037,39 @@
     </message>
     <message>
         <source>Recent transactions may not yet be visible, and therefore your wallet&apos;s balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the dogecoin network, as detailed below.</source>
-        <translation>Последните транзакции може да са все още невидими, затова баланса във Вашия портфейл може да е  </translation>
+        <translation>Възможно е последните транзакции все още да не са видими, вследствие баланса на Вашия портфейл може да е временно неточен. Той ще е точен когато Вашия портфейл се синхронизира със Доджкоин мрежата. За подробности вижте долу.  </translation>
     </message>
     <message>
         <source>Attempting to spend dogecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation type="unfinished"></translation>
+        <translation>Опити за изпращане на доджкоин монети, които са от транзакции със статус "непоказани" няма да бъдат приети от мрежата.</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
-        <translation type="unfinished"></translation>
+        <translation>Брой на останалите блокове</translation>
     </message>
     <message>
         <source>Unknown...</source>
-        <translation type="unfinished"></translation>
+        <translation>Незнайни</translation>
     </message>
     <message>
         <source>Progress</source>
-        <translation type="unfinished"></translation>
+        <translation>Напредък</translation>
     </message>
     <message>
         <source>Progress increase per hour</source>
-        <translation type="unfinished"></translation>
+        <translation>Увеличение на прогреса в час</translation>
     </message>
     <message>
         <source>calculating...</source>
-        <translation type="unfinished"></translation>
+        <translation>изчисляване...</translation>
     </message>
     <message>
         <source>Estimated time left until synced</source>
-        <translation type="unfinished"></translation>
+        <translation>Оценка на останалото вереме до пълна синхронизация</translation>
     </message>
     <message>
         <source>Unknown. Syncing Headers (%1)...</source>
-        <translation type="unfinished"></translation>
+        <translation>Без информация. Синхронизиране на заглавки (%1)...</translation>
     </message>
 </context>
 <context>
@@ -1088,11 +1088,11 @@
     </message>
     <message>
         <source>Select payment request file</source>
-        <translation type="unfinished"></translation>
+        <translation>Избиране на файл за заявка на плащане</translation>
     </message>
     <message>
         <source>Select payment request file to open</source>
-        <translation type="unfinished"></translation>
+        <translation>Избиране на файл за заявка на плащане който да бъде отворен</translation>
     </message>
 </context>
 <context>
@@ -1135,11 +1135,11 @@
     </message>
     <message>
         <source>Reset all client options to default.</source>
-        <translation>Възстановете всички настройки по подразбиране.</translation>
+        <translation>Възстановете всички настройки на клиента/програмата по подразбиране.</translation>
     </message>
     <message>
         <source>&amp;Reset Options</source>
-        <translation>&amp;Нулирай настройките</translation>
+        <translation>&amp;Нулиране на настройките</translation>
     </message>
     <message>
         <source>&amp;Network</source>
@@ -1155,15 +1155,15 @@
     </message>
     <message>
         <source>Enable coin &amp;control features</source>
-        <translation>Позволяване на монетите и &amp;техните възможности</translation>
+        <translation>Активиране на възможности за &amp;контролиране на монетите</translation>
     </message>
     <message>
         <source>&amp;Spend unconfirmed change</source>
-        <translation>&amp;Похарчете непотвърденото ресто</translation>
+        <translation>&amp;Похарчване на непотвърденото ресто</translation>
     </message>
     <message>
         <source>Automatically open the Dogecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Автоматично отваряне на входящия Dogecoin порт. Работи само с рутери поддържащи UPnP.</translation>
+        <translation>Автоматично отварете входящия Dogecoin порт на вашия рутер. Работи само с рутери поддържащи UPnP.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1171,15 +1171,15 @@
     </message>
     <message>
         <source>Connect to the Dogecoin network through a SOCKS5 proxy.</source>
-        <translation>Свързване с Биткойн мрежата чрез SOCKS5  прокси.</translation>
+        <translation>Свързване с Доджкоин мрежата чрез SOCKS5  прокси.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
-        <translation>&amp;Свързване чрез SOCKS5  прокси (прокси по подразбиране):</translation>
+        <translation>&amp;Свързване чрез SOCKS5 прокси (прокси по подразбиране):</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
-        <translation>Прокси &amp; АйПи:</translation>
+        <translation>Прокси &amp;IP:</translation>
     </message>
     <message>
         <source>&amp;Port:</source>
@@ -1199,7 +1199,7 @@
     </message>
     <message>
         <source>&amp;Minimize to the tray instead of the taskbar</source>
-        <translation>&amp;Минимизиране в системния трей</translation>
+        <translation>&amp;Минимизиране в системния трей вместо в таск бара (прозореца със задачите). </translation>
     </message>
     <message>
         <source>M&amp;inimize on close</source>
@@ -1211,7 +1211,7 @@
     </message>
     <message>
         <source>User Interface &amp;language:</source>
-        <translation>Език:</translation>
+        <translation>Език на интерфейса:</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
@@ -1219,11 +1219,11 @@
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Изберете единиците, показвани по подразбиране в интерфейса.</translation>
+        <translation>Изберете разделните единици, показвани по подразбиране в интерфейса.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
-        <translation>Дали да покаже възможностите за контрол на монетите или не.</translation>
+        <translation>Дали да се показват възможностите за контрол на монетите или не.</translation>
     </message>
     <message>
         <source>&amp;OK</source>
@@ -1231,7 +1231,7 @@
     </message>
     <message>
         <source>&amp;Cancel</source>
-        <translation>Отказ</translation>
+        <translation>Отказване</translation>
     </message>
     <message>
         <source>default</source>
@@ -1243,7 +1243,7 @@
     </message>
     <message>
         <source>Confirm options reset</source>
-        <translation>Потвърдете отмяната на настройките.</translation>
+        <translation>Потвърждаване нулирането на настройките .</translation>
     </message>
     <message>
         <source>Client restart required to activate changes.</source>
@@ -1251,23 +1251,23 @@
     </message>
     <message>
         <source>This change would require a client restart.</source>
-        <translation>Тази промяна изисква рестартиране на клиента Ви.</translation>
+        <translation>Тази промяна изисква рестартиране на клиента.</translation>
     </message>
     <message>
         <source>The supplied proxy address is invalid.</source>
-        <translation>Текущият прокси адрес е невалиден.</translation>
+        <translation>Предоставеният прокси адрес е невалиден.</translation>
     </message>
     <message>
         <source>Automatically start %1 after logging in to the system.</source>
-        <translation type="unfinished"></translation>
+        <translation>Автоматично започване %1 след влизане в системата.</translation>
     </message>
     <message>
         <source>&amp;Start %1 on system login</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Стартиране %1 при влизане в системата </translation>
     </message>
     <message>
         <source>Disables some advanced features but all blocks will still be fully validated. Reverting this setting requires re-downloading the entire blockchain. Actual disk usage may be somewhat higher.</source>
-        <translation type="unfinished"></translation>
+        <translation>Изключва някои възможности за напреднали, но всички блокове все още ще бъдат напълно валидирани. Връщането на тази настройка изисква повторно изтегляне на целия блокчейн. Възможно е използваемостта на диска да е по висока.</translation>
     </message>
     <message>
         <source>Prune &amp;block storage to</source>
