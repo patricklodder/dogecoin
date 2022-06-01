@@ -13,7 +13,7 @@
     </message>
     <message>
         <source>Be careful! Do not blindly trust anyone that tells you to add their node.</source>
-        <translation>Внимателно! Не се доверявай сляпо на всеки който ви каже да добавите техния възел.</translation>
+        <translation>Внимателно! Не се доверявай сляпо на всеки, който ви каже да добавите техния възел.</translation>
 
     </message>
     <message>
