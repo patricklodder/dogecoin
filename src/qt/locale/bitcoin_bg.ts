@@ -1589,74 +1589,74 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Paper wallet %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Хартиен портфейл %1</translation>
     </message>
     <message>
         <source>&lt;b&gt;%1&lt;/b&gt; to Paper Wallet &lt;span style=&apos;font-family: monospace;&apos;&gt;%2&lt;/span&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;%1&lt;/b&gt; към Хартиен Порфейл &lt;стил на обхвата=&apos;семейство-фонт: моноширна;&apos;&gt;%2&lt;/обхват&gt;</translation>
     </message>
     <message>
         <source>Send Coins</source>
-        <translation type="unfinished">Изпращане</translation>
+        <translation>Изпращане на Монети</translation>
     </message>
     <message>
         <source>The recipient address is not valid, please recheck.</source>
-        <translation type="unfinished"></translation>
+        <translation>Адреса на получателя не е валиден, моле проверете.</translation>
     </message>
     <message>
         <source>The amount to pay must be larger than 0</source>
-        <translation type="unfinished">Сумата трябва да е по-голяма от 0. {0?}</translation>
+        <translation>Сумата на плащане трябва да е по-голяма от 0.</translation>
     </message>
     <message>
         <source>The amount exceeds your balance.</source>
-        <translation type="unfinished">Сумата надвишава текущия баланс</translation>
+        <translation>Сумата надвишава Вашия баланс</translation>
     </message>
     <message>
         <source>The total exceeds your balance when the transaction fee is included</source>
-        <translation type="unfinished"></translation>
+        <translation>Общата сума надвишава Вашия баланс когато таксите са добавени.</translation>
     </message>
     <message>
         <source>Duplicate address found, can only send to each address once per send operation.</source>
-        <translation type="unfinished"></translation>
+        <translation>Намерен бе дубликатен адрес. Може да се изпраща само до един адрес при изпращане.</translation>
     </message>
     <message>
         <source>Transaction creation failed!</source>
-        <translation type="unfinished">Грешка при създаването на транзакция!</translation>
+        <translation>Грешка при създаването на транзакция!</translation>
     </message>
     <message>
         <source>Are you sure you want to send?</source>
-        <translation type="unfinished">Наистина ли искате да изпратите?</translation>
+        <translation>Сигурни ли сте, че искате да изпращате?</translation>
     </message>
     <message>
         <source>added as transaction fee</source>
-        <translation type="unfinished">добавено като такса за транзакция</translation>
+        <translation>добавено като такса за транзакция</translation>
     </message>
     <message>
         <source>Total Amount %1 (= %2)</source>
-        <translation type="unfinished"></translation>
+        <translation>Обща Сума %1 (= %2)</translation>
     </message>
     <message>
         <source>or</source>
-        <translation type="unfinished">или</translation>
+        <translation>или</translation>
     </message>
     <message>
         <source>Confirm send coins</source>
-        <translation type="unfinished">Потвърждаване</translation>
+        <translation>Потвърдете изпращането на монети</translation>
     </message>
     <message>
         <source>The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation type="unfinished"></translation>
+        <translation>Транзакцията беше отхвърлена! Това може да се случи ако някои от монетите във Вашия портфейл са вече били похарчени, например ако сте изполвали копие от файла wallet.dat и тези монети са вече похарчени в копието, но все още не са маркирани като похарчени тук.</translation>
     </message>
 </context>
 <context>
     <name>PaymentServer</name>
     <message>
         <source>Payment request error</source>
-        <translation>Възникна грешка по време назаявката за плащане</translation>
+        <translation>Възникна грешка при назаявката за плащане</translation>
     </message>
     <message>
         <source>Cannot start dogecoin: click-to-pay handler</source>
-        <translation>Биткойн не можe да се стартира: click-to-pay handler</translation>
+        <translation>Доджкоин не можe да стартира: кликни-да-платиш секунданта</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -1688,7 +1688,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Requested payment amount of %1 is too small (considered dust).</source>
-        <translation type="vanished">Заявената сума за плащане: %1 е твърде малка (счита се за отпадък)</translation>
+        <translation>Заявената сума за плащане: %1 е твърде малка (счита се за прах)</translation>
     </message>
     <message>
         <source>Refund from %1</source>
@@ -1696,7 +1696,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Payment request %1 is too large (%2 bytes, allowed %3 bytes).</source>
-        <translation>Заявката за плащане %1 е твърде голям (%2 байта, позволени %3 байта).</translation>
+        <translation>Заявката за плащане %1 е твърде голяма (%2 байта, позволени %3 байта).</translation>
     </message>
     <message>
         <source>Error communicating with %1: %2</source>
@@ -1704,11 +1704,11 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Bad response from server %1</source>
-        <translation>Възникна проблем при свързването със сървър %1</translation>
+        <translation>Неправилен отговор от сървъра %1</translation>
     </message>
     <message>
         <source>Network request error</source>
-        <translation>Грешка в мрежата по време на заявката</translation>
+        <translation>Грешна мрежова заявка</translation>
     </message>
     <message>
         <source>Payment acknowledged</source>
@@ -1716,31 +1716,31 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Линка за извличане на заявката за изплащане е невалиден.</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid Dogecoin address or malformed URI parameters.</source>
-        <translation type="unfinished"></translation>
+        <translation>Униформеният Ресурс Идентификатор не може да бъде фразиран. Това може да е предизвикано от невалиден Доджкоин адрес, или неправилно формирани УРИ параметри.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
-        <translation type="unfinished"></translation>
+        <translation>Файла за заявка не може да бъде прочетен! Това може да е причинено от невалиден файл за платежна заявка.</translation>
     </message>
     <message>
         <source>Payment request is not initialized.</source>
-        <translation type="unfinished"></translation>
+        <translation>Заявката за плащане не бе започната.</translation>
     </message>
     <message>
         <source>Unverified payment requests to custom payment scripts are unsupported.</source>
-        <translation type="unfinished"></translation>
+        <translation>Непотвърдени заявки за плащане към персонализирани скрипти за плащане не се поддържат.</translation>
     </message>
     <message>
         <source>Requested payment amount of %1 is too small (below discard threshold).</source>
-        <translation type="unfinished"></translation>
+        <translation>Поисканата сума за плащане от %1 е твърде малка (под нивото на отхвъляне). </translation>
     </message>
     <message>
         <source>Payment request cannot be parsed!</source>
-        <translation type="unfinished"></translation>
+        <translation>Заявката за плащане не може да бъде фразирана.</translation>
     </message>
 </context>
 <context>
@@ -1750,24 +1750,24 @@ p, li { white-space: pre-wrap; }
         <translation>Клиент на потребителя</translation>
     </message>
     <message>
-        <source>NodeId</source>
-        <translation type="unfinished"></translation>
+        <source>NodeID</source>
+        <translation>ID на Връстника</translation>
     </message>
     <message>
         <source>Node/Service</source>
-        <translation type="unfinished"></translation>
+        <translation>Връстник/Услуга</translation>
     </message>
     <message>
         <source>Ping</source>
-        <translation type="unfinished"></translation>
+        <translation>Пинг</translation>
     </message>
     <message>
         <source>Bytes Sent</source>
-        <translation type="unfinished"></translation>
+        <translation>Изпратени байта</translation>
     </message>
     <message>
         <source>Bytes Received</source>
-        <translation type="unfinished"></translation>
+        <translation>Получени байта</translation>
     </message>
 </context>
 <context>
