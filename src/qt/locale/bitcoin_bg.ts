@@ -1771,11 +1771,11 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Error: Peer-to-peer functionality missing or disabled</source>
-        <translation type="unfinished"></translation>
+        <translation>Грешка: Функцята "Връзка до Връстници" липсва или е изключена.</translation>
     </message>
     <message>
         <source>Attempted to one try node.</source>
-        <translation type="unfinished"></translation>
+        <translation>Опит за връстник от един опит.</translation>
     </message>
     <message>
         <source>Error: Unable to add node</source>
