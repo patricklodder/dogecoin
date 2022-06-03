@@ -1778,23 +1778,23 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Attempted to one try node.</source>
-        <translation>Опит за връстник от един опит.</translation>
+        <translation>Опит за еднократна връзка до връстник/възел.</translation>
     </message>
     <message>
         <source>Error: Node already added</source>
-        <translation type="unfinished"></translation>
+        <translation>Грешка: Възелът е вече добавен.</translation>
     </message>
     <message>
         <source>Node not found in connected nodes</source>
-        <translation type="unfinished"></translation>
+        <translation>Възелът не е намерен сред свързаните възли</translation>
     </message>
     <message>
         <source>Disconnected the node: </source>
-        <translation type="unfinished"></translation>
+        <translation>Връзката бе прекъсната с възел: </translation>
     </message>
     <message>
         <source>Returned OK.</source>
-        <translation type="unfinished"></translation>
+        <translation>Успешно върнат(а)</translation>
     </message>
 </context>
 <context>
@@ -1805,7 +1805,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Enter a Dogecoin address (e.g. %1)</source>
-        <translation>Въведете Биткойн адрес (например: %1)</translation>
+        <translation>Въведете Доджкоин адрес (например: %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1841,83 +1841,83 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>%1 B</source>
-        <translation type="unfinished">%1 Байт</translation>
+        <translation>%1 Байт</translation>
     </message>
     <message>
         <source>%1 kB</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 Килобайт(а)</translation>
     </message>
     <message>
         <source>%1 MB</source>
-        <translation type="unfinished">%1 Мегабайт</translation>
+        <translation>%1 Мегабайт</translation>
     </message>
     <message numerus="yes">
         <source>%n second(s)</source>
-        <translation type="unfinished">
+        <translation>%n секунда/и</translation>
             <numerusform></numerusform>
             <numerusform></numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <source>%n minute(s)</source>
-        <translation type="unfinished">
+        <translation>%n минута/и</translation>
             <numerusform></numerusform>
             <numerusform></numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <source>%n hour(s)</source>
-        <translation type="unfinished">
+        <translation>%n час(а)</translation>
             <numerusform></numerusform>
             <numerusform></numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <source>%n day(s)</source>
-        <translation type="unfinished">
+        <translation>%n ден(дни)</translation>
             <numerusform></numerusform>
             <numerusform></numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <source>%n week(s)</source>
-        <translation type="unfinished">
+        <translation>%n седмица/и</translation>
             <numerusform></numerusform>
             <numerusform></numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <source>%n year(s)</source>
-        <translation type="unfinished">
+        <translation>%n година/и</translation>
             <numerusform></numerusform>
             <numerusform></numerusform>
         </translation>
     </message>
     <message>
         <source>%1 didn&apos;t yet exit safely...</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 все още не е затворено безопастно...</translation>
     </message>
 </context>
 <context>
     <name>QObject::QObject</name>
     <message>
         <source>Error: Specified data directory &quot;%1&quot; does not exist.</source>
-        <translation type="unfinished"></translation>
+        <translation>Грешка: Посочената директория данни &quot;%1&quot; не съществува. </translation>
     </message>
     <message>
         <source>Error: Cannot parse configuration file: %1. Only use key=value syntax.</source>
-        <translation type="unfinished"></translation>
+        <translation>Грешка: Невъзможно фразиране на конфигурационен фаил: %1. Използвайте само клавиш = стойност.</translation>
     </message>
     <message>
         <source>Error: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Грешка: %1</translation>
     </message>
 </context>
 <context>
     <name>QRImageWidget</name>
     <message>
         <source>&amp;Save Image...</source>
-        <translation>&amp;Запиши изображение...</translation>
+        <translation>&amp;Запази изображение...</translation>
     </message>
     <message>
         <source>&amp;Copy Image</source>
@@ -1944,11 +1944,11 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>&amp;Information</source>
-        <translation>Данни</translation>
+        <translation>&amp;Данни</translation>
     </message>
     <message>
         <source>Debug window</source>
-        <translation>Прозорец с грешки</translation>
+        <translation>Прозорец за диагностика</translation>
     </message>
     <message>
         <source>General</source>
@@ -1976,7 +1976,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Current number of blocks</source>
-        <translation>Текущ брой блокове</translation>
+        <translation>Текущ номер блокове</translation>
     </message>
     <message>
         <source>Received</source>
@@ -1988,11 +1988,11 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>&amp;Peers</source>
-        <translation>&amp;Пиъри</translation>
+        <translation>&amp;Връстници</translation>
     </message>
     <message>
         <source>Select a peer to view detailed information.</source>
-        <translation>Избери пиър за детайлна информация.</translation>
+        <translation>Избери връстник за детайлна информация.</translation>
     </message>
     <message>
         <source>Direction</source>
@@ -2016,11 +2016,11 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Last Send</source>
-        <translation>Изпратени за последно</translation>
+        <translation>Последно изпратени</translation>
     </message>
     <message>
         <source>Last Receive</source>
-        <translation>Получени за последно</translation>
+        <translation>Последно получени</translation>
     </message>
     <message>
         <source>Ping Time</source>
@@ -2040,7 +2040,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>&amp;Network Traffic</source>
-        <translation>&amp;Мрежов Трафик</translation>
+        <translation>&amp;Мрежова Дейност</translation>
     </message>
     <message>
         <source>&amp;Clear</source>
@@ -2060,7 +2060,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Debug log file</source>
-        <translation>Лог файл,съдържащ грешките</translation>
+        <translation>Файл съдържащ информация за грешки</translation>
     </message>
     <message>
         <source>Clear console</source>
@@ -2068,7 +2068,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
-        <translation>Използвайте стрелки надолу и нагореза разглеждане на историятаот команди и &lt;b&gt;Ctrl-L&lt;/b&gt; за изчистване на конзолата.</translation>
+        <translation>Използвайте стрелки надолу и нагоре за разглеждане на историята от команди и &lt;b&gt;Ctrl-L&lt;/b&gt; за изчистване на екрана.</translation>
     </message>
     <message>
         <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
@@ -2096,7 +2096,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>never</source>
-        <translation>Никога</translation>
+        <translation>никога</translation>
     </message>
     <message>
         <source>Inbound</source>
@@ -2120,79 +2120,79 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Datadir</source>
-        <translation type="unfinished"></translation>
+        <translation>Директория данни</translation>
     </message>
     <message>
         <source>Block chain</source>
-        <translation type="unfinished"></translation>
+        <translation>Блокчейн</translation>
     </message>
     <message>
         <source>Memory Pool</source>
-        <translation type="unfinished"></translation>
+        <translation>Басеин с Памет</translation>
     </message>
     <message>
         <source>Current number of transactions</source>
-        <translation type="unfinished"></translation>
+        <translation>Настоящ брой транзакции</translation>
     </message>
     <message>
         <source>Memory usage</source>
-        <translation type="unfinished"></translation>
+        <translation>Употреба на паметта</translation>
     </message>
     <message>
         <source>Open the %1 debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation type="unfinished"></translation>
+        <translation>Отворете %1 лог файла с грешки от текущата директория данни. Това може да отнеме няколко секунди за големи лог файла.</translation>
     </message>
     <message>
         <source>Decrease font size</source>
-        <translation type="unfinished"></translation>
+        <translation>Намаляне размера на шрифта.</translation>
     </message>
     <message>
         <source>Increase font size</source>
-        <translation type="unfinished"></translation>
+        <translation>Увеличаване рамера на шрифта.</translation>
     </message>
     <message>
         <source>Connected peers</source>
-        <translation type="unfinished"></translation>
+        <translation>Свързани връстници</translation>
     </message>
     <message>
         <source>Add new peer</source>
-        <translation type="unfinished"></translation>
+        <translation>Добави нов връстник</translation>
     </message>
     <message>
         <source>Remove peer</source>
-        <translation type="unfinished"></translation>
+        <translation>Премахване на връстник</translation>
     </message>
     <message>
         <source>One try peer</source>
-        <translation type="unfinished"></translation>
+        <translation>Осъществяване на еднократна връзка към връстник</translation>
     </message>
     <message>
         <source>Banned peers</source>
-        <translation type="unfinished"></translation>
+        <translation>Забранени връстници</translation>
     </message>
     <message>
-        <source>Whitelisted</source>
-        <translation type="unfinished"></translation>
+        <source>В Белия Списък</source>
+        <translation></translation>
     </message>
     <message>
         <source>Starting Block</source>
-        <translation type="unfinished"></translation>
+        <translation>Начален Блок</translation>
     </message>
     <message>
         <source>Synced Headers</source>
-        <translation type="unfinished"></translation>
+        <translation>Синхронизирани Заглавки</translation>
     </message>
     <message>
         <source>Synced Blocks</source>
-        <translation type="unfinished"></translation>
+        <translation>Синхронизирани Блокове</translation>
     </message>
     <message>
         <source>Ban Score</source>
-        <translation type="unfinished"></translation>
+        <translation>Резултат Забрана</translation>
     </message>
     <message>
         <source>The duration of a currently outstanding ping.</source>
-        <translation type="unfinished"></translation>
+        <translation>Продължителност на </translation>
     </message>
     <message>
         <source>Ping Wait</source>
