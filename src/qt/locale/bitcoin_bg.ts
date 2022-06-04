@@ -2188,63 +2188,63 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Ban Score</source>
-        <translation>Резултат Забрана</translation>
+        <translation>Ниво на Забраните</translation>
     </message>
     <message>
         <source>The duration of a currently outstanding ping.</source>
-        <translation>Продължителност на </translation>
+        <translation>Продължителност на все още неотговорените повиквания. </translation>
     </message>
     <message>
         <source>Ping Wait</source>
-        <translation type="unfinished"></translation>
+        <translation>Изчакване на отговор</translation>
     </message>
     <message>
         <source>Min Ping</source>
-        <translation type="unfinished"></translation>
+        <translation>Мин повикване/отговор</translation>
     </message>
     <message>
         <source>Time Offset</source>
-        <translation type="unfinished"></translation>
+        <translation>Изместване на Времето</translation>
     </message>
     <message>
         <source>&amp;Disconnect</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Прекъсване на връзката</translation>
     </message>
     <message>
         <source>Ban for</source>
-        <translation type="unfinished"></translation>
+        <translation>Забрани за</translation>
     </message>
     <message>
         <source>1 &amp;hour</source>
-        <translation type="unfinished"></translation>
+        <translation>1 &amp;час</translation>
     </message>
     <message>
         <source>1 &amp;day</source>
-        <translation type="unfinished"></translation>
+        <translation>1 &amp;ден</translation>
     </message>
     <message>
         <source>1 &amp;week</source>
-        <translation type="unfinished"></translation>
+        <translation>1 &amp;седмица</translation>
     </message>
     <message>
         <source>1 &amp;year</source>
-        <translation type="unfinished"></translation>
+        <translation>1 &amp;година</translation>
     </message>
     <message>
         <source>&amp;Unban</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Отмени Забраната</translation>
     </message>
     <message>
         <source>Welcome to the %1 RPC console.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добре дошли в %1 RPC конзолата.</translation>
     </message>
     <message>
         <source>WARNING: Scammers have been active, telling users to type commands here, stealing their wallet contents. Do not use this console without fully understanding the ramification of a command.</source>
-        <translation type="unfinished"></translation>
+        <translation>ВНИМАНИЕ: Има много измамници които ще Ви кажат да пишете разни команди тук, и по този начин да Ви откраднат монетите! Не използвайте тази конзола без напълно да разбирате последвията от тези команди.</translation>
     </message>
     <message>
         <source>Network activity disabled</source>
-        <translation type="unfinished"></translation>
+        <translation>Мрежовата активност е деактивирана</translation>
     </message>
     <message>
         <source>Error</source>
@@ -2252,19 +2252,19 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Remove Peer</source>
-        <translation type="unfinished"></translation>
+        <translation>Премахване на Връстник</translation>
     </message>
     <message>
         <source>Are you sure you want to remove the peer: </source>
-        <translation type="unfinished"></translation>
+        <translation>Сигурни ли сте, че искате да премахнете връстника: </translation>
     </message>
     <message>
         <source>No peer was selected.</source>
-        <translation type="unfinished"></translation>
+        <translation>Няма избрани връстници.</translation>
     </message>
     <message>
         <source>(node id: %1)</source>
-        <translation type="unfinished"></translation>
+        <translation>(ID на възела: %1)</translation>
     </message>
 </context>
 <context>
@@ -2283,15 +2283,15 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
-        <translation>Използвате този формуляр за заявяване на плащания. Всички полета са &lt;b&gt;незадължителни&lt;/b&gt;.</translation>
+        <translation>Използвате този формуляр за заявки на плащания. Всички полета са &lt;b&gt;незадължителни&lt;/b&gt;.</translation>
     </message>
     <message>
         <source>An optional amount to request. Leave this empty or zero to not request a specific amount.</source>
-        <translation>Незадължително заявяване на сума. Оставете полето празно или нулево, за да не заявите конкретна сума.</translation>
+        <translation>Незадължително заявяване на сума. Оставете полето празно или нулево, ако не искате да заявите конкретна сума.</translation>
     </message>
     <message>
         <source>Clear all fields of the form.</source>
-        <translation>Изчисти всички полета от формуляра.</translation>
+        <translation>Изчистване на всички полета на формуляра.</translation>
     </message>
     <message>
         <source>Clear</source>
@@ -2299,7 +2299,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Requested payments history</source>
-        <translation>Изискана история на плащанията</translation>
+        <translation>История на заявките за плащания</translation>
     </message>
     <message>
         <source>&amp;Request payment</source>
@@ -2315,7 +2315,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Copy label</source>
-        <translation>Копирай име</translation>
+        <translation>Копиране на името</translation>
     </message>
     <message>
         <source>Copy message</source>
@@ -2323,42 +2323,42 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Copy amount</source>
-        <translation>Копирай сума</translation>
+        <translation>Копиране на сумата</translation>
     </message>
     <message>
         <source>Reuse one of the previously used receiving addresses. Reusing addresses has security and privacy issues. Do not use this unless re-generating a payment request made before.</source>
-        <translation type="unfinished"></translation>
+        <translation>Повторно използване на вече изполван адрес за получаване. Повторното изпозване на адреси води до проблеми със поверителността и сигурността. Не използвайте тази опция, освен когато пре-издавате предишно отправена заяавка за плащане</translation>
     </message>
     <message>
         <source>R&amp;euse an existing receiving address (not recommended)</source>
-        <translation type="unfinished"></translation>
+        <translation>Повторно &amp;изполване на вече същесвуващ адрес за плащане (не препоръчана практика)</translation>
     </message>
     <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Dogecoin network.</source>
-        <translation type="unfinished"></translation>
+        <translation>Незадължително съобщение, което можете да прикачите към заявката за плащане. То ще бъде показано когато заявката е отворена. Бележка: Това съобщение няма да бъде пратено заедно със плащането през Доджкоин мрежата.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
-        <translation type="unfinished"></translation>
+        <translation>Незадължителен етикет които ще свързан с новия адрес за получаване.</translation>
     </message>
     <message>
         <source>Show the selected request (does the same as double clicking an entry)</source>
-        <translation type="unfinished"></translation>
+        <translation>Показване на отбелязаната заявка (има същия ефект като двойното кликване върху въведение)</translation>
     </message>
     <message>
         <source>Remove the selected entries from the list</source>
-        <translation type="unfinished"></translation>
+        <translation>Премахване на избраните въведения от листа</translation>
     </message>
     <message>
         <source>Copy URI</source>
-        <translation type="unfinished"></translation>
+        <translation>Копиране на URI</translation>
     </message>
 </context>
 <context>
     <name>ReceiveRequestDialog</name>
     <message>
         <source>QR Code</source>
-        <translation>QR код</translation>
+        <translation>QR Код</translation>
     </message>
     <message>
         <source>Copy &amp;URI</source>
