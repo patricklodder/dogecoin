@@ -1571,14 +1571,14 @@ UniValue listtransactions(const JSONRPCRequest& request)
     return ret;
 }
 
-UniValue listnomempooltransactions(const JSONRPCRequest& request)
+UniValue liststucktransactions(const JSONRPCRequest& request)
 {
     if (!EnsureWalletIsAvailable(request.fHelp))
         return NullUniValue;
 
     if (request.fHelp || request.params.size() > 2)
         throw runtime_error(
-            "listnomempooltransactions ( verbosity include_watchonly )\n"
+            "liststucktransactions ( verbosity include_watchonly )\n"
             "\nReturns all transactions in the wallet that do not have a mempool entry.\n"
             "\nArguments:\n"
             "1. verbosity (numeric, optional, default=0) 0 for transaction hash, 1 for transaction hex, 2 for a JSON representation of the transaction\n"
@@ -1629,11 +1629,11 @@ UniValue listnomempooltransactions(const JSONRPCRequest& request)
 
             "\nExamples:\n"
             "\nList all transactions hashes in the wallet that do not have a mempool entry.\n"
-            + HelpExampleCli("listnomempooltransactions", "") +
+            + HelpExampleCli("liststucktransactions", "") +
             "\nList all transactions hexs in the wallet that do not have a mempool entry \n"
-            + HelpExampleCli("listnomempooltransactions", "1") +
+            + HelpExampleCli("liststucktransactions", "1") +
             "\nAs a json rpc call\n"
-            + HelpExampleRpc("listnomempooltransactions", "")
+            + HelpExampleRpc("liststucktransactions", "")
         );
 
     LOCK2(cs_main, pwalletMain->cs_wallet);
@@ -3182,7 +3182,7 @@ static const CRPCCommand commands[] =
     { "wallet",             "listreceivedbyaddress",    &listreceivedbyaddress,    false,  {"minconf","include_empty","include_watchonly"} },
     { "wallet",             "listsinceblock",           &listsinceblock,           false,  {"blockhash","target_confirmations","include_watchonly"} },
     { "wallet",             "listtransactions",         &listtransactions,         false,  {"account","count","skip","include_watchonly"} },
-    { "wallet",             "listnomempooltransactions",&listnomempooltransactions,false,  {"verbosity","include_watchonly"} },
+    { "wallet",             "liststucktransactions",    &liststucktransactions,    false,  {"verbosity","include_watchonly"} },
     { "wallet",             "listunspent",              &listunspent,              false,  {"minconf","maxconf","addresses","include_unsafe","query_options"} },
     { "wallet",             "lockunspent",              &lockunspent,              true,   {"unlock","transactions"} },
     { "wallet",             "move",                     &movecmd,                  false,  {"fromaccount","toaccount","amount","minconf","comment"} },
