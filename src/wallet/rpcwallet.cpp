@@ -1647,6 +1647,9 @@ UniValue liststucktransactions(const JSONRPCRequest& request)
         if(request.params[1].get_bool())
             filter = filter | ISMINE_WATCH_ONLY;
 
+    if(verbosity < 0 || verbosity > 2)
+        throw JSONRPCError(RPC_INVALID_PARAMETER, "Invalid verbosity");
+
     UniValue ret(UniValue::VARR);
 
     const CWallet::TxItems & txOrdered = pwalletMain->wtxOrdered;
@@ -1656,12 +1659,12 @@ UniValue liststucktransactions(const JSONRPCRequest& request)
         CWalletTx *const wtx = (*it).second.first;
         if (wtx->GetDepthInMainChain() <= 0 && !wtx->InMempool())
         {
-            if (verbosity <= 0) {
+            if (verbosity == 0) {
                 ret.push_back(wtx->GetHash().ToString());
             } else if (verbosity == 1) {
                 string strHex = EncodeHexTx(static_cast<CTransaction>(*wtx), RPCSerializationFlags());
                 ret.push_back(strHex);
-            } else {
+            } else if (verbosity == 2) {
                 UniValue entry(UniValue::VOBJ);
 
                 CAmount nCredit = wtx->GetCredit(filter);
