@@ -1657,7 +1657,7 @@ UniValue liststucktransactions(const JSONRPCRequest& request)
     for (CWallet::TxItems::const_iterator it = txOrdered.begin(); it != txOrdered.end(); ++it)
     {
         CWalletTx *const wtx = (*it).second.first;
-        if (wtx->GetDepthInMainChain() <= 0 && !wtx->InMempool())
+        if (wtx->GetDepthInMainChain() <= 0 && !wtx->InMempool() && wtx->IsFromMe(filter))
         {
             if (verbosity == 0) {
                 ret.push_back(wtx->GetHash().ToString());
@@ -1670,11 +1670,10 @@ UniValue liststucktransactions(const JSONRPCRequest& request)
                 CAmount nCredit = wtx->GetCredit(filter);
                 CAmount nDebit = wtx->GetDebit(filter);
                 CAmount nNet = nCredit - nDebit;
-                CAmount nFee = (wtx->IsFromMe(filter) ? wtx->tx->GetValueOut() - nDebit : 0);
+                CAmount nFee = wtx->tx->GetValueOut() - nDebit;
 
                 entry.pushKV("amount", ValueFromAmount(nNet - nFee));
-                if (wtx->IsFromMe(filter))
-                    entry.pushKV("fee", ValueFromAmount(nFee));
+                entry.pushKV("fee", ValueFromAmount(nFee));
 
                 WalletTxToJSON(*wtx, entry);
 
