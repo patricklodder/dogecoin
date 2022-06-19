@@ -9,11 +9,11 @@
     </message>
     <message>
         <source>Enter the peer details below.</source>
-        <translation>Добавяне на детайлите за връстника.</translation>
+        <translation>Добавяне на детайли за връстника.</translation>
     </message>
     <message>
         <source>Be careful! Do not blindly trust anyone that tells you to add their node.</source>
-        <translation>Внимателно! Не се доверявай сляпо на всеки, който ви каже да добавите техния възел.</translation>
+        <translation>Внимателно! Не се доверявайте сляпо на всеки, който ви каже да добавите тяхния възел.</translation>
 
     </message>
     <message>
@@ -2283,7 +2283,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
-        <translation>Използвате този формуляр за заявки на плащания. Всички полета са &lt;b&gt;незадължителни&lt;/b&gt;.</translation>
+        <translation>Използвайте този формуляр за заявки на плащания. Всички полета са &lt;b&gt;незадължителни&lt;/b&gt;.</translation>
     </message>
     <message>
         <source>An optional amount to request. Leave this empty or zero to not request a specific amount.</source>
@@ -2291,7 +2291,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Clear all fields of the form.</source>
-        <translation>Изчистване на всички полета на формуляра.</translation>
+        <translation>Изчистване на всички полета във формуляра.</translation>
     </message>
     <message>
         <source>Clear</source>
@@ -2327,11 +2327,11 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Reuse one of the previously used receiving addresses. Reusing addresses has security and privacy issues. Do not use this unless re-generating a payment request made before.</source>
-        <translation>Повторно използване на вече изполван адрес за получаване. Повторното изпозване на адреси води до проблеми със поверителността и сигурността. Не използвайте тази опция, освен когато пре-издавате предишно отправена заяавка за плащане</translation>
+        <translation>Повторно използване на вече изполван адрес за получаване. Повторното изпозване на адреси може да доведе до проблеми със поверителността и сигурността. Не използвайте тази опция, освен когато пре-издавате предишно отправена заяавка за плащане</translation>
     </message>
     <message>
         <source>R&amp;euse an existing receiving address (not recommended)</source>
-        <translation>Повторно &amp;изполване на вече същесвуващ адрес за плащане (не препоръчана практика)</translation>
+        <translation>Повторно &amp;изполване на вече същесвуващ адрес за плащане (не препоръчано)</translation>
     </message>
     <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Dogecoin network.</source>
@@ -2339,7 +2339,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
-        <translation>Незадължителен етикет които ще свързан с новия адрес за получаване.</translation>
+        <translation>Незадължителен етикет които свързан с новия адрес за получаване.</translation>
     </message>
     <message>
         <source>Show the selected request (does the same as double clicking an entry)</source>
@@ -2366,11 +2366,11 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Copy &amp;Address</source>
-        <translation>&amp;Копирай адрес</translation>
+        <translation>&amp;Копиране на адрес</translation>
     </message>
     <message>
         <source>&amp;Save Image...</source>
-        <translation>&amp;Запиши изображение...</translation>
+        <translation>&amp;Запазване на изображение...</translation>
     </message>
     <message>
         <source>Request payment to %1</source>
@@ -2398,7 +2398,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Error encoding URI into QR Code.</source>
-        <translation>Грешка при създаването на QR Code от URI.</translation>
+        <translation>Грешка при кодирането на URI в QR Код.</translation>
     </message>
     <message>
         <source>URI</source>
@@ -2406,7 +2406,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Resulting URI too long, try to reduce the text for label / message.</source>
-        <translation type="unfinished"></translation>
+        <translation>Получаващото се URI е прекалено дълго. Опитайте да съкратите текста на етикета.</translation>
     </message>
 </context>
 <context>
@@ -2425,7 +2425,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>(no label)</source>
-        <translation>(без име)</translation>
+        <translation>(без етикет)</translation>
     </message>
     <message>
         <source>(no message)</source>
@@ -2433,18 +2433,18 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>(no amount requested)</source>
-        <translation type="unfinished"></translation>
+        <translation>(няма изискана сума)</translation>
     </message>
     <message>
         <source>Requested</source>
-        <translation type="unfinished"></translation>
+        <translation>Поискани</translation>
     </message>
 </context>
 <context>
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation>Изпращане</translation>
+        <translation>Изпращане на Монети</translation>
     </message>
     <message>
         <source>Coin Control Features</source>
@@ -2452,11 +2452,11 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>automatically selected</source>
-        <translation>астоматично избран</translation>
+        <translation>автоматично избран(и)</translation>
     </message>
     <message>
         <source>Insufficient funds!</source>
-        <translation>Нямате достатъчно налични пари!</translation>
+        <translation>Няма достатъчно налични пари!</translation>
     </message>
     <message>
         <source>Quantity:</source>
@@ -2476,7 +2476,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>After Fee:</source>
-        <translation>След прилагане на ДДС</translation>
+        <translation>След прилагане на Такса</translation>
     </message>
     <message>
         <source>Change:</source>
@@ -2484,15 +2484,15 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>If this is activated, but the change address is empty or invalid, change will be sent to a newly generated address.</source>
-        <translation>Ако тази опция е активирана,но адресът на промяна е празен или невалиден,промяната ще бъде изпратена на новосъздаден адрес.</translation>
+        <translation>Ако тази опция е активирана,но адресът за ресто е празен или невалиден, рестото ще бъде изпратено до новосъздаден адрес.</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
-        <translation>Такса за транзакцията:</translation>
+        <translation>Такса за Транзакцията:</translation>
     </message>
     <message>
         <source>Choose...</source>
-        <translation>Избери...</translation>
+        <translation>Изберете...</translation>
     </message>
     <message>
         <source>per kilobyte</source>
@@ -2500,15 +2500,15 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Hide</source>
-        <translation>Скрий</translation>
+        <translation>Скриване</translation>
     </message>
     <message>
         <source>total at least</source>
-        <translation>Крайна сума поне</translation>
+        <translation>общо поне</translation>
     </message>
     <message>
         <source>Recommended:</source>
-        <translation>Препоръчителна:</translation>
+        <translation>Препоръчано:</translation>
     </message>
     <message>
         <source>Custom:</source>
@@ -2528,11 +2528,11 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Add &amp;Recipient</source>
-        <translation>Добави &amp;получател</translation>
+        <translation>Добавете &amp;получател</translation>
     </message>
     <message>
         <source>Clear all fields of the form.</source>
-        <translation>Изчисти всички полета от формуляра.</translation>
+        <translation>Изчистване на всички полета във формуляра.</translation>
     </message>
     <message>
         <source>Dust:</source>
@@ -2540,7 +2540,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Clear &amp;All</source>
-        <translation>&amp;Изчисти</translation>
+        <translation>Изчистване на &amp;Всичко</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -2552,7 +2552,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>S&amp;end</source>
-        <translation>И&amp;зпрати</translation>
+        <translation>И&amp;зпращане</translation>
     </message>
     <message>
         <source>Copy quantity</source>
@@ -2560,15 +2560,15 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Copy amount</source>
-        <translation>Копирай сума</translation>
+        <translation>Копиране на сумата</translation>
     </message>
     <message>
         <source>Copy fee</source>
-        <translation>Копиране на данък добавена стойност</translation>
+        <translation>Копиране на таксата</translation>
     </message>
     <message>
         <source>Copy after fee</source>
-        <translation>Копиране след прилагане на данък добавена стойност</translation>
+        <translation>Копиране след прилагане на таксата</translation>
     </message>
     <message>
         <source>Copy bytes</source>
@@ -2576,15 +2576,15 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Copy dust</source>
-        <translation>Копирай прахта:</translation>
+        <translation>Копиране на прахта:</translation>
     </message>
     <message>
         <source>Copy change</source>
-        <translation>Копирай рестото</translation>
+        <translation>Копиране на рестото</translation>
     </message>
     <message>
         <source>Are you sure you want to send?</source>
-        <translation>Наистина ли искате да изпратите?</translation>
+        <translation>Сигурни ли сте, че искате да изпратите?</translation>
     </message>
     <message>
         <source>added as transaction fee</source>
@@ -2596,7 +2596,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Confirm send coins</source>
-        <translation>Потвърждаване</translation>
+        <translation>Потвърждаване на изпращането на монети</translation>
     </message>
     <message>
         <source>The amount to pay must be larger than 0.</source>
@@ -2604,11 +2604,11 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>The amount exceeds your balance.</source>
-        <translation>Сумата надвишава текущия баланс</translation>
+        <translation>Сумата надвишава вашия баланс</translation>
     </message>
     <message>
         <source>The total exceeds your balance when the %1 transaction fee is included.</source>
-        <translation>Сумата при добавяне на данък добавена стойност по %1 транзакцията надвишава сумата по вашата сметка.</translation>
+        <translation>Общата сума, след добавяне на таксата от %1, надвишава наличните Ви монети.</translation>
     </message>
     <message>
         <source>Transaction creation failed!</source>
@@ -2620,95 +2620,95 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Warning: Invalid Dogecoin address</source>
-        <translation>Внимание: Невалиден Биткойн адрес</translation>
+        <translation>Внимание: Невалиден Доджкоин адрес</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
-        <translation>Внимание:Неизвестен адрес за промяна</translation>
+        <translation>Внимание: Неизвестен адрес за ресто</translation>
     </message>
     <message>
         <source>(no label)</source>
-        <translation>(без име)</translation>
+        <translation>(без етикет)</translation>
     </message>
     <message>
         <source>Inputs...</source>
-        <translation type="unfinished"></translation>
+        <translation>Въведения...</translation>
     </message>
     <message>
         <source>Custom change address</source>
-        <translation type="unfinished"></translation>
+        <translation>Произволен адрес за ресто</translation>
     </message>
     <message>
         <source>Using the fallbackfee can result in sending a transaction that will take several hours or days (or never) to confirm. Consider choosing your fee manually or wait until your have validated the complete chain.</source>
-        <translation type="unfinished"></translation>
+        <translation>Използването на "fallbackfee" може да доведе до изпращане на транзакция, чийто потвърждаване може да отнеме часове, дни или цяла вечност. Може би собственоръчно изберете вашата такса, или изчакайте докато сте удостоверили цялата верига.</translation>
     </message>
     <message>
         <source>Warning: Fee estimation is currently not possible.</source>
-        <translation type="unfinished"></translation>
+        <translation>Внимание: Оценка на таксата не е възможна в момента.</translation>
     </message>
     <message>
         <source>collapse fee-settings</source>
-        <translation type="unfinished"></translation>
+        <translation>разширяване на настройки-такса</translation>
     </message>
     <message>
         <source>If the custom fee is set to 1000 satoshis and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 satoshis in fee, while &quot;total at least&quot; pays 1000 satoshis. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ако за произволната такса са вкарани 1000 коину, а за транзакцията са необходими 250 байта, тогава  &quot;за килобайт&quot; се плащат само 250 коину такса, докато &quot;общо поне&quot; плаща 1000 коину. За транзакции по- големи от килобайт, и двата метода плащат за килобайт.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for dogecoin transactions than the network can process.</source>
-        <translation type="unfinished"></translation>
+        <translation>Плащане само на минималната такса не е проблем, стига свободното място в блоковете да е повече от обема на транзакциитете. Обаче имайте предвид, че това може да доведе до транзакцията никога да не бъде потвърдена, ако има повече доджкоин транзакции отколкото мрежата може да обработи.</translation>
     </message>
     <message>
         <source>(read the tooltip)</source>
-        <translation type="unfinished"></translation>
+        <translation>(прочетете подсказката)</translation>
     </message>
     <message>
         <source>Priority:</source>
-        <translation type="unfinished"></translation>
+        <translation>Приоритет:</translation>
     </message>
     <message>
         <source>low</source>
-        <translation type="unfinished"></translation>
+        <translation>нисък</translation>
     </message>
     <message>
         <source>high</source>
-        <translation type="unfinished"></translation>
+        <translation>висок</translation>
     </message>
     <message>
         <source>%1 to %2</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 до %2</translation>
     </message>
     <message>
         <source>Total Amount %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Обща Сума</translation>
     </message>
     <message>
         <source>The recipient address is not valid. Please recheck.</source>
-        <translation type="unfinished"></translation>
+        <translation>Адресът на получателя е невалиден. Моля проверете отново.</translation>
     </message>
     <message>
         <source>Duplicate address found: addresses should only be used once each.</source>
-        <translation type="unfinished"></translation>
+        <translation>Намерен е дублиран адрес: всеки един адрес трабва да бъде използван еднократно.</translation>
     </message>
     <message>
         <source>The transaction was rejected with the following reason: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Транзакцията бе отхвърлена поради следната причина: %1</translation>
     </message>
     <message>
         <source>A fee higher than %1 is considered an absurdly high fee.</source>
-        <translation type="unfinished"></translation>
+        <translation>Такса по- висока от %1 е считана за абсурдно висока.</translation>
     </message>
     <message>
         <source>Pay only the required fee of %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Плащане само на изисканата такса от %1</translation>
     </message>
     <message>
         <source>Confirm custom change address</source>
-        <translation type="unfinished"></translation>
+        <translation>Потвърдете произволния адрес за ресто</translation>
     </message>
     <message>
         <source>The address you selected for change is not part of this wallet. Any or all funds in your wallet may be sent to this address. Are you sure?</source>
-        <translation type="unfinished"></translation>
+        <translation>Адреса който избрахте за ресто не е част от този портфейл. Всички монети във вашия портфейл могат да бъдат изпратени до този адрес. Сигурни ли сте, че желаете това?</translation>
     </message>
 </context>
 <context>
