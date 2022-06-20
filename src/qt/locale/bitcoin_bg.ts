@@ -2727,7 +2727,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Choose previously used address</source>
-        <translation>Изберете използван преди адрес</translation>
+        <translation>Изберете предишно използван адрес</translation>
     </message>
     <message>
         <source>This is a normal payment.</source>
@@ -2747,7 +2747,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Remove this entry</source>
-        <translation>Премахване на този запис</translation>
+        <translation>Премахване на това въведение</translation>
     </message>
     <message>
         <source>Message:</source>
@@ -2767,31 +2767,31 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>The Dogecoin address to send the payment to</source>
-        <translation type="unfinished"></translation>
+        <translation>Доджкоин адреса на който искате да изпратите заплащане</translation>
     </message>
     <message>
         <source>Enter a label for this address to add it to the list of used addresses</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавете има към този адрес за да го добавите в списъка от ползвани адреси</translation>
     </message>
     <message>
         <source>The fee will be deducted from the amount being sent. The recipient will receive less dogecoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation type="unfinished"></translation>
+        <translation>Таксата ще бъде приспадната от сумата която бива изпращана. Получателя ще получи по малко доджкоини то колкото вкарвате в полето сума. Ако са избрани повече от един получател, таксата ще бъде поделена по равно.</translation>
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
-        <translation type="unfinished"></translation>
+        <translation>П&amp;риспадане на таксата от сумата</translation>
     </message>
     <message>
         <source>A message that was attached to the dogecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Dogecoin network.</source>
-        <translation type="unfinished"></translation>
+        <translation>Към доджкоина бе добавено съобщение: URI което ще бъде запазено с транзакцията, за Ваша справка. Бележка: Това съобщение няма да бъде изпратено чрез Доджкоин мрежата.  </translation>
     </message>
     <message>
         <source>This is an unauthenticated payment request.</source>
-        <translation type="unfinished"></translation>
+        <translation>Това е неудостоверено искане за плащане.</translation>
     </message>
     <message>
         <source>This is an authenticated payment request.</source>
-        <translation type="unfinished"></translation>
+        <translation>Това е удостоверено искане за плащане.</translation>
     </message>
 </context>
 <context>
@@ -2805,11 +2805,11 @@ p, li { white-space: pre-wrap; }
     <name>ShutdownWindow</name>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
-        <translation>Не изключвайте компютъра докато този прозорец не изчезне.</translation>
+        <translation>Не изключвайте компютъра докато този прозорец не се затвори.</translation>
     </message>
     <message>
         <source>%1 is shutting down...</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 се изключва...</translation>
     </message>
 </context>
 <context>
