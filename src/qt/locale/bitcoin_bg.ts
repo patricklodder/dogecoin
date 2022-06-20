@@ -2816,15 +2816,15 @@ p, li { white-space: pre-wrap; }
     <name>SignVerifyMessageDialog</name>
     <message>
         <source>Signatures - Sign / Verify a Message</source>
-        <translation>Подпиши / Провери съобщение</translation>
+        <translation>Подписи - Подпишете / Проверете съобщение</translation>
     </message>
     <message>
         <source>&amp;Sign Message</source>
-        <translation>&amp;Подпиши</translation>
+        <translation>&amp;Подпишете</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
-        <translation>Изберете използван преди адрес</translation>
+        <translation>Изберете предишно използван адрес</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -2832,7 +2832,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Paste address from clipboard</source>
-        <translation>Вмъкни от клипборда</translation>
+        <translation>Вмъкване на адреси от клипборда</translation>
     </message>
     <message>
         <source>Alt+P</source>
@@ -2840,7 +2840,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Enter the message you want to sign here</source>
-        <translation>Въведете съобщението тук</translation>
+        <translation>Въведете съобщение което искате да подпишете тук</translation>
     </message>
     <message>
         <source>Signature</source>
@@ -2848,35 +2848,35 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Copy the current signature to the system clipboard</source>
-        <translation>Копиране на текущия подпис</translation>
+        <translation>Копиране на текущия подпис в клипборда</translation>
     </message>
     <message>
         <source>Sign the message to prove you own this Dogecoin address</source>
-        <translation>Подпишете съобщение като доказателство, че притежавате определен адрес</translation>
+        <translation>Подпишете съобщение като доказателство, че притежавате този адрес</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
-        <translation>Подпиши &amp;съобщение</translation>
+        <translation>Подписване на &amp;съобщение</translation>
     </message>
     <message>
         <source>Clear &amp;All</source>
-        <translation>&amp;Изчисти</translation>
+        <translation>&amp;Изчистване</translation>
     </message>
     <message>
         <source>&amp;Verify Message</source>
-        <translation>&amp;Провери</translation>
+        <translation>&amp;Проверяване на Съобщение</translation>
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified Dogecoin address</source>
-        <translation>Проверете съобщение, за да сте сигурни че е подписано с определен Биткоин адрес</translation>
+        <translation>Потвърдете съобщението, за да сте сигурни че е подписано с посочения Доджкоин адрес</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
-        <translation>Потвърди &amp;съобщението</translation>
+        <translation>Потвърждаване на &amp;съобщението</translation>
     </message>
     <message>
         <source>Click &quot;Sign Message&quot; to generate signature</source>
-        <translation>Натиснете &quot;Подписване на съобщение&quot; за да създадете подпис</translation>
+        <translation>Кликнете върху &quot;Подписване на съобщение&quot; за създаване на подпис</translation>
     </message>
     <message>
         <source>The entered address is invalid.</source>
@@ -2888,113 +2888,113 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>The entered address does not refer to a key.</source>
-        <translation>Въведеният адрес не може да се съпостави с валиден ключ.</translation>
+        <translation>Въведеният адрес не съответства с валиден ключ.</translation>
     </message>
     <message>
         <source>Wallet unlock was cancelled.</source>
-        <translation>Отключването на портфейла беше отменено.</translation>
+        <translation>Отключването на портфейла бе отменено.</translation>
     </message>
     <message>
         <source>Private key for the entered address is not available.</source>
-        <translation>Не е наличен частен ключ за въведеният адрес.</translation>
+        <translation>Не е наличен секретен ключ за въведеният адрес.</translation>
     </message>
     <message>
         <source>Message signing failed.</source>
-        <translation>Подписването на съобщение беше неуспешно.</translation>
+        <translation>Подписване на съобщението бе неуспешно.</translation>
     </message>
     <message>
         <source>Message signed.</source>
-        <translation>Съобщението е подписано.</translation>
+        <translation>Съобщението бе подписано.</translation>
     </message>
     <message>
         <source>The signature could not be decoded.</source>
-        <translation>Подписът не може да бъде декодиран.</translation>
+        <translation>Подписът не можеше да бъде декодиран.</translation>
     </message>
     <message>
         <source>Please check the signature and try again.</source>
-        <translation>Проверете подписа и опитайте отново.</translation>
+        <translation>Моля проверете подписа и опитайте отново.</translation>
     </message>
     <message>
         <source>The signature did not match the message digest.</source>
-        <translation>Подписът не отговаря на комбинацията от съобщение и адрес.</translation>
+        <translation>Подписът не отговори на комбинацията от съобщение и адрес.</translation>
     </message>
     <message>
         <source>Message verification failed.</source>
-        <translation>Проверката на съобщението беше неуспешна.</translation>
+        <translation>Проверката на съобщението бе неуспешна.</translation>
     </message>
     <message>
         <source>Message verified.</source>
-        <translation>Съобщението е потвърдено.</translation>
+        <translation>Съобщението бе потвърдено.</translation>
     </message>
     <message>
         <source>You can sign messages/agreements with your addresses to prove you can receive dogecoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation type="unfinished"></translation>
+        <translation>Можете да подпишете съобщения/договори с Вашите адреси, като доказателство, че можете да получавате доджкоини които са пратени там. Внимавайте да не подписвате разни неясни или произволни запитвания, тъй като имамници могат да опитат да Ви подведат да подпишете Вашата самоличност на тях. Подписвайте само подробни, ясни заявления с които сте напълно съгласни.</translation>
     </message>
     <message>
         <source>The Dogecoin address to sign the message with</source>
-        <translation type="unfinished"></translation>
+        <translation>Доджкоин адреса с който ще се подписва събощението</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
-        <translation type="unfinished"></translation>
+        <translation>Нулиране на всички полета за подписване на съобщението</translation>
     </message>
     <message>
         <source>Enter the receiver&apos;s address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack. Note that this only proves the signing party receives with the address, it cannot prove sendership of any transaction!</source>
-        <translation type="unfinished"></translation>
+        <translation>Вкарайте адреса на получателя, съобщение (бъдете сигурни да копирате нови редове, празни места, раздели и т.н. точно както са) и подпис по долу, за да удостоверите съобщението. Внимавайте да не се вглъбите прекалено в подписа отколкото в подписаното съобщение, за да отбегнете възможността да паднете жертва на "посредническа" атака. Помнете - това само доказва, че долуподписания може да получава на този адрес; това не доказва подателсво на каквато и да е транзакция!</translation>
     </message>
     <message>
         <source>The Dogecoin address the message was signed with</source>
-        <translation type="unfinished"></translation>
+        <translation>Доджкоин адрес с който бе подписано съобщението</translation>
     </message>
     <message>
         <source>Reset all verify message fields</source>
-        <translation type="unfinished"></translation>
+        <translation>Нулиране на всички полета за подвърждаване на съобщението</translation>
     </message>
 </context>
 <context>
     <name>SplashScreen</name>
     <message>
         <source>[testnet]</source>
-        <translation>[testnet]</translation>
+        <translation>[тестова мрежа]</translation>
     </message>
 </context>
 <context>
     <name>TestPeerDialog</name>
     <message>
         <source>Test Peer</source>
-        <translation type="unfinished"></translation>
+        <translation>Тестов Връстник</translation>
     </message>
     <message>
         <source>Enter the peer details below.</source>
-        <translation type="unfinished"></translation>
+        <translation>Вкарайте информацията на връстника по- долу.</translation>
     </message>
     <message>
         <source>Be careful! Do not blindly trust anyone that tells you to add their node.</source>
-        <translation type="unfinished"></translation>
+        <translation>Внимателно! Не се доверявайте сляпо на всеки който Ви каже да добавите техния възел.</translation>
     </message>
     <message>
         <source>Enter the peer&apos;s address</source>
-        <translation type="unfinished"></translation>
+        <translation>Вкарайте адреса на връстника</translation>
     </message>
     <message>
         <source>Enter the peer&apos;s port</source>
-        <translation type="unfinished"></translation>
+        <translation>Вкарайте порта на връстника</translation>
     </message>
     <message>
         <source>Test!</source>
-        <translation type="unfinished"></translation>
+        <translation>Тест!</translation>
     </message>
     <message>
         <source>Please enter an address.</source>
-        <translation type="unfinished"></translation>
+        <translation>Моля вкарайте адрес.</translation>
     </message>
     <message>
         <source>Please enter a valid peer address.</source>
-        <translation type="unfinished"></translation>
+        <translation>Моля вкарайте валиден адрес на връстник.</translation>
     </message>
     <message>
         <source>Try Peer</source>
-        <translation type="unfinished"></translation>
+        <translation>Опитайте Връстника</translation>
     </message>
 </context>
 <context>
