@@ -3005,7 +3005,7 @@ p, li { white-space: pre-wrap; }
     <name>TransactionDesc</name>
     <message>
         <source>Open until %1</source>
-        <translation>Подлежи на промяна до %1</translation>
+        <translation>Отворено за промени до %1</translation>
     </message>
     <message>
         <source>%1/offline</source>
@@ -3017,7 +3017,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>%1 confirmations</source>
-        <translation>включена в %1 блока</translation>
+        <translation>%1 потвърждения</translation>
     </message>
     <message>
         <source>Status</source>
@@ -3057,7 +3057,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>watch-only</source>
-        <translation>само гледане</translation>
+        <translation>само за оглед</translation>
     </message>
     <message>
         <source>label</source>
@@ -3069,7 +3069,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>not accepted</source>
-        <translation>не е приет</translation>
+        <translation>не приет(а,и)</translation>
     </message>
     <message>
         <source>Debit</source>
@@ -3077,19 +3077,19 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Total debit</source>
-        <translation>Общ дълг</translation>
+        <translation>Общ дебит</translation>
     </message>
     <message>
         <source>Total credit</source>
-        <translation>Общ дълг</translation>
+        <translation>Общ кредит</translation>
     </message>
     <message>
         <source>Transaction fee</source>
-        <translation>Такса</translation>
+        <translation>Такса Транзакция</translation>
     </message>
     <message>
         <source>Net amount</source>
-        <translation>Нетна сума</translation>
+        <translation>Нето</translation>
     </message>
     <message>
         <source>Message</source>
@@ -3101,7 +3101,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Transaction ID</source>
-        <translation>ID</translation>
+        <translation>ID на транзакцията</translation>
     </message>
     <message>
         <source>Merchant</source>
@@ -3109,11 +3109,11 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Генерираните монети трябва да отлежат %1 блока преди да могат да бъдат похарчени. Когато генерираш блока, той се разпространява в мрежата, за да се добави в блок-веригата. Ако не успее да се добави във веригата, неговия статус  ще се стане &quot;неприет&quot; и няма да може да се похарчи. Това е възможно да се случи случайно, ако друг възел генерира блок няколко секунди след твоя.</translation>
+        <translation>Генерираните монети трябва да отлежат %1 блока преди да могат да бъдат похарчени. Когато генерирахте този блок, той бе излъчен към мрежата, за да бъде добавен в блок-веригата. Ако не успее да се добави във веригата, неговия статус  ще се стане &quot;неприет&quot; и няма да може да се похарчи. Това е възможно да се случи от време на време, ако друг възел генерира блок няколко секунди след Вашия.</translation>
     </message>
     <message>
         <source>Debug information</source>
-        <translation>Информация за грешките</translation>
+        <translation>Информация за диагностика</translation>
     </message>
     <message>
         <source>Transaction</source>
@@ -3125,68 +3125,68 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>true</source>
-        <translation>true</translation>
+        <translation>вярно</translation>
     </message>
     <message>
         <source>false</source>
-        <translation>false</translation>
+        <translation>невярно</translation>
     </message>
     <message numerus="yes">
         <source>Open for %n more block(s)</source>
-        <translation type="unfinished">
+        <translation>Отворете за още %n блок(а)</translation>
             <numerusform></numerusform>
             <numerusform></numerusform>
         </translation>
     </message>
     <message>
         <source>conflicted with a transaction with %1 confirmations</source>
-        <translation type="unfinished"></translation>
+        <translation>е в конфликт с транзакция, която има %1 потвърждения</translation>
     </message>
     <message>
         <source>0/unconfirmed, %1</source>
-        <translation type="unfinished"></translation>
+        <translation>0/непотвърдени, %1</translation>
     </message>
     <message>
         <source>in memory pool</source>
-        <translation type="unfinished"></translation>
+        <translation>в пул памет</translation>
     </message>
     <message>
         <source>not in memory pool</source>
-        <translation type="unfinished"></translation>
+        <translation>не са в пул памет</translation>
     </message>
     <message>
         <source>abandoned</source>
-        <translation type="unfinished"></translation>
+        <translation>изоставен(и)</translation>
     </message>
     <message numerus="yes">
         <source>matures in %n more block(s)</source>
-        <translation type="unfinished">
+        <translation type="unfinished">отлежава в още %n блок(ове)</translation>
             <numerusform></numerusform>
             <numerusform></numerusform>
         </translation>
     </message>
     <message>
         <source>Transaction total size</source>
-        <translation type="unfinished"></translation>
+        <translation>Общ размер на транзакцията</translation>
     </message>
     <message>
         <source>Output index</source>
-        <translation type="unfinished"></translation>
+        <translation>Изходен индекс</translation>
     </message>
     <message>
         <source>Inputs</source>
-        <translation type="unfinished"></translation>
+        <translation>Входящи</translation>
     </message>
 </context>
 <context>
     <name>TransactionDescDialog</name>
     <message>
         <source>This pane shows a detailed description of the transaction</source>
-        <translation>Описание на транзакцията</translation>
+        <translation>Този прозорец съдържа подробно описание на транзакцията</translation>
     </message>
     <message>
         <source>Details for %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Подробности за %1</translation>
     </message>
 </context>
 <context>
@@ -3197,7 +3197,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Type</source>
-        <translation>Тип</translation>
+        <translation>Вид</translation>
     </message>
     <message>
         <source>Label</source>
@@ -3205,7 +3205,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Open until %1</source>
-        <translation>Подлежи на промяна до %1</translation>
+        <translation>Отворено за промяна до %1</translation>
     </message>
     <message>
         <source>Offline</source>
@@ -3213,7 +3213,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Unconfirmed</source>
-        <translation>Непотвърдено</translation>
+        <translation>Непотвърдено(и)</translation>
     </message>
     <message>
         <source>Confirming (%1 of %2 recommended confirmations)</source>
@@ -3225,11 +3225,11 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Conflicted</source>
-        <translation>Конфликтно</translation>
+        <translation>В противоречие</translation>
     </message>
     <message>
         <source>Immature (%1 confirmations, will be available after %2)</source>
-        <translation>Неплатим (%1 потвърждения, ще бъде платим след %2)</translation>
+        <translation>Неотлежали (%1 потвърждения, ще бъде налично след %2)</translation>
     </message>
     <message>
         <source>This block was not received by any other nodes and will probably not be accepted!</source>
@@ -3237,15 +3237,15 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Generated but not accepted</source>
-        <translation>Генерирана, но отхвърлена от мрежата</translation>
+        <translation>Генериран(и), но отхвърлен(и) от мрежата</translation>
     </message>
     <message>
         <source>Received with</source>
-        <translation>Получени</translation>
+        <translation>Получени чрез</translation>
     </message>
     <message>
         <source>Received from</source>
-        <translation>Получен от</translation>
+        <translation>Получени от</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -3257,15 +3257,15 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Mined</source>
-        <translation>Емитирани</translation>
+        <translation>Обработени от миньори</translation>
     </message>
     <message>
         <source>watch-only</source>
-        <translation>само гледане</translation>
+        <translation>само за оглед</translation>
     </message>
     <message>
         <source>(n/a)</source>
-        <translation>(n/a)</translation>
+        <translation>(без приложение)</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -3273,7 +3273,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Transaction status. Hover over this field to show number of confirmations.</source>
-        <translation>Състояние на транзакцията. Задръжте върху това поле за брой потвърждения.</translation>
+        <translation>Състояние на транзакцията. Задръжте показателя върху това поле за брой потвърждения.</translation>
     </message>
     <message>
         <source>Date and time that the transaction was received.</source>
@@ -3289,22 +3289,22 @@ p, li { white-space: pre-wrap; }
     </message>
     <message numerus="yes">
         <source>Open for %n more block(s)</source>
-        <translation type="unfinished">
+        <translation>Отворете за още %n блок(а)</translation>
             <numerusform></numerusform>
             <numerusform></numerusform>
         </translation>
     </message>
     <message>
         <source>Abandoned</source>
-        <translation type="unfinished"></translation>
+        <translation>Изоставен(и)</translation>
     </message>
     <message>
         <source>Whether or not a watch-only address is involved in this transaction.</source>
-        <translation type="unfinished"></translation>
+        <translation>Относно дали адрес който е маркиран като "само за оглед" учасва в тази транзакция.</translation>
     </message>
     <message>
         <source>User-defined intent/purpose of the transaction.</source>
-        <translation type="unfinished"></translation>
+        <translation>Назначено от потребителя намерение/предназначение на транзакцията. </translation>
     </message>
 </context>
 <context>
@@ -3339,7 +3339,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Received with</source>
-        <translation>Получени</translation>
+        <translation>Получени чрез</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -3347,11 +3347,11 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>To yourself</source>
-        <translation>Собствени</translation>
+        <translation>На себе си</translation>
     </message>
     <message>
         <source>Mined</source>
-        <translation>Емитирани</translation>
+        <translation>Обработени от Миньори</translation>
     </message>
     <message>
         <source>Other</source>
@@ -3367,23 +3367,23 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Copy address</source>
-        <translation>Копирай адрес</translation>
+        <translation>Копиране на адрес</translation>
     </message>
     <message>
         <source>Copy label</source>
-        <translation>Копирай име</translation>
+        <translation>Копиране на име</translation>
     </message>
     <message>
         <source>Copy amount</source>
-        <translation>Копирай сума</translation>
+        <translation>Копиране на сума</translation>
     </message>
     <message>
         <source>Copy transaction ID</source>
-        <translation>Копирай транзакция с ID</translation>
+        <translation>Копиране ID на транзакцията</translation>
     </message>
     <message>
         <source>Edit label</source>
-        <translation>Редактирай име</translation>
+        <translation>Редактиране на име</translation>
     </message>
     <message>
         <source>Show transaction details</source>
@@ -3403,7 +3403,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Watch-only</source>
-        <translation>само гледане</translation>
+        <translation>само за оглед</translation>
     </message>
     <message>
         <source>Date</source>
@@ -3411,7 +3411,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Type</source>
-        <translation>Тип</translation>
+        <translation>Вид</translation>
     </message>
     <message>
         <source>Label</source>
@@ -3423,23 +3423,23 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>ID</source>
-        <translation>ИД</translation>
+        <translation>Идентификационен код</translation>
     </message>
     <message>
         <source>Exporting Failed</source>
-        <translation>Грешка при изнасянето</translation>
+        <translation>Изнасянето пропадна</translation>
     </message>
     <message>
         <source>Exporting Successful</source>
-        <translation>Изнасянето е успешна</translation>
+        <translation>Изнасянето бе успешно</translation>
     </message>
     <message>
         <source>The transaction history was successfully saved to %1.</source>
-        <translation>Историята с транзакциите беше успешно запазена в %1.</translation>
+        <translation>Историята на транзакциите бе успешно запазена в %1.</translation>
     </message>
     <message>
         <source>Range:</source>
-        <translation>От:</translation>
+        <translation>Обхват От:</translation>
     </message>
     <message>
         <source>to</source>
@@ -3447,26 +3447,26 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Abandon transaction</source>
-        <translation type="unfinished"></translation>
+        <translation>Изоставяне на транзакцията</translation>
     </message>
     <message>
         <source>Copy raw transaction</source>
-        <translation type="unfinished"></translation>
+        <translation>Копиране на суровата транзакция</translation>
     </message>
     <message>
         <source>Copy full transaction details</source>
-        <translation type="unfinished"></translation>
+        <translation>Копиране на всички подробности на транзакцията</translation>
     </message>
     <message>
         <source>There was an error trying to save the transaction history to %1.</source>
-        <translation type="unfinished"></translation>
+        <translation>Получи се грешка при опита да се запази историята на транзакциите в %1.</translation>
     </message>
 </context>
 <context>
     <name>UnitDisplayStatusBarControl</name>
     <message>
         <source>Unit to show amounts in. Click to select another unit.</source>
-        <translation type="unfinished"></translation>
+        <translation>Единица в която да се показват сумите. Кликнете тук за да изберете друга единица за мярка.</translation>
     </message>
 </context>
 <context>
@@ -3480,18 +3480,18 @@ p, li { white-space: pre-wrap; }
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation>Изпращане</translation>
+        <translation>Изпращане на Монети</translation>
     </message>
 </context>
 <context>
     <name>WalletView</name>
     <message>
         <source>&amp;Export</source>
-        <translation>Изнеси</translation>
+        <translation>&amp;Изнасяне</translation>
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
-        <translation>Запишете данните от текущия раздел във файл</translation>
+        <translation>Запазване на данните от текущия раздел във файл</translation>
     </message>
     <message>
         <source>Backup Wallet</source>
@@ -3503,46 +3503,46 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Backup Failed</source>
-        <translation>Неуспешно запазване на портфейла</translation>
+        <translation>Запазването на портфейла бе неуспешно</translation>
     </message>
     <message>
         <source>There was an error trying to save the wallet data to %1.</source>
-        <translation>Възникна грешка при запазването на информацията за портфейла в %1.</translation>
+        <translation>Възникна грешка при запазването на портфейлната информацията в %1.</translation>
     </message>
     <message>
         <source>Backup Successful</source>
-        <translation>Успешно запазване на портфейла</translation>
+        <translation>Запазването на портфейла беше успешно</translation>
     </message>
     <message>
         <source>The wallet data was successfully saved to %1.</source>
-        <translation>Информацията за портфейла беше успешно запазена в %1.</translation>
+        <translation>Портфейлната информацията беше успешно запазена в %1.</translation>
     </message>
 </context>
 <context>
     <name>bitcoin-core</name>
     <message>
         <source>Options:</source>
-        <translation>Опции:</translation>
+        <translation>Настройки:</translation>
     </message>
     <message>
         <source>Specify data directory</source>
-        <translation>Определете директория за данните</translation>
+        <translation>Определяне на директория за данните</translation>
     </message>
     <message>
         <source>Connect to a node to retrieve peer addresses, and disconnect</source>
-        <translation>Свържете се към сървър за да можете да извлечете адресите на пиърите след което се разкачете.</translation>
+        <translation>Свързване към сървър за да извлечете адресите на връстниците, след което се разкачете.</translation>
     </message>
     <message>
         <source>Specify your own public address</source>
-        <translation>Въведете Ваш публичен адрес</translation>
+        <translation>Определете Вашя публичен адрес</translation>
     </message>
     <message>
         <source>Dogecoin Core</source>
-        <translation>Биткойн ядро</translation>
+        <translation>Доджкоин Ядро</translation>
     </message>
     <message>
         <source>&lt;category&gt; can be:</source>
-        <translation>&lt;category&gt; може да бъде:</translation>
+        <translation>&lt;категория&gt; може да бъде:</translation>
     </message>
     <message>
         <source>Connection options:</source>
@@ -3554,15 +3554,15 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Error initializing block database</source>
-        <translation>Грешка в пускането на базата данни с блокове</translation>
+        <translation>Грешка в започването на блоковата база данни с</translation>
     </message>
     <message>
         <source>Error: Disk space is low!</source>
-        <translation>Грешка: мястото на диска е малко!</translation>
+        <translation>Грешка: Диска е почти пълен!</translation>
     </message>
     <message>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
-        <translation>Провалено &quot;слушане&quot; на всеки порт. Използвайте -listen=0 ако искате това.</translation>
+        <translation>Провалено бе &quot;слушантое&quot; на всеки порт. Използвайте -listen=0 ако искате това.</translation>
     </message>
     <message>
         <source>Importing...</source>
@@ -3590,7 +3590,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Send trace/debug info to console instead of debug.log file</source>
-        <translation>Изпрати локализиращата или дебъг информацията към конзолата, вместо файлът debug.log</translation>
+        <translation>Изпращане на локализиращата или диагностична информацията към конзолата, вместо към файлът debug.log</translation>
     </message>
     <message>
         <source>This is experimental software.</source>
@@ -3622,7 +3622,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Invalid -proxy address: &apos;%s&apos;</source>
-        <translation>Невалиден -proxy address: &apos;%s&apos;</translation>
+        <translation>Невалиден -прокси адрес: &apos;%s&apos;</translation>
     </message>
     <message>
         <source>Specify configuration file (default: %s)</source>
