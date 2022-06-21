@@ -3626,11 +3626,11 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Specify configuration file (default: %s)</source>
-        <translation>Назовете конфигурационен файл(по подразбиране %s)</translation>
+        <translation>Задайте конфигурационен файл(по подразбиране %s)</translation>
     </message>
     <message>
         <source>Specify connection timeout in milliseconds (minimum: 1, default: %d)</source>
-        <translation>Задайте време на изключване при проблеми със свързването в милисекунди(минимум:1, по подразбиране %d)</translation>
+        <translation>Задайте време на откачане при проблеми със свързването в милисекунди(минимум:1, по подразбиране %d)</translation>
     </message>
     <message>
         <source>Specify pid file (default: %s)</source>
@@ -3638,7 +3638,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Insufficient funds</source>
-        <translation>Недостатъчно средства</translation>
+        <translation>Недостатъчни средства</translation>
     </message>
     <message>
         <source>Loading block index...</source>
@@ -3650,7 +3650,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Rescanning...</source>
-        <translation>Преразглеждане на последовтелността от блокове...</translation>
+        <translation>Преразглеждане последовтелността на блокове...</translation>
     </message>
     <message>
         <source>Done loading</source>
@@ -3662,91 +3662,91 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>The %s developers</source>
-        <translation type="unfinished"></translation>
+        <translation>%s разработчици</translation>
     </message>
     <message>
         <source>Bitcoin Core and Dogecoin Core</source>
-        <translation type="unfinished"></translation>
+        <translation>Биткоин Ядро и Доджкоин Ядро</translation>
     </message>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
-        <translation type="unfinished"></translation>
+        <translation>(1 = запазване на транзакционната метадатата, примерно информация за притежателя на сметката и заявката, 1 = пропускане на метадатата на транзакцията)</translation>
     </message>
     <message>
         <source>-discardthreshold is set very high! This is the output amount that the wallet will discard (to fee) if it is smaller than this setting.</source>
-        <translation type="unfinished"></translation>
+        <translation>--discardthreshold (праг на отхвърляне) е поставен много високо! Това е изходната сума която портфейла ще изразходи (във формата на такса) ако тя е по малка от тази настройка.</translation>
     </message>
     <message>
         <source>-maxtxfee is set very high! Fees this large could be paid on a single transaction.</source>
-        <translation type="unfinished"></translation>
+        <translation>-maxtxfee (максимална такса транзакция) е настроена много високо. Такси с такъв размер биха могли да се платят за единична транзакция.</translation>
     </message>
     <message>
         <source>A fee rate (in %s/kB) that will be used when fee estimation has insufficient data (default: %s)</source>
-        <translation type="unfinished"></translation>
+        <translation>Таксов курс от (%s/кБ) ще бъде използван, когато няма достатъчно налична информация за предварителна оценка (по подразбиране: %s)</translation>
     </message>
     <message>
         <source>Accept connections from outside (default: 1 if no -proxy or -connect/-noconnect)</source>
-        <translation type="unfinished"></translation>
+        <translation>Приемане на външни връзки (по подразбиране: 1 ако няма -proxy (прокси) или -connect/-noconnect (свързване/несвързване)</translation>
     </message>
     <message>
         <source>Accept relayed transactions received from whitelisted peers even when not relaying transactions (default: %d)</source>
-        <translation type="unfinished"></translation>
+        <translation>Приемане на пре-предадени транзакции получени от връстници в белия лист, дори когато не пре-предавате транзакции (по подразбиране: %d)</translation>
     </message>
     <message>
         <source>Allow JSON-RPC connections from specified source. Valid for &lt;ip&gt; are a single IP (e.g. 1.2.3.4), a network/netmask (e.g. 1.2.3.4/255.255.255.0) or a network/CIDR (e.g. 1.2.3.4/24). This option can be specified multiple times</source>
-        <translation type="unfinished"></translation>
+        <translation>Позволяване на JSON-RPC връзки от зададен източник. Валидни &lt;ip&gt; са единични IP номера (пр. 1.2.3.4), мрежа/мрежова маска (пр. 1.2.3.4/255.255.255.0, или мрежа/CIDR (безкласово маршрутизиране между домейни) (пр. 1.2.3.4/24). Тази настройка може да бъде задавана многократно.</translation>
     </message>
     <message>
         <source>Amount under which a transaction output is considered dust, in %s (default: %s)</source>
-        <translation type="unfinished"></translation>
+        <translation>Сума, под която изходът на транзакцията ще се счита за прах, в %s (по подразбиране: %s)</translation>
     </message>
     <message>
         <source>Amount under which a transaction output is considered non-standard and will not be accepted or relayed, in %s (default: %s)</source>
-        <translation type="unfinished"></translation>
+        <translation>Сума, под която изходът на транзакцията ще се счита за нестандартен и няма да бъде приет или пре-предаден, в %s (по подразбиране: %s)</translation>
     </message>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
-        <translation type="unfinished"></translation>
+        <translation>Привързване към даден адрес и непрекъсната готовност. Използвайте [host]:port нотация за IPv6</translation>
     </message>
     <message>
         <source>Bind to given address and whitelist peers connecting to it. Use [host]:port notation for IPv6</source>
-        <translation type="unfinished"></translation>
+        <translation>Привързване към даден адрес и добавяне в белия лист на връстници, свързани с него. Използвайте [host]:port нотация за IPv6</translation>
     </message>
     <message>
         <source>Bind to given address to listen for JSON-RPC connections. Use [host]:port notation for IPv6. This option can be specified multiple times (default: bind to all interfaces)</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Привързване към даден адрес и слушане за JSON-RPC връзки. Използвайте [host]:port нотация за IPv6. Тази настройка може да бъде задавана многократно (по подразбиране: привързване към всички интерфейси)</translation>
     </message>
     <message>
         <source>Cannot obtain a lock on data directory %s. %s is probably already running.</source>
-        <translation type="unfinished"></translation>
+        <translation>Не може да получи захват на директорията данни %s. %s най- вероятно вече работи. </translation>
     </message>
     <message>
         <source>Connect only to the specified node(s); -noconnect or -connect=0 alone to disable automatic connections</source>
-        <translation type="unfinished"></translation>
+        <translation>Свързване само към посочен(и) участник(ци); -noconnect или -connect=0 само за деактивиране на автоматини връзки</translation>
     </message>
     <message>
         <source>Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)</source>
-        <translation type="unfinished"></translation>
+        <translation>Създаване на нови файлове със системни разрешения по подразбиране, вместо umask 077 (ефективно само с деактивирана портфейлна функционалност)</translation>
     </message>
     <message>
         <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
-        <translation type="unfinished"></translation>
+        <translation>Изтриване на всички портфейлни транзакции и възстановяване само на тези части от блок-веригата чрез -rescan при стартиране</translation>
     </message>
     <message>
         <source>Discover own IP addresses (default: 1 when listening and no -externalip or -proxy)</source>
-        <translation type="unfinished"></translation>
+        <translation>Откриване на собствени IP адреси (по подразбиране: 1 при слушане и без -externalip или -proxy)</translation>
     </message>
     <message>
         <source>Distributed under the MIT software license, see the accompanying file %s or %s</source>
-        <translation type="unfinished"></translation>
+        <translation>Разпространено под софтуерен лиценз от MIT, виж прикрепения файл %s или %s(</translation>
     </message>
     <message>
         <source>Do not keep transactions in the mempool longer than &lt;n&gt; hours (default: %u)</source>
-        <translation type="unfinished"></translation>
+        <translation>Пазене на транзакции в пул паметта за не по дълго от &lt;n&gt; часа (по подразбиране: %u)</translation>
     </message>
     <message>
         <source>Equivalent bytes per sigop in transactions for relay and mining (default: %u)</source>
-        <translation type="unfinished"></translation>
+        <translation>Еквивалентни байта за </translation>
     </message>
     <message>
         <source>Error loading %s: You can&apos;t enable HD on a already existing non-HD wallet</source>
@@ -3754,27 +3754,27 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Error reading %s! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
-        <translation type="unfinished"></translation>
+        <translation>Грешка при четене на %s! Всички ключове са правилно прочетени, но части от транзакционната информация или въведения в адресника може да липсват или да са неправилни.</translation>
     </message>
     <message>
         <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
-        <translation type="unfinished"></translation>
+        <translation>Грешка: Слушането за входящи връзки пропадна (грешка отвръщане на слушането %s)</translation>
     </message>
     <message>
         <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
-        <translation type="unfinished"></translation>
+        <translation>Изпълване на команда когато една портфейлна транзакция се промени (%s в cmd е заменена от TxID)</translation>
     </message>
     <message>
         <source>Execute command when the best block changes (%s in cmd is replaced by block hash, %i is replaced by block number)</source>
-        <translation type="unfinished"></translation>
+        <translation>Изпълване на команда когато най- добрия блок се промени (%s в cmd е заменена от block hash, %i е заменена от block number)</translation>
     </message>
     <message>
         <source>Execute command when we see a really long fork (%s in cmd is replaced by message)</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Изпълване на команда когато съотвестваща тревога е получена, или ако отчетем много дълга вилица (%s в cmd е заменена от съобщение)</translation>
     </message>
     <message>
         <source>Extra transactions to keep in memory for compact block reconstructions (default: %u)</source>
-        <translation type="unfinished"></translation>
+        <translation>Брой на допълнителни транзакции които да се пазят в паметта за по съкратени реконструкции на блокове (по подразбиране: %u)</translation>
     </message>
     <message>
         <source>Fees (in %s/kB) smaller than this are considered zero fee for relaying, mining and transaction creation (default: %s)</source>
