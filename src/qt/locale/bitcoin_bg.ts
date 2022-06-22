@@ -3784,19 +3784,19 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Extra transactions to keep in memory for compact block reconstructions (default: %u)</source>
-        <translation>Брой на допълнителни транзакции които да се пазят в паметта за по съкратени реконструкции на блокове (по подразбиране: %u)</translation>
+        <translation>Брой на допълнителни транзакции които да се пазят в паметта, за по компактни реконструкции на блокове (по подразбиране: %u)</translation>
     </message>
     <message>
         <source>Fees (in %s/kB) smaller than this are considered zero fee for relaying, mining and transaction creation (default: %s)</source>
-        <translation type="unfinished"></translation>
+        <translation>Такси (в %s/кБ) по- малки от това се считат нулева такса за пре-пращане, обработване от миньори и създаване на транзакция (по подразбиране: %s)</translation>
     </message>
     <message>
         <source>Fees (in %s/kB) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation type="unfinished"></translation>
+        <translation>Такси (в %s/кБ) по- малки от това се считат нулева такса за създаване на транзакция</translation>
     </message>
     <message>
         <source>Force relay of transactions from whitelisted peers even if they violate local relay policy (default: %d)</source>
-        <translation type="unfinished"></translation>
+        <translation>Принудително пре-предаване на транзакции от връстници в белия списък, дори когато те несъответстват с локалните правила за пре-предаване (по подразбиране: %d)</translation>
     </message>
     <message>
         <source>How thorough the block verification of -checkblocks is (0-4, default: %u)</source>
@@ -3804,31 +3804,31 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>If &lt;category&gt; is not supplied or if &lt;category&gt; = 1, output all debugging information.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ако &lt;категория&gt; не е зададена, или ако &lt;категорията&gt; = 1, цялата диагностична информация ще бъде предадена.</translation>
     </message>
     <message>
         <source>If paytxfee is not set, include enough fee so transactions begin confirmation on average within n blocks (default: %u)</source>
-        <translation type="unfinished"></translation>
+        <translation>Ако paytxfee (плащане такса транзакции) не е зададено, ще бъдат добавени достатно средства за да може транзакциите да започнат потвърждения средно до n блока (по подразбиране: %u)</translation>
     </message>
     <message>
         <source>If this block is in the chain assume that it and its ancestors are valid and potentially skip their script verification (0 to verify all, default: %s, testnet: %s)</source>
-        <translation type="unfinished"></translation>
+        <translation>Ако този блок вече е във веригата, да се предположи че той и всички предишни са валидни, и потенциално сверяването на техния скрипт (0 да се сверят всички, по подразбиране: %s, тестова мрежа: %s)</translation>
     </message>
     <message>
         <source>Invalid amount for -discardthreshold=&lt;amount&gt;: &apos;%s&apos; (must be at least the dust limit of %s to prevent stuck transactions)</source>
-        <translation type="unfinished"></translation>
+        <translation>Невалидна сума за -discardthreshold -discardthreshold=&lt;amount&gt;: &apos;%s&apos; (трябва да бъде не по- малко от минималното ниво на прахта от %s за да се отбегнат заседнали транзакции)</translation>
     </message>
     <message>
         <source>Invalid amount for -maxtxfee=&lt;amount&gt;: &apos;%s&apos; (must be at least the minrelay fee of %s to prevent stuck transactions)</source>
-        <translation type="unfinished"></translation>
+        <translation>Невалидна сума за -maxtxfee=&lt;amount&gt;: &apos;%s&apos; (трябва да бъде не по- малко от минималната такса за пре-предаване от %s за да се отбегнат заседнали транзакции)</translation>
     </message>
     <message>
         <source>Maintain a full transaction index, used by the getrawtransaction rpc call (default: %u)</source>
-        <translation type="unfinished"></translation>
+        <translation>Поддръжка на цялостен индекс на транзакциите, използван от getrawtransaction rpc call (връщане на необработена транзакцийна информация) (по подразбиране: %u)</translation>
     </message>
     <message>
         <source>Maximum allowed median peer time offset adjustment. Local perspective of time may be influenced by peers forward or backward by this amount. (default: %u seconds)</source>
-        <translation type="unfinished"></translation>
+        <translation>Максимално позволена настройка за средното време на изместване от връстници. Възможно е местната времева ориентация да бъде повлияна от връстници, които са назад или напред със зададеното количество време. (по подразбиране: %u секунди)</translation>
     </message>
     <message>
         <source>Maximum size of data in data carrier transactions we relay and mine (default: %u)</source>
