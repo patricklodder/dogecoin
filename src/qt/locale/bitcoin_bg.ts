@@ -3756,7 +3756,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Equivalent bytes per sigop in transactions for relay and mining (default: %u)</source>
-        <translation>Еквивалентни байта за </translation>
+        <translation>Еквивалентни байта за sigop в транзакции за пре-предаване и обработване от миньори (по подразбиране: %u)</translation>
     </message>
     <message>
         <source>Error loading %s: You can&apos;t enable HD on a already existing non-HD wallet</source>
@@ -3800,7 +3800,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>How thorough the block verification of -checkblocks is (0-4, default: %u)</source>
-        <translation type="unfinished"></translation>
+        <translation>Как през потвърждаването на блокове на -checkblocks е (0-4, по подразбиране: %u)</translation>
     </message>
     <message>
         <source>If &lt;category&gt; is not supplied or if &lt;category&gt; = 1, output all debugging information.</source>
@@ -3828,47 +3828,47 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Maximum allowed median peer time offset adjustment. Local perspective of time may be influenced by peers forward or backward by this amount. (default: %u seconds)</source>
-        <translation>Максимално позволена настройка за средното време на изместване от връстници. Възможно е местната времева ориентация да бъде повлияна от връстници, които са назад или напред със зададеното количество време. (по подразбиране: %u секунди)</translation>
+        <translation>Максимално позволена настройка за средното времево изместване от връстници. Възможно е Вашата времева ориентация да бъде повлияна от връстници, които са назад или напред със зададеното количество време. (по подразбиране: %u секунди)</translation>
     </message>
     <message>
         <source>Maximum size of data in data carrier transactions we relay and mine (default: %u)</source>
-        <translation type="unfinished"></translation>
+        <translation>Максимален размер на информация в транзакциите на носителя на информация (опреатора) която бива пре-предавана и обработвана от миньори (по подразбиране: %u)</translation>
     </message>
     <message>
         <source>Maximum total fees (in %s) to use in a single wallet transaction or raw transaction; setting this too low may abort large transactions (default: %s)</source>
-        <translation type="unfinished"></translation>
+        <translation>Максимално такси (в %s) които могат да бъдат начислени в единична транзакция от портфейла или сурова транзакция; прекалени ниски настройки може да доведат до отхвърляне на големи транзакции (по подразбиране: %s)</translation>
     </message>
     <message>
         <source>Number of seconds to keep misbehaving peers from reconnecting (default: %u)</source>
-        <translation type="unfinished"></translation>
+        <translation>Колко секунди да се отказва връзка на връстници с подозрително поведение (по подразбиране: %u)</translation>
     </message>
     <message>
         <source>Output debugging information (default: %u, supplying &lt;category&gt; is optional)</source>
-        <translation type="unfinished"></translation>
+        <translation>Изпращане на диагностична информация (по подразбиране: %u, задаването на &lt;категория&gt; е незадължително)</translation>
     </message>
     <message>
         <source>Please check that your computer&apos;s date and time are correct! If your clock is wrong, %s will not work properly.</source>
-        <translation type="unfinished"></translation>
+        <translation>Моля проверете дали часовника на вашия компютър е сверен! Ако часовите настройки са неточни,  %s няма да работи както трябва.</translation>
     </message>
     <message>
         <source>Please contribute if you find %s useful. Visit %s for further information about the software.</source>
-        <translation type="unfinished"></translation>
+        <translation>Моля допринесете ако намирате %s потребно. Посетете %s за повече информация за софтуера.</translation>
     </message>
     <message>
         <source>Prune configured below the minimum of %d MiB.  Please use a higher number.</source>
-        <translation type="unfinished"></translation>
+        <translation>Подстригването е настроено под минималия размер от %d ??. Моля изполвайте по висока настройка (по- голямо число).</translation>
     </message>
     <message>
         <source>Prune: last wallet synchronisation goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of pruned node)</source>
-        <translation type="unfinished"></translation>
+        <translation>Подстригване: последното синхронизиране датира преди подстриганата информация. Трябва да изполвате -reindex (дърпане наново на цялата блок-верига в случай на подстриган възел)</translation>
     </message>
     <message>
         <source>Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless -connect/-noconnect)</source>
-        <translation type="unfinished"></translation>
+        <translation>Запитване за адреси на връстници чрез претърсване на DNS, в случаи на ниско количество адреси (по подразбиране: 1, освен в случаи на -connect/-noconnect настройки) </translation>
     </message>
     <message>
         <source>Randomize credentials for every proxy connection. This enables Tor stream isolation (default: %u)</source>
-        <translation type="unfinished"></translation>
+        <translation>Разбъркване на акредитивните писма за всяка прокси връзка (връзка чрез посредник). Това активира изолацията на Tor потоците (по подразбиране: %u)</translation>
     </message>
     <message>
         <source>Reduce storage requirements by enabling pruning (deleting) of old blocks. This allows the pruneblockchain RPC to be called to delete specific blocks, and enables automatic pruning of old blocks if a target size in MiB is provided. This mode is incompatible with -txindex and -rescan. Warning: Reverting this setting requires re-downloading the entire blockchain. (default: 0 = disable pruning blocks, 1 = allow manual pruning via RPC, &gt;%u = automatically prune block files to stay under the specified target size in MiB)</source>
