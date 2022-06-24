@@ -4026,87 +4026,87 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Always query for peer addresses via DNS lookup (default: %u)</source>
-        <translation type="unfinished"></translation>
+        <translation>Адресни запитвания за връсници винаги ще бъдат осъществени чрез DNS проверка (по подразбиране: %u)</translation>
     </message>
     <message>
         <source>Amaze</source>
-        <translation type="unfinished"></translation>
+        <translation>Амейз</translation>
     </message>
     <message>
         <source>Append comment to the user agent string</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавяне на коментар към нишката на потребителския агент</translation>
     </message>
     <message>
         <source>Attempt to recover private keys from a corrupt wallet on startup</source>
-        <translation type="unfinished"></translation>
+        <translation>Опитване за възстановяване на секретни ключове от повреден портфейл при стартиране</translation>
     </message>
     <message>
         <source>Automatically create Tor hidden service (default: %d)</source>
-        <translation type="unfinished"></translation>
+        <translation>Автоматично създаване на прикрита Тор услуга (по подразбиране: %d)</translation>
     </message>
     <message>
         <source>Block creation options:</source>
-        <translation type="unfinished"></translation>
+        <translation>Настройки за създаването на блокове:</translation>
     </message>
     <message>
         <source>Cannot downgrade wallet</source>
-        <translation type="unfinished"></translation>
+        <translation>Не може да понижи портфейла</translation>
     </message>
     <message>
         <source>Cannot resolve -%s address: &apos;%s&apos;</source>
-        <translation type="unfinished"></translation>
+        <translation>Не може да се разреши -%s адрес: &apos;%s&apos;</translation>
     </message>
     <message>
         <source>Cannot write default address</source>
-        <translation type="unfinished"></translation>
+        <translation>Не може да се пише адрес по подразбиране</translation>
     </message>
     <message>
         <source>Chain selection options:</source>
-        <translation type="unfinished"></translation>
+        <translation>Настройки за избор на веригата</translation>
     </message>
     <message>
         <source>Change index out of range</source>
-        <translation type="unfinished"></translation>
+        <translation>Промяна на индекса озвън обсег</translation>
     </message>
     <message>
         <source>Copyright (C) %i-%i</source>
-        <translation type="unfinished"></translation>
+        <translation>Авторско право (Copyright) (C) %i-%i</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
-        <translation type="unfinished"></translation>
+        <translation>Намерена бе повредена блокова база данни</translation>
     </message>
     <message>
         <source>Debugging/Testing options:</source>
-        <translation type="unfinished"></translation>
+        <translation>Диагностични/Тестови настройки:</translation>
     </message>
     <message>
         <source>Default</source>
-        <translation type="unfinished"></translation>
+        <translation>По подразбиране</translation>
     </message>
     <message>
         <source>Do not load the wallet and disable wallet RPC calls</source>
-        <translation type="unfinished"></translation>
+        <translation>Не зареждайте портфейла и изключвайте RPC повикванията за портфейла</translation>
     </message>
     <message>
         <source>Enable publish hash block in &lt;address&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>Включване публикуването на блоков хеш в &lt;address&gt;</translation>
     </message>
     <message>
         <source>Enable publish hash transaction in &lt;address&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>Включване публикването на транзакциен хеш в &lt;address&gt;</translation>
     </message>
     <message>
         <source>Enable publish raw block in &lt;address&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>Включване публикуването на необработен блок в &lt;address&gt;</translation>
     </message>
     <message>
         <source>Enable publish raw transaction in &lt;address&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>Включване публикуването на необработена транзакция в &lt;address&gt;</translation>
     </message>
     <message>
         <source>Enable transaction replacement in the memory pool (default: %u)</source>
-        <translation type="unfinished"></translation>
+        <translation>Включване </translation>
     </message>
     <message>
         <source>Error initializing wallet database environment %s!</source>
