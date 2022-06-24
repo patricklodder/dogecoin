@@ -3862,27 +3862,27 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Reduce storage requirements by enabling pruning (deleting) of old blocks. This allows the pruneblockchain RPC to be called to delete specific blocks, and enables automatic pruning of old blocks if a target size in MiB is provided. This mode is incompatible with -txindex and -rescan. Warning: Reverting this setting requires re-downloading the entire blockchain. (default: 0 = disable pruning blocks, 1 = allow manual pruning via RPC, &gt;%u = automatically prune block files to stay under the specified target size in MiB)</source>
-        <translation type="unfinished"></translation>
+        <translation>Намаляне на пространствените изисквания чрез окастряне (изтриване) на стари блокове. Това позволява на дистанционен протокол по окастрянето (RPC да бъде повикан за да изтрие специфични блоковое, и включва автоматичното окастряне на стари блокове, ако зададен размер в МебиБайта е достигнат. Този режим не е съвместим с -txindex и -rescan. Внимание: Връщането на тази настройка изисква цялата блок-верига да бъде дръпната наново. (по подразбиране: 0 = изключване на окастрянето, 1 = ръчно окастряне чрез RPC, &gt;%u = автоматично окастряне на блокови файлове за да не се подмиава посочения размер в МебиБайта)</translation>
     </message>
     <message>
         <source>Rescans are not possible in pruned mode. You will need to use -reindex which will download the whole blockchain again.</source>
-        <translation type="unfinished"></translation>
+        <translation>Повторното сканиране не е възможно в режим на окастряне. Ще трябва да използвате командата -reindex, която ще издърпа цялата блок-верига наново.</translation>
     </message>
     <message>
         <source>Set lowest fee rate (in %s/kB) for transactions to be included in block creation. (default: %s)</source>
-        <translation type="unfinished"></translation>
+        <translation>Избиране на най- ниската такса (в %s/кб) за транзакции да бъде включена в създаването на блокове. (по подразбиране: %s)</translation>
     </message>
     <message>
         <source>Set maximum size of high-priority/low-fee transactions in bytes (default: %d)</source>
-        <translation type="unfinished"></translation>
+        <translation>Избиране на максималния размер на високо-приоритетни/ниско-таксувани транзакции в байта (по подразбиране: %d)</translation>
     </message>
     <message>
         <source>Set the number of script verification threads (%u to %d, 0 = auto, &lt;0 = leave that many cores free, default: %d)</source>
-        <translation type="unfinished"></translation>
+        <translation>Избиране на броя нижки за скриптово потрвърждение (%u до %d, 0 = автоматично, &lt;0 = оставяне на брой свободни ядра, по подразбиране: %d)</translation>
     </message>
     <message>
         <source>Sets the serialization of raw transaction or block hex returned in non-verbose mode, non-segwit(0) or segwit(1) (default: %d)</source>
-        <translation type="unfinished"></translation>
+        <translation>Настройва подредбата на необработени транзакции или блоково шестнадесетичие, които са върнати в немногословен режим, не-сегуит(0) или сегуит(1) (по подразбиране: %d)</translation>
     </message>
     <message>
         <source>Specify directory where to write backups and data dumps (default datadir/backups)</source>
@@ -3890,139 +3890,139 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Support filtering of blocks and transaction with bloom filters (default: %u)</source>
-        <translation type="unfinished"></translation>
+        <translation>Подържане на блоково филтриране и транзакции със блум филтри (по подразбиране: %u)</translation>
     </message>
     <message>
         <source>The block database contains a block which appears to be from the future. This may be due to your computer&apos;s date and time being set incorrectly. Only rebuild the block database if you are sure that your computer&apos;s date and time are correct</source>
-        <translation type="unfinished"></translation>
+        <translation>Блоковата база данни съдържа блок, който изглежда да е от бъдещето. Това може да се дължи на неточно сверяване на часовите настройки на вашия компютър. Възстановете блоковата база данни само когато сте сигурни че Вашият компютър е точно сверен.</translation>
     </message>
     <message>
         <source>The minimum transaction output size (in %s) used to validate wallet transactions and discard change (to fee) (default: %s)</source>
-        <translation type="unfinished"></translation>
+        <translation>Минималния размер на транзакционния изход (в %s), използван за потвърждаване на портфейлни транзакции и отхвърляне на ресто (от такса) (по подразбиране: %s)</translation>
     </message>
     <message>
         <source>The transaction amount is too small to send after the fee has been deducted</source>
-        <translation type="unfinished"></translation>
+        <translation>Размера на транзакцията е прекалено малък след приспадане на таксата.</translation>
     </message>
     <message>
         <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
-        <translation type="unfinished"></translation>
+        <translation>Това е предсрочна тестова разработка - Вие поемате всички рискове от ползването ѝ - не ползвайте за копаене или с търговски приложения</translation>
     </message>
     <message>
         <source>This is the transaction fee you may pay when fee estimates are not available.</source>
-        <translation type="unfinished"></translation>
+        <translation>Това транзакционната такса която може да платите когато предварителни оценки не са налични.</translation>
     </message>
     <message>
         <source>This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit %s and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard. Paper wallet art provided by Anacoluthia.</source>
-        <translation type="unfinished"></translation>
+        <translation>Този продукт вклюва софтуер разработен от проекта OpenSSL за полза в OpenSSL Инструментариума %s и криптографен софтуер създаден от Ерик Янг и UPnP софтуер създаден от Томас Бернард. Илюстрациите на хартиения портфейл са осигурени от Анаколутия.</translation>
     </message>
     <message>
         <source>Total length of network version string (%i) exceeds maximum length (%i). Reduce the number or size of uacomments.</source>
-        <translation type="unfinished"></translation>
+        <translation>Обща дължина на нижката от мрежови версии (%i) надвишава максималната дължина (%i). Намалете това число или размера на уакоментари.</translation>
     </message>
     <message>
         <source>Tries to keep outbound traffic under the given target (in MiB per 24h), 0 = no limit (default: %d)</source>
-        <translation type="unfinished"></translation>
+        <translation>Опитва се да поддържа изходящия трафик под зададеното ниво (в МиБ за 24ч), 0 = без ограничение (по подразбиране: %%d)</translation>
     </message>
     <message>
         <source>Unable to rewind the database to a pre-fork state. You will need to redownload the blockchain</source>
-        <translation type="unfinished"></translation>
+        <translation>Неуспешно превъртяване на базата данни до състоянието ѝ преди вилицата. Ще трябва да дръпнете блок-веригата наново</translation>
     </message>
     <message>
         <source>Unsupported argument -socks found. Setting SOCKS version isn&apos;t possible anymore, only SOCKS5 proxies are supported.</source>
-        <translation type="unfinished"></translation>
+        <translation>Намерн бе неподдържан аргумент -socks. Настройката на SOCKS версията вече не е възможна, с изключение на SOCKS5 пълномощници.</translation>
     </message>
     <message>
         <source>Unsupported argument -whitelistalwaysrelay ignored, use -whitelistrelay and/or -whitelistforcerelay.</source>
-        <translation type="unfinished"></translation>
+        <translation>Неподдържаният аргумент -whitelistalwaysrelay бе игнориран, използвайте -whitelistrelay и/или -whitelistforcerelay.</translation>
     </message>
     <message>
         <source>Use UPnP to map the listening port (default: 1 when listening and no -proxy)</source>
-        <translation type="unfinished"></translation>
+        <translation>Използване на UPnP за намиране на слушащия порт (по подразбиране: 1 когато слуша и няма -proxy посредник)</translation>
     </message>
     <message>
         <source>Use hierarchical deterministic key generation (HD) after BIP32. Only has effect during wallet creation/first start</source>
-        <translation type="unfinished"></translation>
+        <translation>Използване на йерархично детерминирано генериране на ключове (HD) след BIP32. Това само има ефект при създаването на портфейл/първоначално стартиране</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
-        <translation type="unfinished"></translation>
+        <translation>Използване на отделно SOCKS5 прокси за достиг до връстници чрез прикрити услуги Тор (по подразбиране:  %s)</translation>
     </message>
     <message>
         <source>Username and hashed password for JSON-RPC connections. The field &lt;userpw&gt; comes in the format: &lt;USERNAME&gt;:&lt;SALT&gt;$&lt;HASH&gt;. A canonical python script is included in share/rpcuser. The client then connects normally using the rpcuser=&lt;USERNAME&gt;/rpcpassword=&lt;PASSWORD&gt; pair of arguments. This option can be specified multiple times</source>
-        <translation type="unfinished"></translation>
+        <translation>Потребителско име и хеширана парола за връзки тип JSON-RPC. Полето &lt;userpw&gt; отива в следния формат: &lt;USERNAME&gt;:&lt;SALT&gt;$&lt;HASH&gt;. Каноничен скрипт на питон е включен в share/rpcuser. Клиентът тогава се прикачва нормално с двойката аргументи rpcuser=&lt;USERNAME&gt;/rpcpassword=&lt;PASSWORD&gt; Тази настройка може да бъде посочена многократно</translation>
     </message>
     <message>
         <source>Wallet will not create transactions that violate mempool chain limits (default: %u)</source>
-        <translation type="unfinished"></translation>
+        <translation>Портфейла няма да създаде транзакции които нарушават ограниченията на пул паметните вериги (по подразбиране: %u)</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
-        <translation type="unfinished"></translation>
+        <translation>Внимание: Изглежда, че мрежата не достига до консенсус! Някои миньори имат затруднеия.</translation>
     </message>
     <message>
         <source>Warning: Unknown block versions being mined! It&apos;s possible unknown rules are in effect</source>
-        <translation type="unfinished"></translation>
+        <translation>Внимание: Неизвестни блок версии биват обработвани! Възможно е в сила да са неизвестни прафила</translation>
     </message>
     <message>
         <source>Warning: Wallet file corrupt, data salvaged! Original %s saved as %s in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
-        <translation type="unfinished"></translation>
+        <translation>Портфейлния файл е повреден, информацията бе спасена! Оригиналът  %s бе запазен като %s в %s; ако Вашия баланс или транзакции не са точни, ще трябва да възстановите от архивен запис.</translation>
     </message>
     <message>
         <source>Warning: We do not appear to fully agree with our peers! You may need to upgrade, or other nodes may need to upgrade.</source>
-        <translation type="unfinished"></translation>
+        <translation>Внимание: Не изглежда, че е налице пълен консенсус с връстниците! Възможно е да се наложи да актуализирате, или другите възли да актуализират техните версии.</translation>
     </message>
     <message>
         <source>Whitelist peers connecting from the given IP address (e.g. 1.2.3.4) or CIDR notated network (e.g. 1.2.3.0/24). Can be specified multiple times.</source>
-        <translation type="unfinished"></translation>
+        <translation>Връстници в белия лист от зададен IP адрес (например 1.2.3.4) или мрежа отбелязана като CIDR (Безкласово маршрутизиране между домейни) (например 1.2.3.0/24). Може да бъде зададена многократно).</translation>
     </message>
     <message>
         <source>Whitelisted peers cannot be DoS banned and their transactions are always relayed, even if they are already in the mempool, useful e.g. for a gateway</source>
-        <translation type="unfinished"></translation>
+        <translation>Връстници в белия лист не могат да бъдат забранени за DoS (отказ на услуга) и техите транзакции за винаги пре-предадени, дори когато те вече са в пул паметта, полезно например за gateway (порта)</translation>
     </message>
     <message>
         <source>You need to rebuild the database using -reindex to go back to unpruned mode.  This will redownload the entire blockchain</source>
-        <translation type="unfinished"></translation>
+        <translation>Трябва да възстановите базата данни с командата -reindex за да се върнете в не-окастрен режим. Това ще издърпа цялата блок-верига наново</translation>
     </message>
     <message>
         <source>You need to rebuild the database using -reindex-chainstate to change -txindex</source>
-        <translation type="unfinished"></translation>
+        <translation>Трябва да възстановите базата данни с командата -reindex-chainstate за да промените -txindex</translation>
     </message>
     <message>
         <source>%s corrupt, salvage failed</source>
-        <translation type="unfinished"></translation>
+        <translation>%s е повреден, иформацията не можеше да бъде спасена</translation>
     </message>
     <message>
         <source>%s is set very high!</source>
-        <translation type="unfinished"></translation>
+        <translation>%s е много високо!</translation>
     </message>
     <message>
         <source>(default: %s)</source>
-        <translation type="unfinished"></translation>
+        <translation>(по подразбиране: %s)</translation>
     </message>
     <message>
         <source>(default: %u)</source>
-        <translation type="unfinished"></translation>
+        <translation>(по подразбиране: %u)</translation>
     </message>
     <message>
         <source>-maxmempool must be at least %d MB</source>
-        <translation type="unfinished"></translation>
+        <translation>-maxmempool трябва да е поне %d МБ</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>
-        <translation type="unfinished"></translation>
+        <translation>Приемане на командна линия и JSON-RPC команди</translation>
     </message>
     <message>
         <source>Accept public REST requests (default: %u)</source>
-        <translation type="unfinished"></translation>
+        <translation>Приемане на публични REST запитвания (по подразбиране: %u)</translation>
     </message>
     <message>
         <source>Add a node to connect to and attempt to keep the connection open</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавяне на възел към който да се осъществи връзка и опит за поддържане на връзката</translation>
     </message>
     <message>
         <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
-        <translation type="unfinished"></translation>
+        <translation>Позволяване на търсене чрез DNS за -addnode, -seednode и -connect</translation>
     </message>
     <message>
         <source>Always query for peer addresses via DNS lookup (default: %u)</source>
