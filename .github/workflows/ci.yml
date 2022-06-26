@@ -55,44 +55,46 @@ jobs:
           - name: armhf-linux
             host: arm-linux-gnueabihf
             os: ubuntu-18.04
-            packages: g++-arm-linux-gnueabihf
-            run-bench: false
-            run-tests: false
+            packages: g++-arm-linux-gnueabihf qemu-user-static qemu-user
+            run-bench: true
+            run-tests: true
             check-security: true
             check-symbols: false
             dep-opts: "NO_QT=1"
-            config-opts: "--enable-glibc-back-compat --disable-tests LDFLAGS=-static-libstdc++"
+            config-opts: "--enable-glibc-back-compat LDFLAGS=-static-libstdc++"
             goal: install
           - name: aarch64-linux-experimental
             host: aarch64-linux-gnu
             os: ubuntu-18.04
-            packages: g++-aarch64-linux-gnu
-            run-tests: false
+            packages: g++-aarch64-linux-gnu qemu-user-static qemu-user
+            run-bench: true
+            run-tests: true
             check-security: true
             check-symbols: false
             dep-opts: "NO_QT=1"
-            config-opts: "--with-armv8-crypto --enable-zmq --enable-glibc-back-compat --disable-tests LDFLAGS=-static-libstdc++"
+            config-opts: "--with-armv8-crypto --enable-zmq --enable-glibc-back-compat LDFLAGS=-static-libstdc++"
             goal: install
           - name: aarch64-linux-sha512-experimental
             host: aarch64-linux-gnu
             os: ubuntu-20.04
-            packages: g++-aarch64-linux-gnu
-            run-tests: false
+            packages: g++-aarch64-linux-gnu qemu-user-static qemu-user
+            run-bench: true
+            run-tests: true
             check-security: true
             check-symbols: false
             dep-opts: "NO_QT=1"
-            config-opts: "--with-armv82-crypto --enable-zmq --enable-glibc-back-compat --disable-tests LDFLAGS=-static-libstdc++"
+            config-opts: "--with-armv82-crypto --enable-zmq --enable-glibc-back-compat LDFLAGS=-static-libstdc++"
             goal: install
           - name: aarch64-linux
             host: aarch64-linux-gnu
             os: ubuntu-18.04
-            packages: g++-aarch64-linux-gnu
-            run-bench: false
-            run-tests: false
+            packages: g++-aarch64-linux-gnu qemu-user-static qemu-user
+            run-bench: true
+            run-tests: true
             check-security: true
             check-symbols: false
             dep-opts: "NO_QT=1"
-            config-opts: "--enable-zmq --enable-glibc-back-compat --disable-tests LDFLAGS=-static-libstdc++"
+            config-opts: "--enable-zmq --enable-glibc-back-compat LDFLAGS=-static-libstdc++"
             goal: install
           - name: x86_64-linux-nowallet
             host: x86_64-unknown-linux-gnu
@@ -245,15 +247,77 @@ jobs:
       - name: Run benchmark
         if: ${{ matrix.run-bench }}
         run: |
-          src/bench/bench_dogecoin > ${{ matrix.name }}-bench.csv
-          cat ${{ matrix.name }}-bench.csv
+            case "${{ matrix.host }}" in
+              "arm-linux-gnueabihf")
+              qemu-arm -E LD_LIBRARY_PATH=/usr/arm-linux-gnueabihf/lib/ /usr/arm-linux-gnueabihf/lib/ld-linux-armhf.so.3 src/bench/bench_dogecoin > ${{ matrix.name }}-bench.csv
+              cat ${{ matrix.name }}-bench.csv
+              ;;
+              "aarch64-linux-gnu")
+              qemu-aarch64 -E LD_LIBRARY_PATH=/usr/aarch64-linux-gnu/lib/ /usr/aarch64-linux-gnu/lib/ld-linux-aarch64.so.1 src/bench/bench_dogecoin > ${{ matrix.name }}-bench.csv
+              cat ${{ matrix.name }}-bench.csv
+              ;;
+              "x86_64-w64-mingw32")
+              make check $MAKEJOBS VERBOSE=1
+              ./src/bench/bench_dogecoin > ${{ matrix.name }}-bench.csv
+              cat ${{ matrix.name }}-bench.csv
+              ;;
+              "i686-w64-mingw32")
+              make check $MAKEJOBS VERBOSE=1
+              ./src/bench/bench_dogecoin > ${{ matrix.name }}-bench.csv
+              cat ${{ matrix.name }}-bench.csv
+              ;;
+              "x86_64-apple-darwin11")
+              make check $MAKEJOBS VERBOSE=1
+              ./src/bench/bench_dogecoin > ${{ matrix.name }}-bench.csv
+              cat ${{ matrix.name }}-bench.csv
+              ;;
+              "x86_64-unknown-linux-gnu")
+              make check $MAKEJOBS VERBOSE=1
+              ./src/bench/bench_dogecoin > ${{ matrix.name }}-bench.csv
+              cat ${{ matrix.name }}-bench.csv
+              ;;
+              "i686-pc-linux-gnu")
+              make check $MAKEJOBS VERBOSE=1
+              ./src/bench/bench_dogecoin > ${{ matrix.name }}-bench.csv
+              cat ${{ matrix.name }}-bench.csv
+              ;;
+            esac
 
       - name: Run tests
         if: ${{ matrix.run-tests }}
         run: |
-          make check $MAKEJOBS VERBOSE=1
-          qa/pull-tester/install-deps.sh
-          qa/pull-tester/rpc-tests.py --coverage
+            case "${{ matrix.host }}" in
+              "arm-linux-gnueabihf")
+              qemu-arm -E LD_LIBRARY_PATH=/usr/arm-linux-gnueabihf/lib/ /usr/arm-linux-gnueabihf/lib/ld-linux-armhf.so.3 src/test/test_dogecoin
+              ;;
+              "aarch64-linux-gnu")
+              qemu-aarch64 -E LD_LIBRARY_PATH=/usr/aarch64-linux-gnu/lib/ /usr/aarch64-linux-gnu/lib/ld-linux-aarch64.so.1 src/test/test_dogecoin
+              ;;
+              "x86_64-w64-mingw32")
+              make check $MAKEJOBS VERBOSE=1
+              qa/pull-tester/install-deps.sh
+              qa/pull-tester/rpc-tests.py --coverage
+              ;;
+              "i686-w64-mingw32")
+              make check $MAKEJOBS VERBOSE=1
+              qa/pull-tester/install-deps.sh
+              qa/pull-tester/rpc-tests.py --coverage
+              ;;
+              "x86_64-apple-darwin11")
+              make check $MAKEJOBS VERBOSE=1
+              ./src/test/test_dogecoin
+              ;;
+              "x86_64-unknown-linux-gnu")
+              make check $MAKEJOBS VERBOSE=1
+              qa/pull-tester/install-deps.sh
+              qa/pull-tester/rpc-tests.py --coverage
+              ;;
+              "i686-pc-linux-gnu")
+              make check $MAKEJOBS VERBOSE=1
+              qa/pull-tester/install-deps.sh
+              qa/pull-tester/rpc-tests.py --coverage
+              ;;
+            esac
 
       - name: Check security
         if: ${{ matrix.check-security }}
