@@ -587,7 +587,7 @@
         <source>Connecting to peers...</source>
         <translation>Свързване към връсници</translation>
     </message>
-    <message=>
+    <message>
         <source>Processed %n block(s) of transaction history.</source>
         <translation>Обработени %n блок(ове) с транзакции.</translation>
     </message>
