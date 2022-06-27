@@ -2039,7 +2039,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
-        <translation>Въведeте &lt;/b&gt;помощ&lt;/b&gt; за да видите наличните команди.</translation>
+        <translation>Въведeте &lt;/b&gt;help&lt;/b&gt; за да видите наличните команди.</translation>
     </message>
     <message>
         <source>%1 B</source>
@@ -3559,7 +3559,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Invalid -proxy address: &apos;%s&apos;</source>
-        <translation>Невалиден -прокси адрес: &apos;%s&apos;</translation>
+        <translation>Невалиден -proxy адрес: &apos;%s&apos;</translation>
     </message>
     <message>
         <source>Specify configuration file (default: %s)</source>
@@ -3611,7 +3611,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>-discardthreshold is set very high! This is the output amount that the wallet will discard (to fee) if it is smaller than this setting.</source>
-        <translation>--discardthreshold (праг на отхвърляне) е поставен много високо! Това е изходната сума която портфейла ще изразходи (във формата на такса) ако тя е по малка от тази настройка.</translation>
+        <translation>-discardthreshold (праг на отхвърляне) е поставен много високо! Това е изходната сума която портфейла ще изразходи (във формата на такса) ако тя е по малка от тази настройка.</translation>
     </message>
     <message>
         <source>-maxtxfee is set very high! Fees this large could be paid on a single transaction.</source>
@@ -3743,7 +3743,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Invalid amount for -discardthreshold=&lt;amount&gt;: &apos;%s&apos; (must be at least the dust limit of %s to prevent stuck transactions)</source>
-        <translation>Невалидна сума за -discardthreshold -discardthreshold=&lt;amount&gt;: &apos;%s&apos; (трябва да бъде не по- малко от минималното ниво на прахта от %s за да се отбегнат заседнали транзакции)</translation>
+        <translation>Невалидна сума за -discardthreshold=&lt;amount&gt;: &apos;%s&apos; (трябва да бъде не по- малко от минималното ниво на прахта от %s за да се отбегнат заседнали транзакции)</translation>
     </message>
     <message>
         <source>Invalid amount for -maxtxfee=&lt;amount&gt;: &apos;%s&apos; (must be at least the minrelay fee of %s to prevent stuck transactions)</source>
