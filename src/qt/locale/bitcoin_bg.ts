@@ -4366,143 +4366,143 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Spend unconfirmed change when sending transactions (default: %u)</source>
-        <translation type="unfinished"></translation>
+        <translation>Изхарчване на непотвърденото ресто при изпращане на транзакции (по подразбиране: %u)</translation>
     </message>
     <message>
         <source>Starting network threads...</source>
-        <translation type="unfinished"></translation>
+        <translation>Стартиране на мрежови нижки...</translation>
     </message>
     <message>
         <source>Such expensive</source>
-        <translation type="unfinished"></translation>
+        <translation>Баш скъпо</translation>
     </message>
     <message>
         <source>The source code is available from %s.</source>
-        <translation type="unfinished"></translation>
+        <translation>Програмният код е наличен от %s.</translation>
     </message>
     <message>
         <source>The transaction amount is too small to pay the fee</source>
-        <translation type="unfinished"></translation>
+        <translation>Сумата на транзакцията е прекалено малка и не може да заплати таксата</translation>
     </message>
     <message>
         <source>The wallet will avoid paying less than the minimum relay fee.</source>
-        <translation type="unfinished"></translation>
+        <translation>Портфейла ще избягва да плаща по-малко от минималната такса за пре-предаване.</translation>
     </message>
     <message>
         <source>This is the minimum transaction fee you pay on every transaction.</source>
-        <translation type="unfinished"></translation>
+        <translation>Това е минималната такса която плащате за всяка транзакция.</translation>
     </message>
     <message>
         <source>This is the transaction fee you will pay if you send a transaction.</source>
-        <translation type="unfinished"></translation>
+        <translation>Това е таксата която ще платите ако изпратите транзакция.</translation>
     </message>
     <message>
         <source>Threshold for disconnecting misbehaving peers (default: %u)</source>
-        <translation type="unfinished"></translation>
+        <translation>Праг на откачане от връстници с лошо поведение (по подразбиране: %u)</translation>
     </message>
     <message>
         <source>Tor control port password (default: empty)</source>
-        <translation type="unfinished"></translation>
+        <translation>Парола за Тор контролен порт (по подразбиране: празно)</translation>
     </message>
     <message>
         <source>Tor control port to use if onion listening enabled (default: %s)</source>
-        <translation type="unfinished"></translation>
+        <translation>Тор контролен порт който да бъде използван ако слушането onion е включено (по подразбиране: %s)</translation>
     </message>
     <message>
         <source>Transaction amounts must not be negative</source>
-        <translation type="unfinished"></translation>
+        <translation>Сумите в транзакциите не може да бъдат отрицатлени</translation>
     </message>
     <message>
         <source>Transaction has too long of a mempool chain</source>
-        <translation type="unfinished"></translation>
+        <translation>Транзакцията има прекалено дълга пул памет верига</translation>
     </message>
     <message>
         <source>Transaction must have at least one recipient</source>
-        <translation type="unfinished"></translation>
+        <translation>Транзакцията трябва да има поне един получател</translation>
     </message>
     <message>
         <source>Transaction too large for fee policy</source>
-        <translation type="unfinished"></translation>
+        <translation>Транзакцията е прекалено голяма за таксуване</translation>
     </message>
     <message>
         <source>Unable to bind to %s on this computer (bind returned error %s)</source>
-        <translation type="unfinished"></translation>
+        <translation>Този компютър не може да се привърже към %s (грешка отвърнато привързване %s)</translation>
     </message>
     <message>
         <source>Unable to bind to %s on this computer. %s is probably already running.</source>
-        <translation type="unfinished"></translation>
+        <translation>Този компютър не може да се привърже към %s. %s най- вероятно вече работи.</translation>
     </message>
     <message>
         <source>Unable to start HTTP server. See debug log for details.</source>
-        <translation type="unfinished"></translation>
+        <translation>Неуспешно стартиране на HTTP сървъра. Вижте диагностичния дневник за повече информация.</translation>
     </message>
     <message>
         <source>Unknown network specified in -onlynet: &apos;%s&apos;</source>
-        <translation type="unfinished"></translation>
+        <translation>Посочена бе неизвеста мрежа в -onlynet: &apos;%s&apos;</translation>
     </message>
     <message>
         <source>Unsupported argument -benchmark ignored, use -debug=bench.</source>
-        <translation type="unfinished"></translation>
+        <translation>Неподдържаният аргумент -benchmark е игнориран, използвайте -debug=bench.</translation>
     </message>
     <message>
         <source>Unsupported argument -debugnet ignored, use -debug=net.</source>
-        <translation type="unfinished"></translation>
+        <translation>Неподдържаният аргумент -debugnet е игнориран, използвайте -debug=net.</translation>
     </message>
     <message>
         <source>Unsupported argument -tor found, use -onion.</source>
-        <translation type="unfinished"></translation>
+        <translation>Неподдържаният аргумент -tor бе намерен, използвайте -onion.</translation>
     </message>
     <message>
         <source>Upgrade wallet to latest format on startup</source>
-        <translation type="unfinished"></translation>
+        <translation>Подобряване на портфейла с най- новия формат при стартиране</translation>
     </message>
     <message>
         <source>Use Namecoin-compatible AuxPow API structure, (default: %u)</source>
-        <translation type="unfinished"></translation>
+        <translation>Използвайте на съвместима с Namecoin AuxPow API структура, (по подразбиране: %u)</translation>
     </message>
     <message>
         <source>Use UPnP to map the listening port (default: %u)</source>
-        <translation type="unfinished"></translation>
+        <translation>Използване на UPnP за намиране на слушащия порт (по подразбиране: %u)</translation>
     </message>
     <message>
         <source>Use the test chain</source>
-        <translation type="unfinished"></translation>
+        <translation>Използване на тестовата верига</translation>
     </message>
     <message>
         <source>User Agent comment (%s) contains unsafe characters.</source>
-        <translation type="unfinished"></translation>
+        <translation>Коментар на Потербителски Агент (%s) съдържа опасни символи.</translation>
     </message>
     <message>
         <source>Wallet %s resides outside data directory %s</source>
-        <translation type="unfinished"></translation>
+        <translation>Портфейла %s пребивава извън директорията данни %s</translation>
     </message>
     <message>
         <source>Wallet debugging/testing options:</source>
-        <translation type="unfinished"></translation>
+        <translation>Диагностични/тестови настройки на портфейла:</translation>
     </message>
     <message>
         <source>Wallet needed to be rewritten: restart %s to complete</source>
-        <translation type="unfinished"></translation>
+        <translation>Портфейла трябва да бъде презаписан: рестартирайте %s за да довършите</translation>
     </message>
     <message>
         <source>Warning: unknown new rules activated (versionbit %i)</source>
-        <translation type="unfinished"></translation>
+        <translation>Внимание: неизвестни нови правила са активирани (versionbit (бит версия) %i)</translation>
     </message>
     <message>
         <source>Whether to operate in a blocks only mode (default: %u)</source>
-        <translation type="unfinished"></translation>
+        <translation>Дали да работи в режим "само блокове" (по подразбиране: %u)</translation>
     </message>
     <message>
         <source>Wow</source>
-        <translation type="unfinished"></translation>
+        <translation>Уау!</translation>
     </message>
     <message>
         <source>Zapping all transactions from wallet...</source>
-        <translation type="unfinished"></translation>
+        <translation>"Зап"ване на всички транзакции от портфейла...</translation>
     </message>
     <message>
         <source>ZeroMQ notification options:</source>
-        <translation type="unfinished"></translation>
+        <translation>Настройки на ZeroMQ послания:</translation>
     </message>
 </context>
 </TS>
