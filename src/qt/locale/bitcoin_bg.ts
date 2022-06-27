@@ -345,7 +345,7 @@
     </message>
     <message>
         <source>Such &amp;sending addresses...</source>
-        <translatioн>Такова! &amp;изпращане на адреси...</translation>
+        <translation>Такова! &amp;изпращане на адреси...</translation>
     </message>
     <message>
         <source>Much &amp;receiving addresses...</source>
