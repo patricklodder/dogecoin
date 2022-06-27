@@ -4112,247 +4112,247 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Enable transaction replacement in the memory pool (default: %u)</source>
-        <translation>Включване </translation>
+        <translation>Включване замяната на транзакции в пул паметта (по подразбиране: %u)</translation>
     </message>
     <message>
         <source>Error initializing wallet database environment %s!</source>
-        <translation type="unfinished"></translation>
+        <translation>Грешка при стартирането на средата на база данни за портфейла %s!</translation>
     </message>
     <message>
         <source>Error loading %s</source>
-        <translation type="unfinished"></translation>
+        <translation>Грешка при зареждането на %s</translation>
     </message>
     <message>
         <source>Error loading %s: Wallet corrupted</source>
-        <translation type="unfinished"></translation>
+        <translation>Грешка при зареждането на %s: Порфейла е повреден</translation>
     </message>
     <message>
         <source>Error loading %s: Wallet requires newer version of %s</source>
-        <translation type="unfinished"></translation>
+        <translation>Грешка при зареждането на %s: Портфейла изискла нова версия на %s</translation>
     </message>
     <message>
         <source>Error loading %s: You can&apos;t disable HD on a already existing HD wallet</source>
-        <translation type="unfinished"></translation>
+        <translation>Грешка при зареждането на %s: Не можете да изключите HD на вече съществуващ HD портфейл</translation>
     </message>
     <message>
         <source>Error loading block database</source>
-        <translation type="unfinished"></translation>
+        <translation>Грешка при зареждането на блоковата база данни</translation>
     </message>
     <message>
         <source>Error opening block database</source>
-        <translation type="unfinished"></translation>
+        <translation>Грешка при отварянето на блоковата база данни</translation>
     </message>
     <message>
         <source>Error reading from database, shutting down.</source>
-        <translation type="unfinished"></translation>
+        <translation>Грешка при четенето от базата данни, апликацията се затваря.</translation>
     </message>
     <message>
         <source>Error: A fatal internal error occurred, see debug.log for details</source>
-        <translation type="unfinished"></translation>
+        <translation>Грешка! Възникна фатална вътрешна грешка, моля вижте debug.log за повече информация </translation>
     </message>
     <message>
         <source>Fee (in %s/kB) to add to transactions you send (default: %s)</source>
-        <translation type="unfinished"></translation>
+        <translation>Такса (в %s/кБ) която да се добави към транзакции които изпращате (по подразбиране: %s)</translation>
     </message>
     <message>
         <source>How many blocks to check at startup (default: %u, 0 = all)</source>
-        <translation type="unfinished"></translation>
+        <translation>Брой блокове които да бъдат проверени при стартиране (по подразбиране: %u, 0 = всички)</translation>
     </message>
     <message>
         <source>Imports blocks from external blk000??.dat file on startup</source>
-        <translation type="unfinished"></translation>
+        <translation>Внасяне на блокове от външен blk000??.dat файл при стартиране</translation>
     </message>
     <message>
         <source>Include IP addresses in debug output (default: %u)</source>
-        <translation type="unfinished"></translation>
+        <translation>Вклювчване на IP адреси при извеждане на диагностичната информация (по подразбиране: %u)</translation>
     </message>
     <message>
         <source>Incorrect or no genesis block found. Wrong datadir for network?</source>
-        <translation type="unfinished"></translation>
+        <translation>Неправилен или липсващ начален блок. Грешна директория данни на мрежата?</translation>
     </message>
     <message>
         <source>Initialization sanity check failed. %s is shutting down.</source>
-        <translation type="unfinished"></translation>
+        <translation>Стартирането проверка на здравия разум бе неуспешна. %s се затваря.</translation>
     </message>
     <message>
         <source>Invalid -onion address: &apos;%s&apos;</source>
-        <translation type="unfinished"></translation>
+        <translation>Невалиден -onion адрес: &apos;%s&apos;</translation>
     </message>
     <message>
         <source>Invalid amount for -%s=&lt;amount&gt;: &apos;%s&apos;</source>
-        <translation type="unfinished"></translation>
+        <translation>Невалидна сума за -%s=&lt;amount&gt;: &apos;%s&apos;</translation>
     </message>
     <message>
         <source>Invalid amount for -fallbackfee=&lt;amount&gt;: &apos;%s&apos;</source>
-        <translation type="unfinished"></translation>
+        <translation>Невалидна сума за -fallbackfee=&lt;amount&gt;: &apos;%s&apos;</translation>
     </message>
     <message>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos; (must be at least %s)</source>
-        <translation type="unfinished"></translation>
+        <translation>Невалидна сума за -paytxfee=&lt;amount&gt;: &apos;%s&apos; (трябва да е поне %s)</translation>
     </message>
     <message>
         <source>Invalid netmask specified in -whitelist: &apos;%s&apos;</source>
-        <translation type="unfinished"></translation>
+        <translation>Невалидна посочена нет-маска в -whitelist: &apos;%s&apos;</translation>
     </message>
     <message>
         <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>
-        <translation type="unfinished"></translation>
+        <translation>Запазване най- много на &lt;n&gt; несвързващи се транзакции в пул паметта (по подразбиране: %u)</translation>
     </message>
     <message>
         <source>Keep the transaction memory pool below &lt;n&gt; megabytes (default: %u)</source>
-        <translation type="unfinished"></translation>
+        <translation>Поддържане пул паметта на транзакциите под &lt;n&gt; мегабайта (по подразбиране: %u)</translation>
     </message>
     <message>
         <source>Keypool ran out, please call keypoolrefill first</source>
-        <translation type="unfinished"></translation>
+        <translation>Keypool (ключовия фонд) е изчерпан, моля първо повикайте keypoolrefill (презареждане на ключовия фонд)</translation>
     </message>
     <message>
         <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
-        <translation type="unfinished"></translation>
+        <translation>Слущане за JSON-RPC връзки на &lt;port&gt; (по подразбиране: %u или тестова мрежа: %u)</translation>
     </message>
     <message>
         <source>Listen for connections on &lt;port&gt; (default: %u or testnet: %u)</source>
-        <translation type="unfinished"></translation>
+        <translation>Слушане за връзки на &lt;port&gt; (по подразбиране: %u или тестова мрежа: %u)</translation>
     </message>
     <message>
         <source>Loading banlist...</source>
-        <translation type="unfinished"></translation>
+        <translation>Зареждане на лист-забрани...</translation>
     </message>
     <message>
         <source>Location of the auth cookie (default: data dir)</source>
-        <translation type="unfinished"></translation>
+        <translation>Местоположение на авторитетната бисквитка (по подразбиране: data dir (директория данни)</translation>
     </message>
     <message>
         <source>Maintain at most &lt;n&gt; connections to peers (default: %u)</source>
-        <translation type="unfinished"></translation>
+        <translation>Поддържанез най- много на &lt;n&gt; връзки то връстници (по подразбиране: %u)</translation>
     </message>
     <message>
         <source>Make the wallet broadcast transactions</source>
-        <translation type="unfinished"></translation>
+        <translation>Каране на портфейла да излъчва транзакции</translation>
     </message>
     <message>
         <source>Many generous</source>
-        <translation type="unfinished"></translation>
+        <translation>Толкова щедрост</translation>
     </message>
     <message>
         <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
-        <translation type="unfinished"></translation>
+        <translation>Максимален буфер за получаване (за всяка връзка), &lt;n&gt;*1000 байта (по подразбиране: %u)</translation>
     </message>
     <message>
         <source>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
-        <translation type="unfinished"></translation>
+        <translation>Максимален буфер за изпращане (за всяка връзка), &lt;n&gt;*1000 байта (по подразбиране: %u)</translation>
     </message>
     <message>
         <source>Minimum</source>
-        <translation type="unfinished"></translation>
+        <translation>Минимално</translation>
     </message>
     <message>
         <source>More</source>
-        <translation type="unfinished"></translation>
+        <translation>Още</translation>
     </message>
     <message>
         <source>Need to specify a port with -whitebind: &apos;%s&apos;</source>
-        <translation type="unfinished"></translation>
+        <translation>Необходимо е да се посочи порт с -whitebind: &apos;%s&apos;</translation>
     </message>
     <message>
         <source>Node relay options:</source>
-        <translation type="unfinished"></translation>
+        <translation>Настройки пре-предаване на възела:</translation>
     </message>
     <message>
         <source>Not enough file descriptors available.</source>
-        <translation type="unfinished"></translation>
+        <translation>Не са налични достатъчни описатели на файлове.</translation>
     </message>
     <message>
         <source>Only connect to nodes in network &lt;net&gt; (ipv4, ipv6 or onion)</source>
-        <translation type="unfinished"></translation>
+        <translation>Свързване само към възли в мрежата &lt;net&gt; (ipv4, ipv6 или onion)</translation>
     </message>
     <message>
         <source>Prepend debug output with timestamp (default: %u)</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавяне на времева марка към диагностичната информация (по подразбиране: %u)</translation>
     </message>
     <message>
         <source>Print this help message and exit</source>
-        <translation type="unfinished"></translation>
+        <translation>Печатане на това помощно послание и изход</translation>
     </message>
     <message>
         <source>Print version and exit</source>
-        <translation type="unfinished"></translation>
+        <translation>Печатане на версията и изход</translation>
     </message>
     <message>
         <source>Prune cannot be configured with a negative value.</source>
-        <translation type="unfinished"></translation>
+        <translation>Окастрянето не може да бъде конфигурирано с отрицателни стойности.</translation>
     </message>
     <message>
         <source>Prune mode is incompatible with -txindex.</source>
-        <translation type="unfinished"></translation>
+        <translation>Режимът окастряне не е въвместим с -txindex.</translation>
     </message>
     <message>
         <source>Pruning blockstore...</source>
-        <translation type="unfinished"></translation>
+        <translation>Окастряне на блоковото хранилище...</translation>
     </message>
     <message>
         <source>RPC server options:</source>
-        <translation type="unfinished"></translation>
+        <translation>Настройки на RPC сървъра:</translation>
     </message>
     <message>
         <source>Rebuild chain state and block index from the blk*.dat files on disk</source>
-        <translation type="unfinished"></translation>
+        <translation>Възстановяване състоянието на блоковия индекс от blk*.dat файловете в диска</translation>
     </message>
     <message>
         <source>Rebuild chain state from the currently indexed blocks</source>
-        <translation type="unfinished"></translation>
+        <translation>Възстановяване състоянието на блоковия индекс от вече индексирани блокове</translation>
     </message>
     <message>
         <source>Receive and display P2P network alerts (default: %u)</source>
-        <translation type="unfinished"></translation>
+        <translation>Получаване и показване на сигнали на P2P мрежата (по подразбиране: %u)</translation>
     </message>
     <message>
         <source>Reducing -maxconnections from %d to %d, because of system limitations.</source>
-        <translation type="unfinished"></translation>
+        <translation>Намаляне на -maxconnections от %d на %d, поради ограничения на системата.</translation>
     </message>
     <message>
         <source>Relay and mine data carrier transactions (default: %u)</source>
-        <translation type="unfinished"></translation>
+        <translation>Пре-предаване и обработване от миньори на транзакции от носителя (оператора) на данни (по подразбиране: %u)</translation>
     </message>
     <message>
         <source>Relay non-P2SH multisig (default: %u)</source>
-        <translation type="unfinished"></translation>
+        <translation>Пре-предаване на не-P2SH мултиподписи (по подразбиране: %u)</translation>
     </message>
     <message>
         <source>Rescan the block chain for missing wallet transactions on startup</source>
-        <translation type="unfinished"></translation>
+        <translation>Повторно сканиране на блок-веригата за липсващи транзакции на портфейла при стартиране</translation>
     </message>
     <message>
         <source>Rewinding blocks...</source>
-        <translation type="unfinished"></translation>
+        <translation>Пренавиване на блокове...</translation>
     </message>
     <message>
         <source>Run in the background as a daemon and accept commands</source>
-        <translation type="unfinished"></translation>
+        <translation>Работенене във фонов режим като дямон и приемане на команди</translation>
     </message>
     <message>
         <source>Send transactions as zero-fee transactions if possible (default: %u)</source>
-        <translation type="unfinished"></translation>
+        <translation>Изпращане на транзакции като транзакции с нулева такса когато е възможно (по подразбиране: %u)</translation>
     </message>
     <message>
         <source>Send transactions with full-RBF opt-in enabled (default: %u)</source>
-        <translation type="unfinished"></translation>
+        <translation>Изпращане на транзакции с включен цялостен RBF (по подразбиране %u)</translation>
     </message>
     <message>
         <source>Set database cache size in megabytes (%d to %d, default: %d)</source>
-        <translation type="unfinished"></translation>
+        <translation>Настройване кеш размера на базата данни в мегабайта (%d до %d, по подразбиране: %d)</translation>
     </message>
     <message>
         <source>Set key pool size to &lt;n&gt; (default: %u)</source>
-        <translation type="unfinished"></translation>
+        <translation>Настройване размера на ключовото хранилище на &lt;n&gt; (по подразбиране: %u)</translation>
     </message>
     <message>
         <source>Set maximum BIP141 block weight (default: %d)</source>
-        <translation type="unfinished"></translation>
+        <translation>Настройка на максималната BIP141 блок тежест (по подразбиране: %d)</translation>
     </message>
     <message>
         <source>Set maximum block size in bytes (default: %d)</source>
-        <translation type="unfinished"></translation>
+        <translation>Настройване на максималия размер на блоковете в байта (по подразбиране: %d)</translation>
     </message>
     <message>
         <source>Set the number of threads to service RPC calls (default: %d)</source>
