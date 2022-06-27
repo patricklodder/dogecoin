@@ -2512,14 +2512,6 @@ p, li { white-space: pre-wrap; }
         <translation>По избор:</translation>
     </message>
     <message>
-        <source>normal</source>
-        <translation type="vanished">нормален</translation>
-    </message>
-    <message>
-        <source>fast</source>
-        <translation type="vanished">бърз</translation>
-    </message>
-    <message>
         <source>Send to multiple recipients at once</source>
         <translation>Изпращане към повече от един получател</translation>
     </message>
@@ -3008,10 +3000,6 @@ p, li { white-space: pre-wrap; }
         <translation>Отворено за промени до %1</translation>
     </message>
     <message>
-        <source>%1/offline</source>
-        <translation type="vanished">%1/офлайн</translation>
-    </message>
-    <message>
         <source>%1/unconfirmed</source>
         <translation>%1/непотвърдени</translation>
     </message>
@@ -3022,10 +3010,6 @@ p, li { white-space: pre-wrap; }
     <message>
         <source>Status</source>
         <translation>Статус</translation>
-    </message>
-    <message>
-        <source>, has not been successfully broadcast yet</source>
-        <translation type="vanished">, все още не е изпратено</translation>
     </message>
     <message>
         <source>Date</source>
@@ -3208,10 +3192,6 @@ p, li { white-space: pre-wrap; }
         <translation>Отворено за промяна до %1</translation>
     </message>
     <message>
-        <source>Offline</source>
-        <translation type="vanished">Извън линия</translation>
-    </message>
-    <message>
         <source>Unconfirmed</source>
         <translation>Непотвърдено(и)</translation>
     </message>
@@ -3230,10 +3210,6 @@ p, li { white-space: pre-wrap; }
     <message>
         <source>Immature (%1 confirmations, will be available after %2)</source>
         <translation>Неотлежали (%1 потвърждения, ще бъде налично след %2)</translation>
-    </message>
-    <message>
-        <source>This block was not received by any other nodes and will probably not be accepted!</source>
-        <translation type="vanished">Блокът не е получен от останалите участници и най-вероятно няма да бъде одобрен.</translation>
     </message>
     <message>
         <source>Generated but not accepted</source>
