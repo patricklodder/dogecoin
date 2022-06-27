@@ -563,12 +563,9 @@
         <source>Import a Dogecoin private key</source>
         <translation>Добави Доджкоин секретен ключ</translation>
     </message>
-    <message numerus="yes">
+    <message>
         <source>%n active connection(s) to Dogecoin network</source>
         <translation>%n активна/и връзка/и към Доджкоин мрежата</translation>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-        </translation>
     </message>
     <message>
         <source>Click to disable network activity.</source>
@@ -590,12 +587,9 @@
         <source>Connecting to peers...</source>
         <translation>Свързване към връсници</translation>
     </message>
-    <message numerus="yes">
+    <message=>
         <source>Processed %n block(s) of transaction history.</source>
         <translation>Обработени %n блок(ове) с транзакции.</translation>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-        </translation>
     </message>
     <message>
         <source>HD key generation is &lt;b&gt;enabled&lt;/b&gt;</source>
@@ -995,19 +989,13 @@
         <source>Error: Specified data directory &quot;%1&quot; cannot be created.</source>
         <translation>Грешка: Посочената директория &quot;%1&quot; не може да бъде създадена.</translation>
     </message>
-    <message numerus="yes">
+    <message>
         <source>%n GB of free space available</source>
         <translation>%n GB налично свободно място</translation>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-        </translation>
     </message>
-    <message numerus="yes">
+    <message>
         <source>(of %n GB needed)</source>
         <translation>(от %n GB необходими)</translation>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-        </translation>
     </message>
     <message>
         <source>Choose data directory</source>
@@ -1848,47 +1836,29 @@ p, li { white-space: pre-wrap; }
         <source>%1 MB</source>
         <translation>%1 Мегабайт</translation>
     </message>
-    <message numerus="yes">
+    <message>
         <source>%n second(s)</source>
         <translation>%n секунда/и</translation>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-        </translation>
     </message>
-    <message numerus="yes">
+    <message>
         <source>%n minute(s)</source>
-        <translation>%n минута/и</translation>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-        </translation>
+        <translation>%n минута/</translation>
     </message>
-    <message numerus="yes">
+    <message>
         <source>%n hour(s)</source>
         <translation>%n час(а)</translation>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-        </translation>
     </message>
-    <message numerus="yes">
+    <message>
         <source>%n day(s)</source>
         <translation>%n ден(дни)</translation>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-        </translation>
     </message>
-    <message numerus="yes">
+    <message>
         <source>%n week(s)</source>
         <translation>%n седмица/и</translation>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-        </translation>
     </message>
-    <message numerus="yes">
+    <message>
         <source>%n year(s)</source>
         <translation>%n година/и</translation>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-        </translation>
     </message>
     <message>
         <source>%1 didn&apos;t yet exit safely...</source>
@@ -3115,12 +3085,9 @@ p, li { white-space: pre-wrap; }
         <source>false</source>
         <translation>невярно</translation>
     </message>
-    <message numerus="yes">
+    <message>
         <source>Open for %n more block(s)</source>
         <translation>Отворете за още %n блок(а)</translation>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-        </translation>
     </message>
     <message>
         <source>conflicted with a transaction with %1 confirmations</source>
@@ -3142,12 +3109,9 @@ p, li { white-space: pre-wrap; }
         <source>abandoned</source>
         <translation>изоставен(и)</translation>
     </message>
-    <message numerus="yes">
+    <message>
         <source>matures in %n more block(s)</source>
         <translation type="unfinished">отлежава в още %n блок(ове)</translation>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-        </translation>
     </message>
     <message>
         <source>Transaction total size</source>
@@ -3263,12 +3227,9 @@ p, li { white-space: pre-wrap; }
         <source>Amount removed from or added to balance.</source>
         <translation>Сума извадена или добавена към баланса.</translation>
     </message>
-    <message numerus="yes">
+    <message>
         <source>Open for %n more block(s)</source>
         <translation>Отворете за още %n блок(а)</translation>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-        </translation>
     </message>
     <message>
         <source>Abandoned</source>
