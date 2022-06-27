@@ -4346,23 +4346,23 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Set the number of threads to service RPC calls (default: %d)</source>
-        <translation type="unfinished"></translation>
+        <translation>Настройване на броя нижки, които да обслужват RPC повиквания (по подразбиране: %d)</translation>
     </message>
     <message>
         <source>Show all debugging options (usage: --help -help-debug)</source>
-        <translation type="unfinished"></translation>
+        <translation>Показване на всички диагностични опции (употреба: --help -help-debug)</translation>
     </message>
     <message>
         <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
-        <translation type="unfinished"></translation>
+        <translation>Свиване на debug.log файла при стартиране (по подразбиране: 1 когато -debug не е в употреба)</translation>
     </message>
     <message>
         <source>Signing transaction failed</source>
-        <translation type="unfinished"></translation>
+        <translation>Подписването на транзакцията пропадна</translation>
     </message>
     <message>
         <source>Specify wallet file (within data directory)</source>
-        <translation type="unfinished"></translation>
+        <translation>Посочете портфейлен файл (в рамките на директорията данни)</translation>
     </message>
     <message>
         <source>Spend unconfirmed change when sending transactions (default: %u)</source>
