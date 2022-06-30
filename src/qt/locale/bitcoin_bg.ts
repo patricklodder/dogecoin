@@ -437,7 +437,7 @@
     </message>
     <message>
         <source>Request payments (generates QR codes and dogecoin: URIs)</source>
-        <translation>Изискване на плащания(генерира QR кодове и доджкоин: URIs)</translation>
+        <translation>Изискване на плащания(генериране на QR кодове и Доджкоин: URIs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -445,11 +445,11 @@
     </message>
     <message>
         <source>Show the list of used receiving addresses and labels</source>
-        <translation>Покаване на списъка с използваните адреси за получаване и имена.</translation>
+        <translation>Показване на списъка с използваните адреси за получаване и имена.</translation>
     </message>
     <message>
         <source>Open a dogecoin: URI or payment request</source>
-        <translation>Отворете доджкоин: URI  или заявка за плащане</translation>
+        <translation>Отворете Доджкоин: URI или заявка за плащане</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -457,11 +457,11 @@
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
-        <translation>Индексиране на блокове в диска...</translation>
+        <translation>Индексиране на блоковете в диска...</translation>
     </message>
     <message>
         <source>Processing blocks on disk...</source>
-        <translation>Обработване на блокове в диска...</translation>
+        <translation>Обработване на блоковете в диска...</translation>
     </message>
     <message>
         <source>%1 behind</source>
@@ -469,11 +469,11 @@
     </message>
     <message>
         <source>Last received block was generated %1 ago.</source>
-        <translation>Последния получен блок бе генериран преди %1.</translation>
+        <translation>Последният получен блок бе генериран преди %1.</translation>
     </message>
     <message>
         <source>Transactions after this will not yet be visible.</source>
-        <translation>Транзакции след това няма да бъдат видими все още.</translation>
+        <translation>Транзакции след това няма да бъдат все още видими.</translation>
     </message>
     <message>
         <source>Error</source>
@@ -493,7 +493,7 @@
     </message>
     <message>
         <source>Show the %1 help message to get a list with possible Dogecoin command-line options</source>
-        <translation>Покажи %1 помощно съобщение за лист с възможни Доджкоин команди</translation>
+        <translation>Показване на %1 помощно съобщение за лист с възможни Доджкоин команди</translation>
     </message>
     <message>
         <source>%1 client</source>
@@ -501,7 +501,7 @@
     </message>
     <message>
         <source>Catching up...</source>
-        <translation>Зарежда блокове...</translation>
+        <translation>Наваксване...</translation>
     </message>
     <message>
         <source>Date: %1</source>
@@ -545,7 +545,7 @@
     </message>
     <message>
         <source>Print paper wallets</source>
-        <translation>Печатане на хартиен портфейл</translation>
+        <translation>Печатане на хартиени портфейли</translation>
     </message>
     <message>
         <source>&amp;Such sending addresses...</source>
@@ -557,11 +557,11 @@
     </message>
     <message>
         <source>&amp;Import Private Key...</source>
-        <translation>Добави Секретен Ключ...</translation>
+        <translation>Добавяне на Секретен Ключ...</translation>
     </message>
     <message>
         <source>Import a Dogecoin private key</source>
-        <translation>Добави Доджкоин секретен ключ</translation>
+        <translation>Добавяне на Доджкоин секретен ключ</translation>
     </message>
     <message>
         <source>%n active connection(s) to Dogecoin network</source>
@@ -569,35 +569,35 @@
     </message>
     <message>
         <source>Click to disable network activity.</source>
-        <translation>Деактивиране на мрежовата дейност</translation>
+        <translation>Кликнете за да деактивирате мрежовата дейност</translation>
     </message>
     <message>
         <source>Network activity disabled.</source>
-        <translation>Мрежовата дейност деактивирана.</translation>
+        <translation>Мрежовата дейност е деактивирана.</translation>
     </message>
     <message>
         <source>Click to enable network activity again.</source>
-        <translation>Активиране отново на мрежовата дейност.</translation>
+        <translation>Кликнете за да активирате мрежовата дейност наново.</translation>
     </message>
     <message>
         <source>Syncing Headers (%1%)...</source>
-        <translation>Синхронизиране на заглавки</translation>
+        <translation>Синхронизиране на Заглавките</translation>
     </message>
     <message>
         <source>Connecting to peers...</source>
-        <translation>Свързване към връсници</translation>
+        <translation>Свързване към връстници</translation>
     </message>
     <message>
         <source>Processed %n block(s) of transaction history.</source>
-        <translation>Обработени %n блок(ове) с транзакции.</translation>
+        <translation>Обработен(и) %n блок(ове) с транзакции.</translation>
     </message>
     <message>
         <source>HD key generation is &lt;b&gt;enabled&lt;/b&gt;</source>
-        <translation>Съдаването на ЙД ключ е &lt;b&gt;активирано&lt;/b&gt;</translation>
+        <translation>Съдаването на HD ключ е &lt;b&gt;активирано&lt;/b&gt;</translation>
     </message>
     <message>
         <source>HD key generation is &lt;b&gt;disabled&lt;/b&gt;</source>
-        <translation>Съдаването на ЙД ключ е &lt;b&gt;деактивирано&lt;/b&gt;</translation>
+        <translation>Съдаването на HD ключ е &lt;b&gt;деактивирано&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Runaway exception</source>
@@ -612,7 +612,7 @@
     <name>CoinControlDialog</name>
     <message>
         <source>Coin Selection</source>
-        <translation>Избор на монета</translation>
+        <translation>Избор на монета/и</translation>
     </message>
     <message>
         <source>Quantity:</source>
@@ -636,15 +636,15 @@
     </message>
     <message>
         <source>After Fee:</source>
-        <translation>След прилагане на таксата</translation>
+        <translation>След прилагане на Такса</translation>
     </message>
     <message>
         <source>Change:</source>
-        <translation>Ресто</translation>
+        <translation>Ресто:</translation>
     </message>
     <message>
         <source>(un)select all</source>
-        <translation>(Пре)махни избора на всички</translation>
+        <translation>(отмяна) избор на всички</translation>
     </message>
     <message>
         <source>Tree mode</source>
@@ -680,27 +680,27 @@
     </message>
     <message>
         <source>Copy address</source>
-        <translation>Копирай адрес</translation>
+        <translation>Копиране на адрес</translation>
     </message>
     <message>
         <source>Copy label</source>
-        <translation>Копирай име</translation>
+        <translation>Копиране на име</translation>
     </message>
     <message>
         <source>Copy amount</source>
-        <translation>Копирай сума</translation>
+        <translation>Копиране на сума</translation>
     </message>
     <message>
         <source>Copy transaction ID</source>
-        <translation>Копирай ID на транзакцията</translation>
+        <translation>Копиране на ID на транзакцията</translation>
     </message>
     <message>
         <source>Lock unspent</source>
-        <translation>Заключване на неизхарченото</translation>
+        <translation>Заключване на неизхарчените стредства</translation>
     </message>
     <message>
         <source>Unlock unspent</source>
-        <translation>Отключване на неизхарченото</translation>
+        <translation>Отключване на неизхарчените средства</translation>
     </message>
     <message>
         <source>Copy quantity</source>
@@ -720,15 +720,15 @@
     </message>
     <message>
         <source>Copy dust</source>
-        <translation>Копирай прахта:</translation>
+        <translation>Копиране на прахта:</translation>
     </message>
     <message>
         <source>Copy change</source>
-        <translation>Копирай рестото</translation>
+        <translation>Копиране на рестото</translation>
     </message>
     <message>
         <source>(%1 locked)</source>
-        <translation>(%1 заключен)</translation>
+        <translation>(%1 заключен/а/и)</translation>
     </message>
     <message>
         <source>yes</source>
@@ -748,11 +748,11 @@
     </message>
     <message>
         <source>(change)</source>
-        <translation>(промени)</translation>
+        <translation>(ресто/промяна)</translation>
     </message>
     <message>
         <source>This label turns red if any recipient receives an amount smaller than the current dust threshold.</source>
-        <translation>Този етикет се превръща червен ако някой от получателите получи сума в размер по малкък от сегашния праг на праха.</translation>
+        <translation>Този етикет се става червен ако някой от получателите получи сума в размер по малкък от сегашния праг на праха.</translation>
     </message>
     <message>
         <source>Can vary +/- %1 koinu per input.</source>
@@ -799,26 +799,26 @@
     </message>
     <message>
         <source>The entered address &quot;%1&quot; is not a valid Dogecoin address.</source>
-        <translation>Въведения адрес &quot;%1&quot; не е валиден Доджкоин адрес.</translation>
+        <translation>Въведеният адрес &quot;%1&quot; не е валиден Доджкоин адрес.</translation>
     </message>
     <message>
         <source>The entered address &quot;%1&quot; is already in the address book.</source>
-        <translation>Въведения адрес &quot;%1&quot; вече е наличен в списъка с адреси.</translation>
+        <translation>Въведеният адрес &quot;%1&quot; вече е наличен в списъка с адреси.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
-        <translation>Отключването на портфейла беше неуспешно.</translation>
+        <translation>Отключването на портфейла бе неуспешно.</translation>
     </message>
     <message>
         <source>New key generation failed.</source>
-        <translation>Създаването на нов ключ беше неуспешно.</translation>
+        <translation>Създаването на нов ключ бе неуспешно.</translation>
     </message>
 </context>
 <context>
     <name>FreespaceChecker</name>
     <message>
         <source>A new data directory will be created.</source>
-        <translation>Ще се създаде нова директория за данни.</translation>
+        <translation>Ще бъде създадена нова директория за данни.</translation>
     </message>
     <message>
         <source>name</source>
@@ -826,11 +826,11 @@
     </message>
     <message>
         <source>Directory already exists. Add %1 if you intend to create a new directory here.</source>
-        <translation>Директорията вече съществува. Добавете %1 ако желаете да създадете нова директория тук.</translation>
+        <translation>Директорията вече съществува. Добавете %1 ако смятате да създадете нова директория тук.</translation>
     </message>
     <message>
         <source>Path already exists, and is not a directory.</source>
-        <translation>Пътят вече съществува, и не е директория.</translation>
+        <translation>Пътят вече съществува, и също така не е директория.</translation>
     </message>
     <message>
         <source>Cannot create data directory here.</source>
@@ -845,7 +845,7 @@
     </message>
     <message>
         <source>(%1-bit)</source>
-        <translation>(%1-битов)</translation>
+        <translation>(%1-бита)</translation>
     </message>
     <message>
         <source>About %1</source>
@@ -857,7 +857,7 @@
     </message>
     <message>
         <source>Usage:</source>
-        <translation>Използване:</translation>
+        <translation>Употреба:</translation>
     </message>
     <message>
         <source>command-line options</source>
@@ -865,7 +865,7 @@
     </message>
     <message>
         <source>UI Options:</source>
-        <translation>Опции на интерфейса:</translation>
+        <translation>Настройки на интерфейса:</translation>
     </message>
     <message>
         <source>Choose data directory on startup (default: %u)</source>
@@ -873,19 +873,19 @@
     </message>
     <message>
         <source>Set language, for example &quot;de_DE&quot; (default: system locale)</source>
-        <translation>Избор на език, примерно &quot;de_DE&quot; (по подразбиране: локал на системата)</translation>
+        <translation>Избор на език, примерно &quot;de_DE&quot; (по подразбиране: system locale)</translation>
     </message>
     <message>
         <source>Start minimized</source>
-        <translation>Стартирай минимизиран</translation>
+        <translation>Минимизиране при старт</translation>
     </message>
     <message>
         <source>Set SSL root certificates for payment request (default: -system-)</source>
-        <translation>Задай SSL root сертификати за молби за изплащане (по подразбиране: -система-)</translation>
+        <translation>Задаване на SSL root сертификати за молби за изплащане (по подразбиране: -system-)</translation>
     </message>
     <message>
         <source>Show splash screen on startup (default: %u)</source>
-        <translation>Покажи начален екран при стартиране (по подразбиране %u)</translation>
+        <translation>Показване на начален екран при стартиране (по подразбиране %u)</translation>
     </message>
     <message>
         <source>Reset all settings changed in the GUI</source>
@@ -924,7 +924,7 @@
     </message>
     <message>
         <source>Reset this form.</source>
-        <translation type="unfinished"></translation>
+        <translation>Нулиране на този формуляр.</translation>
     </message>
     <message>
         <source>&amp;Reset</source>
@@ -1411,11 +1411,11 @@
     </message>
     <message>
         <source>Never share your wallet.dat file with anyone</source>
-        <translation type="unfinished">Никога не споделяйте Вашия wallet.dat файл и/или Ващият секретен ключ с никого</translation>
+        <translation>Никога не споделяйте Вашия wallet.dat файл с някой</translation>
     </message>
     <message>
         <source>For advanced operations, use the console in &apos;Help&apos; -&gt; &apos;Debug Window&apos;</source>
-        <translation type="unfinished">За достъп до опции за напреднали използвайте конзолата в &apos;Помощ&apos; -&gt; &apos;Прозорец за диагностика&apos;</translation>
+        <translation>За достъп до операции за напреднали използвайте конзолата в &apos;Помощ&apos; -&gt; &apos;Прозорец диагностика&apos;</translation>
     </message>
     <message>
         <source>Encrypt your wallet with a strong passphrase for maximum security</source>
@@ -1423,7 +1423,7 @@
     </message>
     <message>
         <source>Make sure to keep your wallet software updated</source>
-        <translation type="unfinished">Бъдете сигурни да поддържате Вашия портфейл актуализиран</translation>
+        <translation>Бъдете сигурни актуализирате софтуера на Вашия портфейл редовно</translation>
     </message>
     <message>
         <source>Backup your private key to recover your coins, using &apos;File&apos; &gt; &apos;Backup Wallet&apos;</source>
@@ -1435,26 +1435,26 @@
     </message>
     <message>
         <source>Never share your private key with anyone</source>
-        <translation type="unfinished">Никога не споделяйте Вашия секретен ключ със някой на когото не можете да се доверите</translation>
+        <translation>Никога не споделяйте Вашия секретен ключ с някого</translation>
     </message>
     <message>
         <source>Who owns the private keys, owns the coins</source>
-        <translation type="unfinished">Този който притежава секретните ключове притежава монетите</translation>
+        <translation>Този който притежава секретните ключове притежава монетите</translation>
     </message>
     <message>
         <source>To see ongoing development and contribute, check out the Dogecoin Core repository on GitHub</source>
-        <translation type="unfinished">За да видите как върви развитието и да допринесете, посетете Доджкоин хранилището в GitHub!</translation>
+        <translation>За да видите как върви развитието, и за да допринесете, моля посетете Доджкоин хранилището в GitHub</translation>
     </message>
     <message>
         <source>Services that claim to double your dogecoins are always ponzi schemes</source>
-        <translation>Услуги които обещават да удвоят вашите доджкоини винаги са пирамиди.</translation>
+        <translation>Услуги които обещават да удвоят вашите Доджкоини винаги се оказват пирамиди.</translation>
     </message>
 </context>
 <context>
     <name>PaperWalletDialog</name>
     <message>
         <source>Print Your Paper Wallets</source>
-        <translation>Изпечатайте Вашите Хартиени Портфейли</translation>
+        <translation>Изпечатване на Вашите Хартиени Портфейли</translation>
     </message>
     <message>
         <source>Very New Address</source>
@@ -1546,19 +1546,19 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Error encoding Address into QR Code.</source>
-        <translation type="unfinished"></translation>
+        <translation>Грешка при кодирането на Адреса в QR Кода.</translation>
     </message>
     <message>
         <source>Error encoding private key into QR Code.</source>
-        <translation>Възникна грешка в превръщането на секретния ключ в QR Код.</translation>
+        <translation>Възникна грешка при кодирането на секретния ключ в QR Код.</translation>
     </message>
     <message>
         <source>Printing Error</source>
-        <translation>Грешка при принтирането</translation>
+        <translation>Грешка при Принтирането</translation>
     </message>
     <message>
         <source>failed to open file, is it writable?</source>
-        <translation>не успя да отвори файл, дали може да се пише на него?</translation>
+        <translation>файла не се отвори, дали може да се пише върху него?</translation>
     </message>
     <message>
         <source>Load Paper Wallets</source>
@@ -1755,7 +1755,7 @@ p, li { white-space: pre-wrap; }
     <name>PeerTools</name>
     <message>
         <source>Error: Node address is invalid</source>
-        <translation type="unfinished"></translation>
+        <translation>Грешка: Адресът на възела е невалиден</translation>
     </message>
     <message>
         <source>Error: Peer-to-peer functionality missing or disabled</source>
@@ -1767,7 +1767,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Error: Unable to add node</source>
-        <translation type="unfinished"></translation>
+        <translation>Грешка: Добавянето на възела бе неуспешно</translation>
     </message>
     <message>
         <source>Node not found in connected nodes</source>
@@ -2215,7 +2215,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Error</source>
-        <translation type="unfinished">Грешка</translation>
+        <translation>Грешка</translation>
     </message>
     <message>
         <source>Remove Peer</source>
@@ -2369,7 +2369,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>URI</source>
-        <translation type="unfinished"></translation>
+        <translation URI (Единен Идентификатор на Ресурси)></translation>
     </message>
     <message>
         <source>Resulting URI too long, try to reduce the text for label / message.</source>
@@ -3111,7 +3111,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>matures in %n more block(s)</source>
-        <translation type="unfinished">отлежава в още %n блок(ове)</translation>
+        <translation>отлежава в още %n блок(ове)</translation>
     </message>
     <message>
         <source>Transaction total size</source>
@@ -3651,7 +3651,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Bind to given address to listen for JSON-RPC connections. Use [host]:port notation for IPv6. This option can be specified multiple times (default: bind to all interfaces)</source>
-        <translation type="unfinished">Привързване към даден адрес и слушане за JSON-RPC връзки. Използвайте [host]:port нотация за IPv6. Тази настройка може да бъде задавана многократно (по подразбиране: привързване към всички интерфейси)</translation>
+        <translation>Привързване към посочен адрес и слушане за JSON-RPC връзки. Използвайте [host]:port нотация за IPv6. Тази настройка може да бъде задавана многократно (по подразбиране: bind to all interfaces)</translation>
     </message>
     <message>
         <source>Cannot obtain a lock on data directory %s. %s is probably already running.</source>
@@ -3687,7 +3687,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Error loading %s: You can&apos;t enable HD on a already existing non-HD wallet</source>
-        <translation type="unfinished"></translation>
+        <translation>Грешка при зареждането на %s: Не може да включите HD на вече същестуващ портфейл без HD</translation>
     </message>
     <message>
         <source>Error reading %s! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
@@ -3707,7 +3707,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Execute command when we see a really long fork (%s in cmd is replaced by message)</source>
-        <translation type="unfinished">Изпълване на команда когато съотвестваща тревога е получена, или ако отчетем много дълга вилица (%s в cmd е заменена от съобщение)</translation>
+        <translation>Изпълняване на командата, когато е отчетена много дълга вилица (%s в cmd е заменено от съобщение)</translation>
     </message>
     <message>
         <source>Extra transactions to keep in memory for compact block reconstructions (default: %u)</source>
@@ -3823,7 +3823,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Specify directory where to write backups and data dumps (default datadir/backups)</source>
-        <translation type="unfinished"></translation>
+        <translation>Посочете директория където да се записват резервни копия и разтоварвания на данни (по подразбиране: datadir/backups)</translation>
     </message>
     <message>
         <source>Support filtering of blocks and transaction with bloom filters (default: %u)</source>
