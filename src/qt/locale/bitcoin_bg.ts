@@ -3563,11 +3563,11 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Specify configuration file (default: %s)</source>
-        <translation>Задайте конфигурационен файл(по подразбиране %s)</translation>
+        <translation>Задайте конфигурационен файл(по подразбиране: %s)</translation>
     </message>
     <message>
         <source>Specify connection timeout in milliseconds (minimum: 1, default: %d)</source>
-        <translation>Задайте време на откачане при проблеми със свързването в милисекунди(минимум:1, по подразбиране %d)</translation>
+        <translation>Задайте време на откачане при проблеми със свързването в милисекунди(минимум:1, по подразбиране: %d)</translation>
     </message>
     <message>
         <source>Specify pid file (default: %s)</source>
@@ -3783,7 +3783,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Prune configured below the minimum of %d MiB.  Please use a higher number.</source>
-        <translation>Подстригването е настроено под минималия размер от %d ??. Моля изполвайте по висока настройка (по- голямо число).</translation>
+        <translation>Подстригването е настроено под минималия размер от %d МебиБайта. Моля изполвайте по висока настройка (по- голямо число).</translation>
     </message>
     <message>
         <source>Prune: last wallet synchronisation goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of pruned node)</source>
@@ -3859,7 +3859,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Tries to keep outbound traffic under the given target (in MiB per 24h), 0 = no limit (default: %d)</source>
-        <translation>Опитва се да поддържа изходящия трафик под зададеното ниво (в МиБ за 24ч), 0 = без ограничение (по подразбиране: %%d)</translation>
+        <translation>Опитва се да поддържа изходящия трафик под зададеното ниво (в МебиБайта за 24ч), 0 = без ограничение (по подразбиране: %%d)</translation>
     </message>
     <message>
         <source>Unable to rewind the database to a pre-fork state. You will need to redownload the blockchain</source>
@@ -4339,7 +4339,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Tor control port password (default: empty)</source>
-        <translation>Парола за Тор контролен порт (по подразбиране: празно)</translation>
+        <translation>Парола за Тор контролен порт (по подразбиране: empty)</translation>
     </message>
     <message>
         <source>Tor control port to use if onion listening enabled (default: %s)</source>
