@@ -581,7 +581,7 @@
     </message>
     <message>
         <source>Syncing Headers (%1%)...</source>
-        <translation>Синхронизиране на Заглавките</translation>
+        <translation>Синхронизиране на Заглавките (%1%)...</translation>
     </message>
     <message>
         <source>Connecting to peers...</source>
@@ -1697,7 +1697,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
-        <translation>Линка за извличане на заявката за изплащане е невалиден.</translation>
+        <translation>Линка за извличане на заявката за изплащане е невалиден: %1</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid Dogecoin address or malformed URI parameters.</source>
@@ -2369,7 +2369,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>URI</source>
-        <translation URI (Единен Идентификатор на Ресурси)></translation>
+        <translation> URI (Единен Идентификатор на Ресурси)></translation>
     </message>
     <message>
         <source>Resulting URI too long, try to reduce the text for label / message.</source>
@@ -2639,7 +2639,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Total Amount %1</source>
-        <translation>Обща Сума</translation>
+        <translation>Обща Сума %1</translation>
     </message>
     <message>
         <source>The recipient address is not valid. Please recheck.</source>
@@ -3719,7 +3719,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Fees (in %s/kB) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Такси (в %s/кБ) по- малки от това се считат нулева такса за създаване на транзакция</translation>
+        <translation>Такси (в %s/кБ) по- малки от това се считат нулева такса за създаване на транзакция (по подразбиране: %s)</translation>
     </message>
     <message>
         <source>Force relay of transactions from whitelisted peers even if they violate local relay policy (default: %d)</source>
@@ -3859,7 +3859,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Tries to keep outbound traffic under the given target (in MiB per 24h), 0 = no limit (default: %d)</source>
-        <translation>Опитва се да поддържа изходящия трафик под зададеното ниво (в МебиБайта за 24ч), 0 = без ограничение (по подразбиране: %%d)</translation>
+        <translation>Опитва се да поддържа изходящия трафик под зададеното ниво (в МебиБайта за 24ч), 0 = без ограничение (по подразбиране: %d)</translation>
     </message>
     <message>
         <source>Unable to rewind the database to a pre-fork state. You will need to redownload the blockchain</source>
