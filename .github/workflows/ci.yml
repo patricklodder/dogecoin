@@ -46,7 +46,10 @@ jobs:
             os: ubuntu-18.04
             packages: g++-multilib bc python3-zmq
             run-bench: true
-            run-tests: true
+            test-script: |
+              make check $MAKEJOBS VERBOSE=1
+              qa/pull-tester/install-deps.sh
+              qa/pull-tester/rpc-tests.py --coverage
             check-security: true
             check-symbols: true
             dep-opts: "NO_QT=1"
@@ -57,7 +60,8 @@ jobs:
             os: ubuntu-18.04
             packages: g++-arm-linux-gnueabihf qemu-user-static qemu-user
             run-bench: false
-            run-tests: true
+            test-script: |
+              qemu-arm -E LD_LIBRARY_PATH=/usr/arm-linux-gnueabihf/lib/ /usr/arm-linux-gnueabihf/lib/ld-linux-armhf.so.3 src/test/test_dogecoin
             check-security: true
             check-symbols: false
             dep-opts: "NO_QT=1"
@@ -68,7 +72,8 @@ jobs:
             os: ubuntu-18.04
             packages: g++-aarch64-linux-gnu qemu-user-static qemu-user
             run-bench: false
-            run-tests: true
+            test-script: |
+              qemu-aarch64 -E LD_LIBRARY_PATH=/usr/aarch64-linux-gnu/lib/ /usr/aarch64-linux-gnu/lib/ld-linux-aarch64.so.1 src/test/test_dogecoin
             check-security: true
             check-symbols: false
             dep-opts: "NO_QT=1"
@@ -79,7 +84,8 @@ jobs:
             os: ubuntu-20.04
             packages: g++-aarch64-linux-gnu qemu-user-static qemu-user
             run-bench: false
-            run-tests: true
+            test-script: |
+              qemu-aarch64 -E LD_LIBRARY_PATH=/usr/aarch64-linux-gnu/lib/ /usr/aarch64-linux-gnu/lib/ld-linux-aarch64.so.1 src/test/test_dogecoin
             check-security: true
             check-symbols: false
             dep-opts: "NO_QT=1"
@@ -90,7 +96,8 @@ jobs:
             os: ubuntu-18.04
             packages: g++-aarch64-linux-gnu qemu-user-static qemu-user
             run-bench: false
-            run-tests: true
+            test-script: |
+              qemu-aarch64 -E LD_LIBRARY_PATH=/usr/aarch64-linux-gnu/lib/ /usr/aarch64-linux-gnu/lib/ld-linux-aarch64.so.1 src/test/test_dogecoin
             check-security: true
             check-symbols: false
             dep-opts: "NO_QT=1"
@@ -101,7 +108,8 @@ jobs:
             os: ubuntu-18.04
             packages: python3
             run-bench: true
-            run-tests: true
+            test-script: |
+              make check $MAKEJOBS VERBOSE=1
             check-security: true
             check-symbols: true
             dep-opts: "NO_WALLET=1"
@@ -112,7 +120,10 @@ jobs:
             os: ubuntu-18.04
             packages: bc python3-zmq
             run-bench: true
-            run-tests: true
+            test-script: |
+              make check $MAKEJOBS VERBOSE=1
+              qa/pull-tester/install-deps.sh
+              qa/pull-tester/rpc-tests.py --coverage
             check-security: true
             check-symbols: false
             dep-opts: "DEBUG=1"
@@ -129,7 +140,8 @@ jobs:
               sudo update-alternatives --set i686-w64-mingw32-g++  /usr/bin/i686-w64-mingw32-g++-posix
               sudo update-binfmts --import /usr/share/binfmts/wine
             run-bench: false
-            run-tests: true
+            test-script: |
+              make check $MAKEJOBS VERBOSE=1
             check-security: true
             check-symbols: false
             dep-opts: ""
@@ -146,7 +158,8 @@ jobs:
               sudo update-alternatives --set x86_64-w64-mingw32-g++  /usr/bin/x86_64-w64-mingw32-g++-posix
               sudo update-binfmts --import /usr/share/binfmts/wine
             run-bench: false
-            run-tests: true
+            test-script: |
+              make check $MAKEJOBS VERBOSE=1
             check-security: true
             check-symbols: false
             dep-opts: ""
@@ -157,7 +170,6 @@ jobs:
             os: ubuntu-18.04
             packages: cmake imagemagick libcap-dev librsvg2-bin libz-dev libtiff-tools libtinfo5 python3-setuptools xorriso libtinfo5
             run-bench: false
-            run-tests: false
             check-security: false
             check-symbols: false
             dep-opts: ""
@@ -170,7 +182,10 @@ jobs:
             os: ubuntu-18.04
             packages: bc python3-zmq
             run-bench: true
-            run-tests: true
+            test-script: |
+              make check $MAKEJOBS VERBOSE=1
+              qa/pull-tester/install-deps.sh
+              qa/pull-tester/rpc-tests.py --coverage
             dep-opts: "AVX2=1"
             config-opts: "--with-intel-avx2 --enable-gui=qt5 --enable-zmq --enable-glibc-back-compat --enable-reduce-exports"
             goal: install
@@ -251,40 +266,8 @@ jobs:
           cat ${{ matrix.name }}-bench.csv
 
       - name: Run tests
-        if: ${{ matrix.run-tests }}
-        run: |
-            case "${{ matrix.host }}" in
-              "arm-linux-gnueabihf")
-              qemu-arm -E LD_LIBRARY_PATH=/usr/arm-linux-gnueabihf/lib/ /usr/arm-linux-gnueabihf/lib/ld-linux-armhf.so.3 src/test/test_dogecoin
-              ;;
-              "aarch64-linux-gnu")
-              qemu-aarch64 -E LD_LIBRARY_PATH=/usr/aarch64-linux-gnu/lib/ /usr/aarch64-linux-gnu/lib/ld-linux-aarch64.so.1 src/test/test_dogecoin
-              ;;
-              "x86_64-w64-mingw32")
-              make check $MAKEJOBS VERBOSE=1
-              qa/pull-tester/install-deps.sh
-              qa/pull-tester/rpc-tests.py --coverage
-              ;;
-              "i686-w64-mingw32")
-              make check $MAKEJOBS VERBOSE=1
-              qa/pull-tester/install-deps.sh
-              qa/pull-tester/rpc-tests.py --coverage
-              ;;
-              "x86_64-apple-darwin11")
-              make check $MAKEJOBS VERBOSE=1
-              ./src/test/test_dogecoin
-              ;;
-              "x86_64-unknown-linux-gnu")
-              make check $MAKEJOBS VERBOSE=1
-              qa/pull-tester/install-deps.sh
-              qa/pull-tester/rpc-tests.py --coverage
-              ;;
-              "i686-pc-linux-gnu")
-              make check $MAKEJOBS VERBOSE=1
-              qa/pull-tester/install-deps.sh
-              qa/pull-tester/rpc-tests.py --coverage
-              ;;
-            esac
+        if: ${{ matrix.test-script }}
+        run: ${{ matrix.test-script }}
 
       - name: Check security
         if: ${{ matrix.check-security }}
