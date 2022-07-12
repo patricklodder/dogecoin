@@ -257,27 +257,22 @@ jobs:
               cat ${{ matrix.name }}-bench.csv
               ;;
               "x86_64-w64-mingw32")
-              make check $MAKEJOBS VERBOSE=1
               ./src/bench/bench_dogecoin > ${{ matrix.name }}-bench.csv
               cat ${{ matrix.name }}-bench.csv
               ;;
               "i686-w64-mingw32")
-              make check $MAKEJOBS VERBOSE=1
               ./src/bench/bench_dogecoin > ${{ matrix.name }}-bench.csv
               cat ${{ matrix.name }}-bench.csv
               ;;
               "x86_64-apple-darwin11")
-              make check $MAKEJOBS VERBOSE=1
               ./src/bench/bench_dogecoin > ${{ matrix.name }}-bench.csv
               cat ${{ matrix.name }}-bench.csv
               ;;
               "x86_64-unknown-linux-gnu")
-              make check $MAKEJOBS VERBOSE=1
               ./src/bench/bench_dogecoin > ${{ matrix.name }}-bench.csv
               cat ${{ matrix.name }}-bench.csv
               ;;
               "i686-pc-linux-gnu")
-              make check $MAKEJOBS VERBOSE=1
               ./src/bench/bench_dogecoin > ${{ matrix.name }}-bench.csv
               cat ${{ matrix.name }}-bench.csv
               ;;
