@@ -393,10 +393,10 @@
     </message>
     <message>
         <source>&amp;Such Send</source>
-        <translation>&amp;Такова Изпращане!;)</translation>
+        <translation>&amp;Такова Изпращане!</translation>
     </message>
     <message>
-        <source>&amp;Much Receive :)</source>
+        <source>&amp;Much Receive</source>
         <translation>&amp;Яко Получаване!</translation>
     </message>
     <message>
@@ -1061,7 +1061,7 @@
     </message>
     <message>
         <source>Open payment request from URI or file</source>
-        <translation>Отвори молба за изплащане от URI или файл</translation>
+        <translation>Отваряне на молба за изплащане от URI или файл</translation>
     </message>
     <message>
         <source>URI:</source>
@@ -1096,7 +1096,7 @@
     </message>
     <message>
         <source>Number of script &amp;verification threads</source>
-        <translation>Брой на скриптове и &amp;нишки за потвърждение</translation>
+        <translation>Брой на скриптове и &amp;нижки за потвърждение</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1104,7 +1104,7 @@
     </message>
     <message>
         <source>Allow incoming connections</source>
-        <translation>Позволи входящите връзки</translation>
+        <translation>Позволяване на входящите връзки</translation>
     </message>
     <message>
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
@@ -1136,7 +1136,7 @@
     </message>
     <message>
         <source>Enable coin &amp;control features</source>
-        <translation>Активиране на възможности за &amp;контролиране на монетите</translation>
+        <translation>Активиране на свойства за &amp;контролиране на монетите</translation>
     </message>
     <message>
         <source>&amp;Spend unconfirmed change</source>
@@ -1220,7 +1220,7 @@
     </message>
     <message>
         <source>none</source>
-        <translation>нищо</translation>
+        <translation>няма</translation>
     </message>
     <message>
         <source>Confirm options reset</source>
@@ -1248,11 +1248,11 @@
     </message>
     <message>
         <source>Disables some advanced features but all blocks will still be fully validated. Reverting this setting requires re-downloading the entire blockchain. Actual disk usage may be somewhat higher.</source>
-        <translation>Изключва някои възможности за напреднали, но всички блокове все още ще бъдат напълно валидирани. Връщането на тази настройка изисква повторно изтегляне на целия блокчейн. Възможно е използваемостта на диска да е по висока.</translation>
+        <translation>Изключва някои опции за напреднали, но всички блокове все още ще бъдат напълно валидирани. Връщането на тази настройка изисква повторно изтегляне на целия блокчейн. Възможно е използваемостта на диска да е по висока.</translation>
     </message>
     <message>
         <source>Prune &amp;block storage to</source>
-        <translation>Окастри &amp;съхранилището на блокове до</translation>
+        <translation>Окастряне на &amp;съхранилището на блокове до</translation>
     </message>
     <message>
         <source>GB</source>
@@ -1462,11 +1462,11 @@
     </message>
     <message>
         <source>So Print</source>
-        <translation>Яко Принтиране</translation>
+        <translation>Принтиране</translation>
     </message>
     <message>
         <source>Many Wallets?</source>
-        <translation>Много Портфейли?</translation>
+        <translation>Бр Портфейли?</translation>
     </message>
     <message>
         <source>1</source>
@@ -1534,7 +1534,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Close</source>
-        <translation>Затвори</translation>
+        <translation>Затваряне</translation>
     </message>
     <message>
         <source>Warning: Network Activity Detected</source>
@@ -1542,7 +1542,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>It is recommended to disconnect from the internet before printing paper wallets. Even though paper wallets are generated on your local computer, it is still possible to unknowingly have malware that transmits your screen to a remote location. It is also recommended to print to a local printer vs a network printer since that network traffic can be monitored. Some advanced printers also store copies of each printed document. Proceed with caution relative to the amount of value you plan to store on each address.</source>
-        <translation>Препоръчително е да прекъснете връзката към интернет преди да печатате хартиени портфейли. Въпреки че хартиените портфейли са създадени на вашия компютър, все пак е възможно наличието на зловреден софтвер който без Вашето знание да предаде екрана Ви на трети лица. Също така е препоръчително да печатате на принтер който директно е свързан към Вашия компютър, вместо с мрежов принтер, тъй като трафика може да бъде наблюдаван. Някои принтери също съхраняват копия на всеки принтиран документ. Продължете с повишено внимание, особено в зависимост на сумите които смятате да съхранявате на всеки един адрес.</translation>
+        <translation>Препоръчително е да прекъснете връзката към интернет преди да печатате хартиени портфейли. Въпреки че хартиените портфейли са създадени на вашия компютър, възможно е наличието на зловреден софтвер който без Вашето знание би могъл да предаде екрана Ви на трети лица. Също така е препоръчително да печатате на принтер който директно е свързан към Вашия компютър, вместо на мрежов принтер, тъй като трафика може да бъде наблюдаван. Някои принтери също съхраняват копия на всеки принтиран документ. Продължете с повишено внимание, особено в зависимост на сумите които смятате да съхранявате на всеки един адрес.</translation>
     </message>
     <message>
         <source>Error encoding Address into QR Code.</source>
@@ -1999,7 +1999,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>&amp;Open</source>
-        <translation>&amp;Отвори</translation>
+        <translation>&amp;Отваряне</translation>
     </message>
     <message>
         <source>&amp;Console</source>
@@ -2027,7 +2027,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Debug log file</source>
-        <translation>Файл съдържащ информация за грешки</translation>
+        <translation>Файл съдържащ диагностична информация</translation>
     </message>
     <message>
         <source>Clear console</source>
@@ -2734,7 +2734,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>The fee will be deducted from the amount being sent. The recipient will receive less dogecoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation>Таксата ще бъде приспадната от сумата която бива изпращана. Получателя ще получи по малко доджкоини то колкото вкарвате в полето сума. Ако са избрани повече от един получател, таксата ще бъде поделена по равно.</translation>
+        <translation>Таксата ще бъде приспадната от сумата която бива изпращана. Получателя ще получи по малко Доджкоини то колкото вкарвате в полето сума. Ако са избрани повече от един получател, таксата ще бъде поделена по равно.</translation>
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
@@ -2887,7 +2887,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>You can sign messages/agreements with your addresses to prove you can receive dogecoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Можете да подпишете съобщения/договори с Вашите адреси, като доказателство, че можете да получавате доджкоини които са пратени там. Внимавайте да не подписвате разни неясни или произволни запитвания, тъй като имамници могат да опитат да Ви подведат да подпишете Вашата самоличност на тях. Подписвайте само подробни, ясни заявления с които сте напълно съгласни.</translation>
+        <translation>Можете да подпишете съобщения/договори с Вашите адреси, като доказателство, че можете да получавате Доджкоини които са пратени там. Внимавайте да не подписвате разни неясни или произволни запитвания, тъй като имамници могат да опитат да Ви подведат да подпишете Вашата самоличност на тях. Подписвайте само подробни, ясни заявления с които сте напълно съгласни.</translation>
     </message>
     <message>
         <source>The Dogecoin address to sign the message with</source>
@@ -3675,7 +3675,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Distributed under the MIT software license, see the accompanying file %s or %s</source>
-        <translation>Разпространено под софтуерен лиценз от MIT, виж прикрепения файл %s или %s(</translation>
+        <translation>Разпространен под софтуерен лиценз от MIT, Вижте прикрепения файл %s или %s(</translation>
     </message>
     <message>
         <source>Do not keep transactions in the mempool longer than &lt;n&gt; hours (default: %u)</source>
@@ -3779,7 +3779,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Please contribute if you find %s useful. Visit %s for further information about the software.</source>
-        <translation>Моля допринесете ако намирате %s потребно. Посетете %s за повече информация за софтуера.</translation>
+        <translation>Моля допринесете ако намирате %s потребен. Посетете %s за повече информация за софтуера.</translation>
     </message>
     <message>
         <source>Prune configured below the minimum of %d MiB.  Please use a higher number.</source>
@@ -3851,7 +3851,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit %s and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard. Paper wallet art provided by Anacoluthia.</source>
-        <translation>Този продукт вклюва софтуер разработен от проекта OpenSSL за полза в OpenSSL Инструментариума %s и криптографен софтуер създаден от Ерик Янг и UPnP софтуер създаден от Томас Бернард. Илюстрациите на хартиения портфейл са осигурени от Анаколутия.</translation>
+        <translation>Този продукт включва софтуер разработен от проекта OpenSSL за полза в OpenSSL Инструментариума %s и криптографния софтуер са създаден от Ерик Янг и UPnP софтуер е създаден от Томас Бернард. Илюстрациите на хартиения портфейл са осигурени от Анаколутия.</translation>
     </message>
     <message>
         <source>Total length of network version string (%i) exceeds maximum length (%i). Reduce the number or size of uacomments.</source>
@@ -4315,7 +4315,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>The source code is available from %s.</source>
-        <translation>Програмният код е наличен от %s.</translation>
+        <translation>Програмният код е наличен в %s.</translation>
     </message>
     <message>
         <source>The transaction amount is too small to pay the fee</source>
