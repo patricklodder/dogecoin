@@ -300,7 +300,7 @@
     </message>
     <message>
         <source>E&amp;xit</source>
-        <translation>И&зход</translation>
+        <translation>И&amp;зход</translation>
     </message>
     <message>
         <source>Quit application</source>
