@@ -1,0 +1,43 @@
+name: cppcheck-action
+on:
+  push:
+    branches:
+      - '*-dev'
+  pull_request:
+    branches:
+      - '*-dev'
+    paths:
+      - 'src/**.cpp'
+      - 'src/**.h'
+
+jobs:
+  analyse:
+    name: cppcheck
+    runs-on: ubuntu-18.04
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Install deps
+      run: |
+        sudo apt update -y
+        sudo apt install -y build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils
+        sudo apt install -y libboost-system-dev libboost-filesystem-dev libboost-chrono-dev libboost-program-options-dev libboost-test-dev libboost-thread-dev
+        sudo apt install -y libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev protobuf-compiler libqrencode-dev
+        sudo apt install -y libdb5.3++-dev libdb5.3++ libdb5.3-dev
+        sudo apt install -y libzmq3-dev libminiupnpc-dev
+
+    - name: Configure
+      run: ./autogen.sh && ./configure --enable-reduce-exports --enable-glibc-back-compat
+
+    - name: Run Cppcheck
+      uses: Bedzior/run-cppcheck@v1.0.0
+      with:
+        enabled checks: unusedFunction,warning,missingInclude
+        generate report: true
+        path: ./src
+
+    - name: Upload report
+      uses: actions/upload-artifact@v1
+      with:
+        name: report
+        path: output
