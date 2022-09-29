@@ -477,7 +477,7 @@ class BitcoinTestFramework(metaclass=BitcoinTestMetaClass):
                 descriptors=self.options.descriptors,
             )
             self.nodes.append(test_node_i)
-            if not test_node_i.version_is_at_least(170000):
+            if not test_node_i.version_is_at_least(1210000):
                 # adjust conf for pre 17
                 conf_file = test_node_i.bitcoinconf
                 with open(conf_file, 'r', encoding='utf8') as conf:
@@ -634,7 +634,8 @@ class BitcoinTestFramework(metaclass=BitcoinTestMetaClass):
             if pool.count(pool[0]) == len(rpc_connections):
                 if flush_scheduler:
                     for r in rpc_connections:
-                        r.syncwithvalidationinterfacequeue()
+                        if r.version_is_at_least(1210000):
+                            r.syncwithvalidationinterfacequeue()
                 return
             # Check that each peer has at least one connection
             assert (all(len(x.getpeerinfo()) for x in rpc_connections))
