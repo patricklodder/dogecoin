@@ -19,39 +19,40 @@ import subprocess
 import sys
 import hashlib
 
+DEFAULT_BINARY_URL = "https://archive.dogecoincore.org"
 
 SHA256_SUMS = {
-"d40f18b4e43c6e6370ef7db9131f584fbb137276ec2e3dba67a4b267f81cb644": "bitcoin-0.15.2-aarch64-linux-gnu.tar.gz",
-"54fb877a148a6ad189a1e1ab1ff8b11181e58ff2aaf430da55b3fd46ae549a6b": "bitcoin-0.15.2-arm-linux-gnueabihf.tar.gz",
-"2b843506c3f1af0eeca5854a920264f9a829f02d0d50328005950ddcbe88874d": "bitcoin-0.15.2-i686-pc-linux-gnu.tar.gz",
-"87e9340ff3d382d543b2b69112376077f0c8b4f7450d372e83b68f5a1e22b2df": "bitcoin-0.15.2-osx64.tar.gz",
-"566be44190fd76daa01f13d428939dadfb8e3daacefc8fa17f433cad28f73bd5": "bitcoin-0.15.2-x86_64-linux-gnu.tar.gz",
 
-"0768c6c15caffbaca6524824c9563b42c24f70633c681c2744649158aa3fd484": "bitcoin-0.16.3-aarch64-linux-gnu.tar.gz",
-"fb2818069854a6ad20ea03b28b55dbd35d8b1f7d453e90b83eace5d0098a2a87": "bitcoin-0.16.3-arm-linux-gnueabihf.tar.gz",
-"75a537844313b0a84bdb61ffcdc5c4ce19a738f7ddf71007cd2edf664efd7c37": "bitcoin-0.16.3-i686-pc-linux-gnu.tar.gz",
-"78c3bff3b619a19aed575961ea43cc9e142959218835cf51aede7f0b764fc25d": "bitcoin-0.16.3-osx64.tar.gz",
-"5d422a9d544742bc0df12427383f9c2517433ce7b58cf672b9a9b17c2ef51e4f": "bitcoin-0.16.3-x86_64-linux-gnu.tar.gz",
+  "fae35ef220ab09c449e9213b966df2bc234aa76d936f5205e6d4bf03a1c47e7e": "dogecoin-1.14.0-aarch64-linux-gnu.tar.gz",
+  "db7858a949015be2dbff238ae7da2ae9ea86c804dcba6f5768cd6bcce07fd8be": "dogecoin-1.14.0-arm-linux-gnueabihf.tar.gz",
+  "323ec725a885fcc479676f6e48c676e6d81f7146e5ec4816cad99d4522f46164": "dogecoin-1.14.0-i686-pc-linux-gnu.tar.gz",
+  "ed7baccafab98b5ce452bd3fd2cf7ab5e757269105350283e2bab91e4ccb7366": "dogecoin-1.14.0-x86_64-linux-gnu.tar.gz",
 
-"5a6b35d1a348a402f2d2d6ab5aed653a1a1f13bc63aaaf51605e3501b0733b7a": "bitcoin-0.17.2-aarch64-linux-gnu.tar.gz",
-"d1913a5d19c8e8da4a67d1bd5205d03c8614dfd2e02bba2fe3087476643a729e": "bitcoin-0.17.2-arm-linux-gnueabihf.tar.gz",
-"d295fc93f39bbf0fd937b730a93184899a2eb6c3a6d53f3d857cbe77ef89b98c": "bitcoin-0.17.2-i686-pc-linux-gnu.tar.gz",
-"a783ba20706dbfd5b47fbedf42165fce70fbbc7d78003305d964f6b3da14887f": "bitcoin-0.17.2-osx64.tar.gz",
-"943f9362b9f11130177839116f48f809d83478b4c28591d486ee9a7e35179da6": "bitcoin-0.17.2-x86_64-linux-gnu.tar.gz",
+  "b80bd2b55b67f218efde9498af18581244105c258e7790f7166df1afa1a89f1d": "dogecoin-1.14.2-aarch64-linux-gnu.tar.gz",
+  "60c3aac0c336dcc227a217b62571ed76c892cc37d0d08d0e07cd119344d00360": "dogecoin-1.14.2-arm-linux-gnueabihf.tar.gz",
+  "6bdcfcbad88c0d9dfca180b8801f7d02e3ebf053b8657d2ed18bf0f253001cca": "dogecoin-1.14.2-i686-pc-linux-gnu.tar.gz",
+  "10c400c8f2039b1f804b8a533266201a9e4e3b32a8854501e8a43792e1ee78e6": "dogecoin-1.14.2-x86_64-linux-gnu.tar.gz",
 
-"88f343af72803b851c7da13874cc5525026b0b55e63e1b5e1298390c4688adc6": "bitcoin-0.18.1-aarch64-linux-gnu.tar.gz",
-"cc7d483e4b20c5dabd4dcaf304965214cf4934bcc029ca99cbc9af00d3771a1f": "bitcoin-0.18.1-arm-linux-gnueabihf.tar.gz",
-"989e847b3e95fc9fedc0b109cae1b4fa43348f2f712e187a118461876af9bd16": "bitcoin-0.18.1-i686-pc-linux-gnu.tar.gz",
-"b7bbcee7a7540f711b171d6981f939ca8482005fde22689bc016596d80548bb1": "bitcoin-0.18.1-osx64.tar.gz",
-"425ee5ec631ae8da71ebc1c3f5c0269c627cf459379b9b030f047107a28e3ef8": "bitcoin-0.18.1-riscv64-linux-gnu.tar.gz",
-"600d1db5e751fa85903e935a01a74f5cc57e1e7473c15fd3e17ed21e202cfe5a": "bitcoin-0.18.1-x86_64-linux-gnu.tar.gz",
+  "65671f9854fe04815a4a849e6cdd5b1701fa04627cd2acc68cfd1de2561f70e5": "dogecoin-1.14.3-aarch64-linux-gnu.tar.gz",
+  "e572d5af93f8ff4a5178e1edbbc151410f311097a17a619c43ca92de0ef4e51a": "dogecoin-1.14.3-arm-linux-gnueabihf.tar.gz",
+  "c998e35ba3d8caf5bf5f2cec79c80e8cfea0ee9ccbaa5bff81b76ae72df9bbb1": "dogecoin-1.14.3-i686-pc-linux-gnu.tar.gz",
+  "a95cc29ac3c19a450e9083cc3ac24b6f61763d3ed1563bfc3ea9afbf0a2804fd": "dogecoin-1.14.3-x86_64-linux-gnu.tar.gz",
 
-"3a80431717842672df682bdb619e66523b59541483297772a7969413be3502ff": "bitcoin-0.19.1-aarch64-linux-gnu.tar.gz",
-"657f28213823d240dd3324d14829702f9ad6f0710f8bdd1c379cb3c447197f48": "bitcoin-0.19.1-arm-linux-gnueabihf.tar.gz",
-"10d1e53208aa7603022f4acc084a046299ab4ccf25fe01e81b3fb6f856772589": "bitcoin-0.19.1-i686-pc-linux-gnu.tar.gz",
-"1ae1b87de26487075cd2fd22e0d4ead87d969bd55c44f2f1d873ecdc6147ebb3": "bitcoin-0.19.1-osx64.tar.gz",
-"aa7a9563b48aa79252c8e7b6a41c07a5441bd9f14c5e4562cc72720ea6cb0ee5": "bitcoin-0.19.1-riscv64-linux-gnu.tar.gz",
-"5fcac9416e486d4960e1a946145566350ca670f9aaba99de6542080851122e4c": "bitcoin-0.19.1-x86_64-linux-gnu.tar.gz"
+  "72ee42424835cdfb4111b284c98f78919b7a9ede6f8d509b2abe31f7b3eb1f09": "dogecoin-1.14.4-aarch64-linux-gnu.tar.gz",
+  "d023b7a6dfc5d92b1635f0fa03e14c9fc787a3eae94fba0cc3aca53b62a8e9ac": "dogecoin-1.14.4-arm-linux-gnueabihf.tar.gz",
+  "6e93f5edccf528b44112f2088be3ac8f4f44151a757754da09c8c53cdd725815": "dogecoin-1.14.4-i686-pc-linux-gnu.tar.gz",
+  "6266235abe4bcbd41ea57bdf42f11ef89aa69f0386e8c8846d5228af69e7fa13": "dogecoin-1.14.4-x86_64-linux-gnu.tar.gz",
+
+  "f3bc387f393a0d55b6f653aef24febef6cb6f352fab2cbb0bae420bddcdacd1c": "dogecoin-1.14.5-aarch64-linux-gnu.tar.gz",
+  "dfdcdc6bb36076e7634cc8ed89138ec0383d73ba42b3e7ecfa9279b8949bce6b": "dogecoin-1.14.5-arm-linux-gnueabihf.tar.gz",
+  "7e7dd731ecfb2b78d6cc50d013ebf5faceeab50c59ffa2ab7551167b1bb81f08": "dogecoin-1.14.5-i686-pc-linux-gnu.tar.gz",
+  "17a03f019168ec5283947ea6fbf1a073c1d185ea9edacc2b91f360e1c191428e": "dogecoin-1.14.5-x86_64-linux-gnu.tar.gz",
+
+  "87419c29607b2612746fccebd694037e4be7600fc32198c4989f919be20952db": "dogecoin-1.14.6-aarch64-linux-gnu.tar.gz",
+  "d0b7f5f4fbabb6a10078ac9cde1df7eb37bef4c2627cecfbf70746387c59f914": "dogecoin-1.14.6-arm-linux-gnueabihf.tar.gz",
+  "3e60c4c818cb44abcca5b3bf9eff6baf86834c762e41d886c19bd721c00d0e24": "dogecoin-1.14.6-i686-pc-linux-gnu.tar.gz",
+  "fe9c9cdab946155866a5bd5a5127d2971a9eed3e0b65fb553fe393ad1daaebb0": "dogecoin-1.14.6-x86_64-linux-gnu.tar.gz"
+
 }
 
 @contextlib.contextmanager
@@ -71,15 +72,14 @@ def download_binary(tag, args) -> int:
             return 0
         shutil.rmtree(tag)
     Path(tag).mkdir()
-    bin_path = 'bin/bitcoin-core-{}'.format(tag[1:])
+    bin_path = 'bin/dogecoin-core-{}'.format(tag[1:])
     match = re.compile('v(.*)(rc[0-9]+)$').search(tag)
     if match:
-        bin_path = 'bin/bitcoin-core-{}/test.{}'.format(
+        bin_path = 'bin/dogecoin-core-{}/test.{}'.format(
             match.group(1), match.group(2))
-    tarball = 'bitcoin-{tag}-{platform}.tar.gz'.format(
+    tarball = 'dogecoin-{tag}-{platform}.tar.gz'.format(
         tag=tag[1:], platform=args.platform)
-    tarballUrl = 'https://bitcoincore.org/{bin_path}/{tarball}'.format(
-        bin_path=bin_path, tarball=tarball)
+    tarballUrl = f'{args.binary_url}/{tarball}'
 
     print('Fetching: {tarballUrl}'.format(tarballUrl=tarballUrl))
 
@@ -111,7 +111,7 @@ def download_binary(tag, args) -> int:
     # Extract tarball
     ret = subprocess.run(['tar', '-zxf', tarball, '-C', tag,
                           '--strip-components=1',
-                          'bitcoin-{tag}'.format(tag=tag[1:])]).returncode
+                          'dogecoin-{tag}'.format(tag=tag[1:])]).returncode
     if ret:
         return ret
 
@@ -120,7 +120,7 @@ def download_binary(tag, args) -> int:
 
 
 def build_release(tag, args) -> int:
-    githubUrl = "https://github.com/bitcoin/bitcoin"
+    githubUrl = "https://github.com/dogecoin/dogecoin"
     if args.remove_dir:
         if Path(tag).is_dir():
             shutil.rmtree(tag)
@@ -164,7 +164,7 @@ def build_release(tag, args) -> int:
         # Move binaries, so they're in the same place as in the
         # release download
         Path('bin').mkdir(exist_ok=True)
-        files = ['bitcoind', 'bitcoin-cli', 'bitcoin-tx']
+        files = ['dogecoind', 'dogecoin-cli', 'dogecoin-tx']
         for f in files:
             Path('src/'+f).rename('bin/'+f)
     return 0
@@ -222,6 +222,8 @@ if __name__ == '__main__':
                         help='download release binary.')
     parser.add_argument('-t', '--target-dir', action='store',
                         help='target directory.', default='releases')
+    parser.add_argument('-u', '--binary-url', action='store',
+                        help='binary base url', default=DEFAULT_BINARY_URL)
     parser.add_argument('tags', nargs='+',
                         help="release tags. e.g.: v0.18.1 v0.20.0rc2")
     args = parser.parse_args()
