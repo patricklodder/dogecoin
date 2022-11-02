@@ -243,7 +243,7 @@ class CAddress:
         self.ip = "0.0.0.0"
         self.port = 0
 
-    def deserialize(self, f, *, with_time=True):
+    def deserialize(self, f, with_time=True):
         """Deserialize from addrv1 format (pre-BIP155)"""
         if with_time:
             # VERSION messages serialize CAddress objects without time
@@ -255,7 +255,7 @@ class CAddress:
         self.ip = socket.inet_ntoa(f.read(4))
         self.port = struct.unpack(">H", f.read(2))[0]
 
-    def serialize(self, *, with_time=True):
+    def serialize(self, with_time=True):
         """Serialize in addrv1 format (pre-BIP155)"""
         assert self.net == self.NET_IPV4
         r = b""
@@ -1136,6 +1136,25 @@ class msg_sendaddrv2:
 
     def __repr__(self):
         return "msg_sendaddrv2()"
+
+
+class msg_alert(object):
+    command = b"alert"
+
+    def __init__(self):
+        self.alert = CAlert()
+
+    def deserialize(self, f):
+        self.alert = CAlert()
+        self.alert.deserialize(f)
+
+    def serialize(self):
+        r = b""
+        r += self.alert.serialize()
+        return r
+
+    def __repr__(self):
+        return "msg_alert(alert=%s)" % (repr(self.alert), )
 
 
 class msg_inv:
