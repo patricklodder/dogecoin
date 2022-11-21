@@ -21,7 +21,7 @@ jobs:
       CCACHE_TEMPDIR: /tmp/.ccache-temp
       CCACHE_COMPRESS: "1"
       PYTHON_DEBUG: "1"
-      CACHE_NONCE: "1"
+      CACHE_NONCE: "2"
       WINEDEBUG: fixme-all
       SDK_URL: https://depends.dogecoincore.org
 
