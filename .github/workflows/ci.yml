@@ -60,7 +60,7 @@ jobs:
             run-bench: false
             run-tests: false
             check-security: true
-            check-symbols: false
+            check-symbols: true
             dep-opts: "NO_QT=1"
             config-opts: "--enable-glibc-back-compat --disable-tests LDFLAGS=-static-libstdc++"
             goal: install
@@ -91,7 +91,7 @@ jobs:
             run-bench: false
             run-tests: false
             check-security: true
-            check-symbols: false
+            check-symbols: true
             dep-opts: "NO_QT=1"
             config-opts: "--enable-zmq --enable-glibc-back-compat --disable-tests LDFLAGS=-static-libstdc++"
             goal: install
@@ -130,7 +130,7 @@ jobs:
             run-bench: false
             run-tests: true
             check-security: true
-            check-symbols: false
+            check-symbols: true
             dep-opts: ""
             config-opts: "--enable-gui=qt5"
             goal: install
@@ -147,7 +147,7 @@ jobs:
             run-bench: false
             run-tests: true
             check-security: true
-            check-symbols: false
+            check-symbols: true
             dep-opts: ""
             config-opts: "--enable-gui=qt5"
             goal: install
