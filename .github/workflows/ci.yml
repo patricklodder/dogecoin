@@ -229,9 +229,7 @@ jobs:
 
       - name: Install custom lief wheel
         if: matrix.os == 'ubuntu-18.04'
-        run: |
-          curl -L -O $SDK_URL/$BIONIC_LIEF_WHL
-          python3 -m pip install $BIONIC_LIEF_WHL
+        run: python3 -m pip install $SDK_URL/$BIONIC_LIEF_WHL
 
       - name: Install standard lief wheel
         if: matrix.os != 'ubuntu-18.04'
