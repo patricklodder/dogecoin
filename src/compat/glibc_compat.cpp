@@ -76,7 +76,7 @@ extern "C" float __wrap_log2f(float x)
 
 extern "C" float exp_old(float x);
 #ifdef __i386__
-__asm(".symver exp_old,exp@GLIBC_2.1");
+__asm(".symver exp_old,exp@GLIBC_2.0");
 #elif defined(__amd64__)
 __asm(".symver exp_old,exp@GLIBC_2.2.5");
 #elif defined(__arm__)
@@ -90,7 +90,7 @@ extern "C" float __wrap_exp(float x) {
 
 extern "C" float log_old(float x);
 #ifdef __i386__
-__asm(".symver log_old,log@GLIBC_2.1");
+__asm(".symver log_old,log@GLIBC_2.0");
 #elif defined(__amd64__)
 __asm(".symver log_old,log@GLIBC_2.2.5");
 #elif defined(__arm__)
@@ -104,7 +104,7 @@ extern "C" float __wrap_log(float x) {
 
 extern "C" float pow_old(float x);
 #ifdef __i386__
-__asm(".symver pow_old,pow@GLIBC_2.1");
+__asm(".symver pow_old,pow@GLIBC_2.0");
 #elif defined(__amd64__)
 __asm(".symver pow_old,pow@GLIBC_2.2.5");
 #elif defined(__arm__)
