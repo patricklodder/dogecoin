@@ -23,6 +23,9 @@ ossTarHash="f9a8cdb38b9c309326764ebc937cba1523a3a751a7ab05df3ecc99d18ae466c9"
 macosSdkUrl="https://depends.dogecoincore.org/MacOSX10.11.sdk.tar.gz"
 macosSdkHash="bec9d089ebf2e2dd59b1a811a38ec78ebd5da18cbbcd6ab39d1e59f64ac5033f"
 
+liefUrl="https://depends.dogecoincore.org/lief-0.12.3-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+liefHash="c848aadac0816268aeb9dde7cefdb54bf24f78e664a19e97e74c92d3be1bb147"
+
 # What to do
 verify=false
 build=false
@@ -267,6 +270,7 @@ if [[ $setup == true ]]; then
     download_file $ossPatchUrl $ossPatchHash
     download_file $ossTarUrl $ossTarHash
     download_file $macosSdkUrl $macosSdkHash
+    download_file $liefUrl $liefHash
 
     popd
 

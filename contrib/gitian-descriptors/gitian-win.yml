@@ -27,7 +27,8 @@ packages:
 remotes:
 - "url": "https://github.com/dogecoin/dogecoin.git"
   "dir": "dogecoin"
-files: []
+files:
+- "lief-0.12.3-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
 script: |
   WRAP_DIR=$HOME/wrapped
   HOSTS="i686-w64-mingw32 x86_64-w64-mingw32"
@@ -97,7 +98,7 @@ script: |
   export PATH=${WRAP_DIR}:${PATH}
 
   # install python-lief
-  python3 -m pip install lief
+  python3 -m pip install ${BUILD_DIR}/lief-0.12.3-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
 
   cd dogecoin
   BASEPREFIX=`pwd`/depends
