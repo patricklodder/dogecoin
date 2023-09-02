@@ -144,13 +144,19 @@ class TxDownloadTest(BitcoinTestFramework):
 
         return selected, fallback
 
+    def wait_for_mocktime(self, node):
+        def has_mocktime():
+            return node.getmocktime() == self.mocktime
+        return wait_until(has_mocktime, timeout=60)
+
     def forward_mocktime(self, delta_time):
         self.mocktime += delta_time
         for node in self.nodes:
             node.setmocktime(self.mocktime)
-        # give the nodes some time to process the new mocktime
-        # can be removed when we have getmocktime
-        time.sleep(0.1)
+
+	# block until all nodes have adjusted their mocktime
+        for node in self.nodes:
+            assert self.wait_for_mocktime(node)
 
     def forward_mocktime_step2(self, iterations):
         # forward mocktime in steps of 2 seconds to allow the nodes
