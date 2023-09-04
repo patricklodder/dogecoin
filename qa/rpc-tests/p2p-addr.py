@@ -83,6 +83,13 @@ class AddrTest(BitcoinTestFramework):
         node.add_connection(conn)
         return node
 
+    def setmocktime(self, increment):
+        self.mocktime += increment
+        self.nodes[0].setmocktime(self.mocktime)
+        def mocktime_is_set():
+            return self.nodes[0].getmocktime() == self.mocktime
+        assert wait_until(mocktime_is_set, timeout=60)
+
     def index_to_port(self, idx):
         return self.start_port + idx
 
@@ -125,10 +132,8 @@ class AddrTest(BitcoinTestFramework):
         # `addr` messages are sent on an exponential distribution with mean interval of 30s.
         # Setting the mocktime 600s forward gives a probability of (1 - e^-(600/30)) that
         # the event will occur (i.e. this fails once in ~500 million repeats).
-        self.mocktime += 60 * 10
-        self.nodes[0].setmocktime(self.mocktime)
+        self.setmocktime(60 * 10)
 
-        time.sleep(0.5) # sleep half a second to prevent pings racing mocktime
         for peer in self.recv_nodes:
             peer.sync_with_ping()
 
@@ -148,8 +153,7 @@ class AddrTest(BitcoinTestFramework):
 
         # to make sure we are not rate-limited, add 1001 / 0.1 seconds
         # to mocktime to allocate the maximum non-burst amount of tokens
-        self.mocktime += 10010
-        self.nodes[0].setmocktime(self.mocktime)
+        self.setmocktime(10010)
 
         # send one valid message, keep track of the port it contains
         valid_port_before = self.index_to_port(self.counter)
