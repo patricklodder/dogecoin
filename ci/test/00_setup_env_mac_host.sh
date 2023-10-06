@@ -6,11 +6,11 @@
 
 export LC_ALL=C.UTF-8
 
-export HOST=x86_64-apple-darwin16
+export HOST="x86_64-apple-darwin22.4.0"
 export PIP_PACKAGES="zmq"
 export GOAL="install"
-export BDB_PREFIX="${BASE_ROOT_DIR}/db5"
-export BITCOIN_CONFIG="--with-gui --enable-reduce-exports --with-boost-process BDB_LIBS='-L${BDB_PREFIX}/lib -ldb_cxx-5.3' BDB_CFLAGS='-I${BDB_PREFIX}/include'"
+export BOOST_PREFIX=$(brew --prefix boost)
+export BITCOIN_CONFIG="--with-gui --enable-reduce-exports --with-boost-process --with-boost='${BOOST_PREFIX}'"
 export CI_OS_NAME="macos"
 export NO_DEPENDS=1
 export OSX_SDK=""
