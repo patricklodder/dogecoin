@@ -1,0 +1,30 @@
+From: Allan Sandfeld Jensen <allan.jensen@qt.io>
+Date: Tue, 13 Nov 2018 15:00:23 +0000 (+0100)
+Subject: Fix compile issue with gcc 9
+X-Git-Tag: v5.12.1~208
+X-Git-Url: https://codereview.qt-project.org/gitweb?p=qt%2Fqtbase.git;a=commitdiff_plain;h=a52d7861edfb5956de38ba80015c4dd0b596259b;hp=79af4ec056b6301752ee750f04192d170f9c1823
+
+Fix compile issue with gcc 9
+
+It appears messenne_twisters in the latest libstdc++ has one more
+requirement before it is willing to construct with our
+SystemGenerator struct as an sseq provider.
+
+Change-Id: If38151d1fa6f40a80274acc26d9ed6b4ac6049fe
+Reviewed-by: Giuseppe D'Angelo <giuseppe.dangelo@kdab.com>
+Reviewed-by: Thiago Macieira <thiago.macieira@intel.com>
+---
+
+diff --git a/qtbase/src/corelib/global/qrandom.cpp b/qtbase/src/corelib/global/qrandom.cpp
+index 23e5e499b2f6..03534cf453f3 100644
+--- a/qtbase/src/corelib/global/qrandom.cpp
++++ b/qtbase/src/corelib/global/qrandom.cpp
+@@ -218,6 +218,7 @@ struct QRandomGenerator::SystemGenerator
+ #endif // Q_OS_WINRT
+ 
+     static SystemGenerator &self();
++    typedef quint32 result_type;
+     void generate(quint32 *begin, quint32 *end) Q_DECL_NOEXCEPT_EXPR(FillBufferNoexcept);
+ 
+     // For std::mersenne_twister_engine implementations that use something
+
