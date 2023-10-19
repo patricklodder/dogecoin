@@ -11,7 +11,7 @@
         <source>Enter the peer details below.</source>
         <translation>Voer de peer gegevens hieronder in.</translation>
     </message>
-    <message>
+    <message =d>
         <source>Be careful! Do not blindly trust anyone that tells you to add their node.</source>
         <translation>Opgelet! Vertrouw niet blindelings iemand die je vertelt om hun node toe te voegen.</translation>
     </message>
