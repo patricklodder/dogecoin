@@ -177,6 +177,7 @@ testScripts = [
     'getblock.py',
     'addnode.py',
     'getmocktime.py',
+    'walletnotify.py',
 ]
 if ENABLE_ZMQ:
     testScripts.append('zmq_test.py')
