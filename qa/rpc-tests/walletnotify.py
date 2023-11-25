@@ -60,7 +60,7 @@ class WalletNotifyTest(BitcoinTestFramework):
         notifs = self.get_notifications()
         assert len(notifs) == self.current_line + 1
         assert notifs[self.current_line] == "{} {}".format(txid, 0)
-        print(self.nodes[1].gettransaction(txid))
+        assert self.nodes[0].gettransaction(txid)['confirmations'] == 0
         self.current_line += 1
 
 
@@ -73,6 +73,7 @@ class WalletNotifyTest(BitcoinTestFramework):
         notifs = self.get_notifications()
         assert len(notifs) == self.current_line + 1
         assert notifs[self.current_line] == "{} {}".format(txid, height)
+        assert self.nodes[0].gettransaction(txid)['confirmations'] == 1
         self.current_line += 1
 
         # mine 10 more blocks
@@ -82,6 +83,7 @@ class WalletNotifyTest(BitcoinTestFramework):
         # check that we got no more notifications
         notifs = self.get_notifications()
         assert len(notifs) == self.current_line
+        assert self.nodes[0].gettransaction(txid)['confirmations'] == 11
 
         # rollback the chain and re-mine 30 blocks
         self.nodes[1].invalidateblock(reset_hash)
