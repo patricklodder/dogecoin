@@ -90,16 +90,14 @@ class WalletNotifyTest(BitcoinTestFramework):
         self.nodes[1].generate(30)
         sync_blocks(self.nodes)
 
-        # check that we got a notification that the transaction isn't confirmed anymore
+        # we should now receive 2 notifications:
+        # 1. from the transaction being put into the mempool (AcceptToMemoryPool)
+        # 2. from the transaction no longer being in the best chain (DisconnectTip)
         notifs = self.get_notifications()
-
-        #TODO: AS OF RIGHT NOW, THE WALLET WILL SEND 2 NOTIFICATIONS
-        #      We need to explain and then fix and/or document this
-        #      behavior.
-
         assert len(notifs) == self.current_line + 2
         assert notifs[self.current_line] == "{} {}".format(txid, 0)
         assert notifs[self.current_line + 1] == "{} {}".format(txid, 0)
+        assert self.nodes[0].gettransaction(txid)['confirmations'] == 0
         self.current_line += 2
 
 if __name__ == '__main__':
