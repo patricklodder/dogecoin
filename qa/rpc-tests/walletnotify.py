@@ -46,7 +46,7 @@ class WalletNotifyTest(BitcoinTestFramework):
         self.sync_all()
 
         # we're going to invalidate this block later: store the hash
-        reset_hash = self.nodes[1].getbestblockhash()
+        # reset_hash = self.nodes[1].getbestblockhash()
 
         # make sure there are no notifications yet
         assert len(self.get_notifications()) == 0
@@ -64,6 +64,7 @@ class WalletNotifyTest(BitcoinTestFramework):
 
         # mine a block to confirm the tx
         self.nodes[1].generate(1)
+        reset_hash = self.nodes[1].getbestblockhash()
         self.sync_all()
 
         # check that we got a notification for the confirmed transaction
