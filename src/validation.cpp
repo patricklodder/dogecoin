@@ -217,6 +217,7 @@ public:
                                                        this, boost::placeholders::_1,
                                                        boost::placeholders::_2));
         for (const auto& tx : conflictedTxs) {
+            LogPrintf("REMOVEME! Called SyncTransaction from %s for tx %s\n", __func__, tx->GetHash().ToString());
             GetMainSignals().SyncTransaction(*tx, NULL, CMainSignals::SYNC_TRANSACTION_NOT_IN_BLOCK);
         }
         conflictedTxs.clear();
@@ -1042,6 +1043,7 @@ bool AcceptToMemoryPoolWorker(CTxMemPool& pool, CValidationState& state, const C
         }
     }
 
+    LogPrintf("REMOVEME! Called SyncTransaction from %s for tx %s\n", __func__, tx.GetHash().ToString());
     GetMainSignals().SyncTransaction(tx, NULL, CMainSignals::SYNC_TRANSACTION_NOT_IN_BLOCK);
 
     return true;
@@ -2283,6 +2285,7 @@ bool static DisconnectTip(CValidationState& state, const CChainParams& chainpara
     // Let wallets know transactions went from 1-confirmed to
     // 0-confirmed or conflicted:
     for (const auto& tx : block.vtx) {
+        LogPrintf("REMOVEME! Called SyncTransaction from %s for tx %s\n", __func__, tx->GetHash().ToString());
         GetMainSignals().SyncTransaction(*tx, pindexDelete->pprev, CMainSignals::SYNC_TRANSACTION_NOT_IN_BLOCK);
     }
     return true;
@@ -2587,8 +2590,10 @@ bool ActivateBestChain(CValidationState &state, const CChainParams& chainparams,
             for (const auto& pair : connectTrace.blocksConnected) {
                 assert(pair.second);
                 const CBlock& block = *(pair.second);
-                for (unsigned int i = 0; i < block.vtx.size(); i++)
+                for (unsigned int i = 0; i < block.vtx.size(); i++) {
+                    LogPrintf("REMOVEME! Called SyncTransaction from %s for tx %s\n", __func__, block.vtx[i]->GetHash().ToString());
                     GetMainSignals().SyncTransaction(*block.vtx[i], pair.first, i);
+                }
             }
         }
         // When we reach this point, we switched to a new tip (stored in pindexNewTip).
