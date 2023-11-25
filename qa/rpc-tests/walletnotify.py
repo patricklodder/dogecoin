@@ -41,8 +41,8 @@ class WalletNotifyTest(BitcoinTestFramework):
         return notif_text.split("\n")[:-1] # take out the last entry due to trailing \n
 
     def run_test(self):
-        # Mine 100 blocks from node 1
-        self.nodes[1].generate(100)
+        # Mine 60 blocks from node 1
+        self.nodes[1].generate(60)
         self.sync_all()
 
         # we're going to invalidate this block later: store the hash
@@ -91,14 +91,22 @@ class WalletNotifyTest(BitcoinTestFramework):
         sync_blocks(self.nodes)
 
         # we should now receive 2 notifications:
-        # 1. from the transaction being put into the mempool (AcceptToMemoryPool)
-        # 2. from the transaction no longer being in the best chain (DisconnectTip)
+        # - from the transaction being put into the mempool (AcceptToMemoryPool)
+        # - from the transaction no longer being in the best chain (DisconnectTip)
+        #
+        # The order depends on how far the rollback goes; in our case the above
+        # order reflects the respective triggers for the notifications, because
+        # we roll back before the block that mined the tx. If we were to stop
+        # rolling back at exactly the block that mined the tx, the order would
+        # be reversed.
         notifs = self.get_notifications()
         assert len(notifs) == self.current_line + 2
         assert notifs[self.current_line] == "{} {}".format(txid, 0)
         assert notifs[self.current_line + 1] == "{} {}".format(txid, 0)
         assert self.nodes[0].gettransaction(txid)['confirmations'] == 0
         self.current_line += 2
+
+
 
 if __name__ == '__main__':
     WalletNotifyTest().main()
