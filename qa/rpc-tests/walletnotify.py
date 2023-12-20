@@ -19,6 +19,7 @@ class WalletNotifyTest(BitcoinTestFramework):
 
     notify_filename = None  # Set by setup_network
     current_line = 0
+    notifs = []
 
     def setup_network(self):
         self.nodes = []
@@ -40,6 +41,19 @@ class WalletNotifyTest(BitcoinTestFramework):
             return [];
         return notif_text.split("\n")[:-1] # take out the last entry due to trailing \n
 
+    def wait_for_notifications(self, num, exact):
+        notifs = self.notifs
+        expected = self.current_line + num
+        def notifications_received(self):
+            notifs = self.get_notifications()
+            if exact:
+                return len(notifs) == expected
+            return len(notifs) >= expected
+        if wait_until(notifications_received, timeout=20):
+            self.notifs = notifs
+            return True
+        return False
+
     def run_test(self):
         # Mine 60 blocks from node 1
         self.nodes[1].generate(60)
@@ -57,9 +71,8 @@ class WalletNotifyTest(BitcoinTestFramework):
         self.sync_all()
 
         # check that we got a notification for the unconfirmed transaction
-        notifs = self.get_notifications()
-        assert len(notifs) == self.current_line + 1
-        assert notifs[self.current_line] == "{} {}".format(txid, 0)
+        assert self.wait_for_notifications(1, True)
+        assert self.notifs[self.current_line] == "{} {}".format(txid, 0)
         assert self.nodes[0].gettransaction(txid)['confirmations'] == 0
         self.current_line += 1
 
@@ -69,10 +82,9 @@ class WalletNotifyTest(BitcoinTestFramework):
         self.sync_all()
 
         # check that we got a notification for the confirmed transaction
+        assert self.wait_for_notifications(1, True)
         height = self.nodes[1].getblockchaininfo()['blocks']
-        notifs = self.get_notifications()
-        assert len(notifs) == self.current_line + 1
-        assert notifs[self.current_line] == "{} {}".format(txid, height)
+        assert self.notifs[self.current_line] == "{} {}".format(txid, height)
         assert self.nodes[0].gettransaction(txid)['confirmations'] == 1
         self.current_line += 1
 
@@ -81,8 +93,7 @@ class WalletNotifyTest(BitcoinTestFramework):
         self.sync_all()
 
         # check that we got no more notifications
-        notifs = self.get_notifications()
-        assert len(notifs) == self.current_line
+        assert self.wait_for_notifications(0, True)
         assert self.nodes[0].gettransaction(txid)['confirmations'] == 11
 
         # rollback the chain and re-mine 30 blocks
@@ -99,10 +110,13 @@ class WalletNotifyTest(BitcoinTestFramework):
         # we roll back before the block that mined the tx. If we were to stop
         # rolling back at exactly the block that mined the tx, the order would
         # be reversed.
-        notifs = self.get_notifications()
-        assert len(notifs) == self.current_line + 2
-        assert notifs[self.current_line] == "{} {}".format(txid, 0)
-        assert notifs[self.current_line + 1] == "{} {}".format(txid, 0)
+        #
+        # In rare occasions, the reversed transaction is included in one of the
+        # 30 new blocks we mined, so don't wait for exactly 2 notifications, as
+        # there may be 3.
+        assert self.wait_for_notifications(2, False)
+        assert self.notifs[self.current_line] == "{} {}".format(txid, 0)
+        assert self.notifs[self.current_line + 1] == "{} {}".format(txid, 0)
         assert self.nodes[0].gettransaction(txid)['confirmations'] == 0
         self.current_line += 2
 
@@ -113,9 +127,9 @@ class WalletNotifyTest(BitcoinTestFramework):
         self.sync_all()
 
         # we should now have received one more notification.
+        assert self.wait_for_notifications(1, True)
         height = self.nodes[1].getblockchaininfo()['blocks']
-        assert len(notifs) == self.current_line + 1
-        assert notifs[self.current_line] == "{} {}".format(txid, height)
+        assert self.notifs[self.current_line] == "{} {}".format(txid, height)
         assert self.nodes[0].gettransaction(txid)['confirmations'] == 1
         self.current_line += 1
 
