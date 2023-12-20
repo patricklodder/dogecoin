@@ -106,6 +106,20 @@ class WalletNotifyTest(BitcoinTestFramework):
         assert self.nodes[0].gettransaction(txid)['confirmations'] == 0
         self.current_line += 2
 
+        # mine the same transaction again and make sure it's in the mempool by
+        # force submitting it on the miner node.
+        self.nodes[1].sendrawtransaction(self.nodes[0].gettransaction(txid)['hex'], True)
+        self.nodes[1].generate(1)
+        self.sync_all()
+
+        # we should now have received one more notification.
+        height = self.nodes[1].getblockchaininfo()['blocks']
+        assert len(notifs) == self.current_line + 1
+        assert notifs[self.current_line] == "{} {}".format(txid, height)
+        assert self.nodes[0].gettransaction(txid)['confirmations'] == 1
+        self.current_line += 1
+
+
 
 
 if __name__ == '__main__':
