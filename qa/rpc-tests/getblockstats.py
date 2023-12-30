@@ -45,7 +45,13 @@ class GetblockstatsTest(BitcoinTestFramework):
         self.sync_all()
 
     def get_stats(self):
-        return [self.nodes[0].getblockstats(hash_or_height=self.start_height + i) for i in range(self.max_stat_pos+1)]
+        return [self.get_stats_for_height(self.start_height + i) for i in range(self.max_stat_pos+1)]
+
+    def get_stats_for_height(self, height, stats=None):
+        blockhash = self.nodes[0].getblockhash(height)
+        if stats == None:
+            return self.nodes[0].getblockstats(hash=blockhash)
+        return self.nodes[0].getblockstats(hash=blockhash, stats=stats)
 
     def generate_test_data(self, filename):
         mocktime = 1525107225
@@ -121,13 +127,13 @@ class GetblockstatsTest(BitcoinTestFramework):
 
             # Check selecting block by hash too
             blockhash = self.expected_stats[i]['blockhash']
-            stats_by_hash = self.nodes[0].getblockstats(hash_or_height=blockhash)
+            stats_by_hash = self.nodes[0].getblockstats(hash=blockhash)
             assert_equal(stats_by_hash, self.expected_stats[i])
 
         # Make sure each stat can be queried on its own
         for stat in expected_keys:
             for i in range(self.max_stat_pos+1):
-                result = self.nodes[0].getblockstats(hash_or_height=self.start_height + i, stats=[stat])
+                result = self.get_stats_for_height(self.start_height + i, [stat])
                 assert_equal(list(result.keys()), [stat])
                 if result[stat] != self.expected_stats[i][stat]:
                     self.log.info('result[%s] (%d) failed, %r != %r' % (
@@ -136,15 +142,10 @@ class GetblockstatsTest(BitcoinTestFramework):
 
         # Make sure only the selected statistics are included (more than one)
         some_stats = {'minfee', 'maxfee'}
-        stats = self.nodes[0].getblockstats(hash_or_height=1, stats=list(some_stats))
+        stats = self.get_stats_for_height(1, list(some_stats))
         assert_equal(set(stats.keys()), some_stats)
 
-        # Test invalid parameters raise the proper json exceptions
-        tip = self.start_height + self.max_stat_pos
-        assert_raises_jsonrpc(-8, 'Target block height %d after current tip %d' % (tip+1, tip),
-                                self.nodes[0].getblockstats, hash_or_height=tip+1)
-        assert_raises_jsonrpc(-8, 'Target block height %d is negative' % (-1),
-                                self.nodes[0].getblockstats, hash_or_height=-1)
+        blockhashone = self.nodes[0].getblockhash(1)
 
         # Make sure not valid stats aren't allowed
         inv_sel_stat = 'asdfghjkl'
@@ -156,17 +157,17 @@ class GetblockstatsTest(BitcoinTestFramework):
         ]
         for inv_stat in inv_stats:
             assert_raises_jsonrpc(-8, 'Invalid selected statistic %s' % inv_sel_stat,
-                                    self.nodes[0].getblockstats, hash_or_height=1, stats=inv_stat)
+                                    self.nodes[0].getblockstats, hash=blockhashone, stats=inv_stat)
 
         # Make sure we aren't always returning inv_sel_stat as the culprit stat
         assert_raises_jsonrpc(-8, 'Invalid selected statistic aaa%s' % inv_sel_stat,
-                                self.nodes[0].getblockstats, hash_or_height=1, stats=['minfee' , 'aaa%s' % inv_sel_stat])
+                                self.nodes[0].getblockstats, hash=blockhashone, stats=['minfee' , 'aaa%s' % inv_sel_stat])
         # Mainchain's genesis block shouldn't be found on regtest
         assert_raises_jsonrpc(-5, 'Block not found', self.nodes[0].getblockstats,
-                                hash_or_height='1a91e3dace36e2be3bf030a65679fe821aa1d6ef92e7c9902eb318182c355691')
+                                hash='1a91e3dace36e2be3bf030a65679fe821aa1d6ef92e7c9902eb318182c355691')
 
         # Invalid number of args
-        assert_raises_jsonrpc(-1, 'getblockstats hash_or_height ( stats )', self.nodes[0].getblockstats)
+        assert_raises_jsonrpc(-1, 'getblockstats hash ( stats )', self.nodes[0].getblockstats)
 
 
 if __name__ == '__main__':
