@@ -1591,11 +1591,11 @@ static UniValue getblockstats(const JSONRPCRequest& request)
 {
     if (request.fHelp || request.params.size() < 1 || request.params.size() > 2) {
         throw std::runtime_error(
-            "getblockstats hash_or_height ( stats )\n"
+            "getblockstats hash ( stats )\n"
             "\nCompute per block statistics for a given window. All amounts are in koinus.\n"
             "It won't work for some heights with pruning.\n"
             "\nArguments:\n"
-            "1. \"hash_or_height\"     (string or numeric, required) The block hash or height of the target block\n"
+            "1. \"hash\"               (string, required) The block hash of the target block\n"
             "2. \"stats\"              (array,  optional) Values to plot, by default all values (see result below)\n"
             "    [\n"
             "      \"height\",         (string, optional) Selected statistic\n"
@@ -1648,25 +1648,14 @@ static UniValue getblockstats(const JSONRPCRequest& request)
     LOCK(cs_main);
 
     CBlockIndex* pindex;
-    if (request.params[0].isNum()) {
-        const int height = request.params[0].get_int();
-        const int current_tip = chainActive.Height();
-        if (height < 0) {
-            throw JSONRPCError(RPC_INVALID_PARAMETER, strprintf("Target block height %d is negative", height));
-        }
-        if (height > current_tip) {
-            throw JSONRPCError(RPC_INVALID_PARAMETER, strprintf("Target block height %d after current tip %d", height, current_tip));
-        }
+    const uint256 hash = ParseHashV(request.params[0], "hash");
 
-        pindex = chainActive[height];
-    } else {
-        const uint256 hash = ParseHashV(request.params[0], "hash_or_height");
-        if (mapBlockIndex.count(hash) == 0)
-            throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Block not found");
-        pindex = mapBlockIndex[hash];
-        if (!chainActive.Contains(pindex)) {
-            throw JSONRPCError(RPC_INVALID_PARAMETER, strprintf("Block is not in chain %s", Params().NetworkIDString()));
-        }
+    if (mapBlockIndex.count(hash) == 0)
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Block not found");
+    pindex = mapBlockIndex[hash];
+
+    if (!chainActive.Contains(pindex)) {
+        throw JSONRPCError(RPC_INVALID_PARAMETER, strprintf("Block is not in chain %s", Params().NetworkIDString()));
     }
 
     assert(pindex != nullptr);
@@ -1837,7 +1826,7 @@ static const CRPCCommand commands[] =
 { //  category              name                      actor (function)         okSafe argNames
   //  --------------------- ------------------------  -----------------------  ------ ----------
     { "blockchain",         "getblockchaininfo",      &getblockchaininfo,      true,  {} },
-    { "blockchain",         "getblockstats",          &getblockstats,          true,  {"hash_or_height", "stats"} },
+    { "blockchain",         "getblockstats",          &getblockstats,          true,  {"hash", "stats"} },
     { "blockchain",         "getbestblockhash",       &getbestblockhash,       true,  {} },
     { "blockchain",         "getblockcount",          &getblockcount,          true,  {} },
     { "blockchain",         "getblock",               &getblock,               true,  {"blockhash","verbosity"} },
