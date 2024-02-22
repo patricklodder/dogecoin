@@ -1075,14 +1075,14 @@ bool GetTransaction(const uint256 &hash, CTransactionRef &txOut, const Consensus
 {
     CBlockIndex *pindexSlow = NULL;
 
-    LOCK(cs_main);
-
     CTransactionRef ptx = mempool.get(hash);
     if (ptx)
     {
         txOut = ptx;
         return true;
     }
+
+    LOCK(cs_main);
 
     if (fTxIndex) {
         CDiskTxPos postx;
