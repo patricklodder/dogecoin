@@ -47,7 +47,7 @@ dogecoin.conf or as an argument to Dogecoin-Qt if absolutely needed. Please use
 extreme caution when exercising this option.
 
 This is step 1 in full deprecation of BIP-70, BIP-71 and BIP-72 inside Dogecoin
-Core. Future releases will completely remove this feature.
+Core. Future releases may completely remove this feature.
 
 *Implemented with #3412*
 
