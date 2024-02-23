@@ -207,8 +207,8 @@ Minor Changes
 * Introduced modern tooling for inspecting and constraining our binaries (#3204)
 * Refactored out C-style NUL-terminated strings in interfaces (#3157)
 * Enhanced the CI to run unit tests in armhf and aarch64 linux builds (#3025)
-* Added a translation in Vietnamese (#3060), and fixed missin information in the
-  Chinese README translations (#3070)
+* Added a translation in Vietnamese (#3060), and fixed missing information in
+  the Chinese README translations (#3070)
 * Updated the python ltc-scrypt module to a maintained fork (#3080), which can
   be found at https://github.com/dogecoin/ltc-scrypt
 * Backported a pure Python implementation of RIPEMD160 from Bitcoin Core (#3081)
