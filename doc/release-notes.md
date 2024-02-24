@@ -21,6 +21,8 @@ Compatibility
 Dogecoin Core is extensively tested on Ubuntu Server LTS, macOS and Windows.
 Minimum OS compatibility can be found [in the INSTALL guide](../INSTALL.md).
 
+
+
 Notable changes
 ================
 
@@ -37,7 +39,7 @@ requests and related BIP-71 and BIP-72 payment URI and MIME types have been
 disabled by default, because this functionality interacts with remote websites
 in an automated manner and could be used to amplify any future vulnerabilities
 inside Dogecoin Qt. By default, incoming BIP-70 payment requests and files or
-URLs that use the functionality, are rejected and an explanation is shown to the
+URLs that use the functionality are rejected and an explanation is shown to the
 user.
 
 BIP-21 payment requests remain fully supported.
