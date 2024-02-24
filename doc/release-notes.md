@@ -2,9 +2,9 @@ Dogecoin Core version 1.14.7 is now available from:
 
   <https://github.com/dogecoin/dogecoin/releases/tag/v1.14.7/>
 
-This is a new minor version release, including important security updates for
-Dogecoin-Qt. Dogecoin-Qt users on any platform are strongly recommended to
-upgrade.
+This is a new minor version release, including enchancements to several RPC
+methods and important security updates for Dogecoin-Qt. Dogecoin-Qt users on
+any platform are strongly recommended to upgrade.
 
 Please report bugs using the issue tracker at github:
 
