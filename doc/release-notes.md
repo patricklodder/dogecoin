@@ -140,9 +140,10 @@ Translation Updates
 Updates have been provided to the following languages:
 
 * Chinese (#3103, #3419)
+* Dutch (#3435)
 * French (#3148, #3195)
-* Korean (#3395, #3430)
 * Italian (#3428)
+* Korean (#3395, #3430)
 * ***TODO: add others as they merge***
 
 
