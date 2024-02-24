@@ -206,7 +206,7 @@ Minor Changes
 * Enhanced the paper wallet print function to default to the User's paper format
   instead of A4 (#3239)
 * Updated build guides for MacOS (#2686), Windows (#3340), ***TODO: add fedora***
-* Updated and modernized the rpcuser.py script (#3186)
+* Updated and modernized the rpcuser.py script (#3186, #3388)
 * Introduced modern tooling for inspecting and constraining our binaries (#3204)
 * Refactored out C-style NUL-terminated strings in interfaces (#3157)
 * Enhanced the CI to run unit tests in armhf and aarch64 linux builds (#3025)
