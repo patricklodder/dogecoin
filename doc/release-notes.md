@@ -6,7 +6,7 @@ This is a new minor version release, including enchancements to several RPC
 methods and important security updates for Dogecoin-Qt. Dogecoin-Qt users on
 any platform are strongly recommended to upgrade.
 
-Please report bugs using the issue tracker at github:
+Please report bugs using the issue tracker at GitHub:
 
   <https://github.com/dogecoin/dogecoin/issues>
 
@@ -33,7 +33,7 @@ security for end users.
 ### Disable BIP-70 payment server by default
 
 To mitigate future potential risk inside Dogecoin Qt, support for BIP-70 payment
-requests and related BIP-71 and BIP-72 payment URI and MIME types have been
+requests and related BIP-71 and BIP-72 payment URIs and MIME types have been
 disabled by default, because this functionality interacts with remote websites
 in an automated manner and could be used to amplify any future vulnerabilities
 inside Dogecoin Qt. By default, incoming BIP-70 payment requests and files or
@@ -61,9 +61,9 @@ Core. Future releases may completely remove this feature.
   guarantees (#3415)
 * Added security guidance to INSTALL.md and build guides, to remind those that
   self-compile to update their system libraries. (#3384)
-* Updated the rpcuser.py script to improve the password and salt generation
+* Updated the `rpcuser.py` script to improve the password and salt generation
   methods it uses (#3388). If you've used this script in the past, replacing
-  current authentication in dogecoin.conf with new credentials generated with
+  current authentication in `dogecoin.conf` with new credentials generated with
   the new version of this script is recommended.
 
 
@@ -99,8 +99,8 @@ Add fully verbose transaction decoding to `getblock`
 
 Updates the `getblock` RPC to use verbosity levels 0-2 besides the existing
 boolean. This allows operators to decode a full block in one go when using
-level `2`, instead of having to query getrawtransaction for each individual
-transaction returned with the boolean `true`.
+level `2`, instead of having to query `getrawtransaction` for each individual
+txid returned with the boolean `true`.
 
 Mapping between boolean and integer parameter functionality:
 
@@ -140,7 +140,7 @@ dogecoin-cli help getblockstats
 
 ### Add a `height` parameter to `-walletnotify`
 
-Adds %i in the command to include the height of the block containing the
+Adds `%i` in the command to include the height of the block containing the
 transaction. If the transaction is not in any block, the height is `0`.
 
 *Implemented with #3257 and #3382*
@@ -188,16 +188,16 @@ Dependency Updates
   AVX2 support for Windows x86_64 (#3071, #3146, #3214)
 
 NOTE: on systems that cannot use pinned dependencies from `depends/`, please
-be aware that due to a bug in boost-1.83, self-compilation may lead to failure.
-More information about the bug can be found at the boostorg/signals github repo
-at https://github.com/boostorg/signals2/issues/68.
+be aware that due to a bug in `boost-1.83`, building may lead to failure.
+More information about the bug can be found at the `boostorg/signals` GitHub
+repository at https://github.com/boostorg/signals2/issues/68.
 
 Bug Fixes
 ==========
 
 * Fixed a bug where `-maxtxfee` was not being respected outside of the wallet,
   which caused problems with the `sendrawtransaction` RPC call. (#3088)
-* Fixed the example dogecoind.service file (#3066)
+* Fixed the example `dogecoind.service` file (#3066)
 * Fixed a bug where misnamed signal handlers were causing excessive warnings
   in Dogecoin Qt logs (#3063)
 * Fixed a bug where extremely long wallet labels could cause Qt popups to flow
@@ -212,13 +212,13 @@ Minor Changes
 =============
 
 * Enforced explicit enabling of experimental features by introducing a build
-  flag (--enable-experimental) and enforce these at compile time. (#3136), see
-  [experiments.md](experiments.md) for more information about which
+  flag (`--enable-experimental`) and enforce these at compile time (#3136).
+  See [experiments.md](experiments.md) for more information about which
   experiments are available to self-compile.
 * Re-enabled Scrypt SSE2 routines and encapsulated it as an experimental feature
   to help speeding up PoW verification on x86_64 architecture. (#2773)
 * Packaged the Noto Sans font to make sure all languages can be rendered (#2676)
-* Updated assumevalid to help new nodes save CPU time by setting it to block
+* Updated `assumevalid` to help new nodes save CPU time by setting it to block
   `e7d4577405223918491477db725a393bcfc349d8ee63b0a4fde23cbfbfd81dea`, at height
   5,050,000 on mainnet (#3416)
 * Enhanced the paper wallet print function to default to the User's paper format
@@ -229,12 +229,12 @@ Minor Changes
 * Enhanced the CI to run unit tests in armhf and aarch64 linux builds (#3025)
 * Added a translation in Vietnamese (#3060), and fixed missing information in
   the Chinese README translations (#3070)
-* Updated the python ltc-scrypt module to a maintained fork (#3080), which can
-  be found at https://github.com/dogecoin/ltc-scrypt
+* Updated the python `ltc-scrypt` module to a maintained fork (#3080), which
+  can be found at https://github.com/dogecoin/ltc-scrypt
 * Backported a pure Python implementation of RIPEMD160 from Bitcoin Core (#3081)
 * Removed historical OpenSSL comparison tests to increase compatibility with
   OpenSSL 3+ (#3079)
-* Ported extended tests for rpcbind (#3228) and feefilter (#3241)
+* Ported extended tests for `rpcbind` (#3228) and `feefilter` (#3241)
 
 
 Credits
