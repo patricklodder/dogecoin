@@ -168,6 +168,8 @@ RPC API Changes
   which allows the user to specify from which chain height to rescan for wallet
   transactions.
 * Added `getmocktime` (regtest-only) (#3322)
+* Added documentation for RPC method maturity in [rpc-maturity.md](rpc-maturity.md)
+  (#3443)
 
 
 Dependency Updates
