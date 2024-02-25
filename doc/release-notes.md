@@ -179,6 +179,10 @@ Dependency Updates
 * Updated the experimental intel-ipsec-mb dependency to version 1.2, adds
   AVX2 support for Windows x86_64 (#3071, #3146, #3214)
 
+NOTE: on systems that cannot use pinned dependencies from `depends/`, please
+be aware that due to a bug in boost-1.83, self-compilation may lead to failure.
+More information about the bug can be found at the boostorg/signals github repo
+at https://github.com/boostorg/signals2/issues/68.
 
 Bug Fixes
 ==========
