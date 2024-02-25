@@ -79,11 +79,13 @@ to support Dogecoin parametrization.
 The RPC methods `estimatefee` and `estimatesmartfee` are now under active
 maintenance and will be further enhanced in the future.
 
-NOTE: Because the minimum and maximum tracked fees and spacing of the buckets
+NOTE: Because the minimum and maximum tracked fees and spacing of fee buckets
 has changed, the `fee_estimates.dat` file from earlier versions **will be
 discarded** after restarting this version of the software. This means that after
-the first restart, the estimates will become usable after having processed a
-few blocks, and will incrementally improve in precision over up to 12 hours.
+the first restart, the estimates will reset, but become usable again after the
+node has processed a few blocks, and will improve in precision over up to 12
+hours after the first restart. Any subsequent restarts will use the estimates
+from the file as usual.
 
 ***If you have in the past ran a custom compiled version of 1.14.7 or created
 your own higher version, you must manually delete the `fee_estimates.dat` file
