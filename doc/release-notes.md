@@ -61,6 +61,10 @@ Core. Future releases may completely remove this feature.
   guarantees (#3415)
 * Added security guidance to INSTALL.md and build guides, to remind those that
   self-compile to update their system libraries. (#3384)
+* Updated the rpcuser.py script to improve the password and salt generation
+  methods it uses (#3388). If you've used this script in the past, replacing
+  current authentication in dogecoin.conf with new credentials generated with
+  the new version of this script is recommended.
 
 
 Maintain RPC fee estimation facilities
@@ -216,7 +220,6 @@ Minor Changes
 * Enhanced the paper wallet print function to default to the User's paper format
   instead of A4 (#3239)
 * Updated build guides for MacOS (#2686), Windows (#3340), ***TODO: add fedora***
-* Updated and modernized the rpcuser.py script (#3186, #3388)
 * Introduced modern tooling for inspecting and constraining our binaries (#3204)
 * Refactored out C-style NUL-terminated strings in interfaces (#3157)
 * Enhanced the CI to run unit tests in armhf and aarch64 linux builds (#3025)
