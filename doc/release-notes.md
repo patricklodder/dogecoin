@@ -243,4 +243,50 @@ Credits
 
 Credit goes to all awesome contributors to this release, alphabetically:
 
-* ***TODO: fill in authors here after code freeze***
+* Ajay Chowdhury
+* alamshafil
+* Anish M
+* Anthony Chen
+* Bertrand Jacquin
+* bobdos
+* Brett T. Warden
+* Carl Dong
+* chromatic
+* cijsk
+* Cory Fields
+* daanksy
+* Dakoda Greaves
+* danielw86dev
+* Dylan Ferris
+* Ed Tubbs
+* fanquake
+* Fierce Skit
+* fultondoge
+* hwanyoungChoi
+* ilsubyega
+* Jalin Wang
+* jimjimmiejames
+* junderw
+* kalvdans
+* mangekyousharingan
+* MarsDoge
+* Martyornot
+* Michi Lumin
+* mintodev
+* MishaBoar
+* NinVoido
+* omahs
+* oshawa-connection
+* Patrick Lodder
+* Pieter Wuille
+* pmb
+* practicalswift
+* randomwalk266
+* serious-gemini
+* Shubham Mathur
+* Skylar Loomis
+* sunerok
+* thisiskeanyvy
+* Thành Nhân
+* tosufever
+* victorsk2019
