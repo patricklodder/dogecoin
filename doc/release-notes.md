@@ -156,6 +156,7 @@ Updates have been provided to the following languages:
 * French (#3148, #3195)
 * Italian (#3428)
 * Korean (#3395, #3430)
+* Polish (#3431)
 * ***TODO: add others as they merge***
 
 
