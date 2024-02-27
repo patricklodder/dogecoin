@@ -266,10 +266,12 @@ Credit goes to all awesome contributors to this release, alphabetically:
 * ilsubyega
 * Jalin Wang
 * jimjimmiejames
+* John-Inubook
 * junderw
 * kalvdans
 * mangekyousharingan
 * MarsDoge
+* Martin
 * Martyornot
 * Michi Lumin
 * mintodev
@@ -282,6 +284,7 @@ Credit goes to all awesome contributors to this release, alphabetically:
 * pmb
 * practicalswift
 * randomwalk266
+* Schmeckl3s
 * serious-gemini
 * Shubham Mathur
 * Skylar Loomis
