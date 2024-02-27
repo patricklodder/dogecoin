@@ -158,7 +158,6 @@ Updates have been provided to the following languages:
 * Italian (#3428)
 * Korean (#3395, #3430)
 * Polish (#3431)
-* ***TODO: add others as they merge***
 
 
 RPC API Changes
