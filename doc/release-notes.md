@@ -154,6 +154,7 @@ Updates have been provided to the following languages:
 * Chinese (#3103, #3419)
 * Dutch (#3435)
 * French (#3148, #3195)
+* French-Canadian (#3441)
 * Italian (#3428)
 * Korean (#3395, #3430)
 * Polish (#3431)
@@ -224,7 +225,7 @@ Minor Changes
   5,050,000 on mainnet (#3416)
 * Enhanced the paper wallet print function to default to the User's paper format
   instead of A4 (#3239)
-* Updated build guides for MacOS (#2686), Windows (#3340), Fedora (#3434)
+* Updated build guides for MacOS (#2686), Windows (#3340, #3411), Fedora (#3434)
 * Introduced modern tooling for inspecting and constraining our binaries (#3204)
 * Refactored out C-style NUL-terminated strings in interfaces (#3157)
 * Enhanced the CI to run unit tests in armhf and aarch64 linux builds (#3025)
