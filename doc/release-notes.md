@@ -262,6 +262,7 @@ Credit goes to all awesome contributors to this release, alphabetically:
 * fanquake
 * Fierce Skit
 * fultondoge
+* georgeartem
 * hwanyoungChoi
 * ilsubyega
 * Jalin Wang
