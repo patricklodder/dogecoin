@@ -129,9 +129,6 @@ AC_DEFUN([BITCOIN_QT_CONFIGURE],[
       if test -d "$qt_plugin_path/styles"; then
         QT_LIBS="$QT_LIBS -L$qt_plugin_path/styles"
       fi
-      if test -d "$qt_plugin_path/accessible"; then
-        QT_LIBS="$QT_LIBS -L$qt_plugin_path/accessible"
-      fi
       if test -d "$qt_plugin_path/printsupport"; then
         QT_LIBS="$QT_LIBS -L$qt_plugin_path/printsupport"
       fi
@@ -345,28 +342,15 @@ dnl -----------------------------
 dnl
 dnl Outputs: QT_LIBS is prepended.
 AC_DEFUN([_BITCOIN_QT_CHECK_STATIC_LIBS], [
-  PKG_CHECK_MODULES([QT_ACCESSIBILITY], [${qt_lib_prefix}AccessibilitySupport${qt_lib_suffix}], [QT_LIBS="$QT_ACCESSIBILITY_LIBS $QT_LIBS"])
-  PKG_CHECK_MODULES([QT_DEVICEDISCOVERY], [${qt_lib_prefix}DeviceDiscoverySupport${qt_lib_suffix}], [QT_LIBS="$QT_DEVICEDISCOVERY_LIBS $QT_LIBS"])
-  PKG_CHECK_MODULES([QT_EDID], [${qt_lib_prefix}EdidSupport${qt_lib_suffix}], [QT_LIBS="$QT_EDID_LIBS $QT_LIBS"])
-  PKG_CHECK_MODULES([QT_EVENTDISPATCHER], [${qt_lib_prefix}EventDispatcherSupport${qt_lib_suffix}], [QT_LIBS="$QT_EVENTDISPATCHER_LIBS $QT_LIBS"])
-  PKG_CHECK_MODULES([QT_FB], [${qt_lib_prefix}FbSupport${qt_lib_suffix}], [QT_LIBS="$QT_FB_LIBS $QT_LIBS"])
-  PKG_CHECK_MODULES([QT_FONTDATABASE], [${qt_lib_prefix}FontDatabaseSupport${qt_lib_suffix}], [QT_LIBS="$QT_FONTDATABASE_LIBS $QT_LIBS"])
-  PKG_CHECK_MODULES([QT_THEME], [${qt_lib_prefix}ThemeSupport${qt_lib_suffix}], [QT_LIBS="$QT_THEME_LIBS $QT_LIBS"])
   if test "$TARGET_OS" = "linux"; then
-    PKG_CHECK_MODULES([QT_INPUT], [${qt_lib_prefix}InputSupport], [QT_LIBS="$QT_INPUT_LIBS $QT_LIBS"])
-    PKG_CHECK_MODULES([QT_SERVICE], [${qt_lib_prefix}ServiceSupport], [QT_LIBS="$QT_SERVICE_LIBS $QT_LIBS"])
     PKG_CHECK_MODULES([QT_XCBQPA], [${qt_lib_prefix}XcbQpa], [QT_LIBS="$QT_XCBQPA_LIBS $QT_LIBS"])
-    PKG_CHECK_MODULES([QT_XKBCOMMON], [${qt_lib_prefix}XkbCommonSupport], [QT_LIBS="$QT_XKBCOMMON_LIBS $QT_LIBS"])
   elif test "$TARGET_OS" = "darwin"; then
     PKG_CHECK_MODULES([QT_CLIPBOARD], [${qt_lib_prefix}ClipboardSupport${qt_lib_suffix}], [QT_LIBS="$QT_CLIPBOARD_LIBS $QT_LIBS"])
     PKG_CHECK_MODULES([QT_GRAPHICS], [${qt_lib_prefix}GraphicsSupport${qt_lib_suffix}], [QT_LIBS="$QT_GRAPHICS_LIBS $QT_LIBS"])
-    PKG_CHECK_MODULES([QT_SERVICE], [${qt_lib_prefix}ServiceSupport${qt_lib_suffix}], [QT_LIBS="$QT_SERVICE_LIBS $QT_LIBS"])
   elif test "$TARGET_OS" = "windows"; then
-    PKG_CHECK_MODULES([QT_WINDOWSUIAUTOMATION], [${qt_lib_prefix}WindowsUIAutomationSupport${qt_lib_suffix}], [QT_LIBS="$QT_WINDOWSUIAUTOMATION_LIBS $QT_LIBS"])
+    PKG_CHECK_MODULES([QT_WININTEGRATION], [${qt_lib_prefix}WindowsIntegration${qt_lib_suffix}], [QT_LIBS="$QT_WININTEGRATION_LIBS $QT_LIBS"])
+    PKG_CHECK_MODULES([QT_MININTEGRATION], [${qt_lib_prefix}MinimalIntegration${qt_lib_suffix}], [QT_LIBS="$QT_MININTEGRATION_LIBS $QT_LIBS"])
     PKG_CHECK_MODULES([QT_WINDOWSPRINTER], [${qt_lib_prefix}WindowsPrinterSupport${qt_lib_suffix}], [QT_LIBS="$QT_WINDOWSPRINTER_LIBS $QT_LIBS"])
-  elif test "$TARGET_OS" = "android"; then
-    PKG_CHECK_MODULES([QT_EGL], [${qt_lib_prefix}EglSupport${qt_lib_suffix}], [QT_LIBS="$QT_EGL_LIBS $QT_LIBS"])
-    PKG_CHECK_MODULES([QT_SERVICE], [${qt_lib_prefix}ServiceSupport${qt_lib_suffix}], [QT_LIBS="$QT_SERVICE_LIBS $QT_LIBS"])
   fi
 ])
 
