@@ -13,6 +13,11 @@
 # https://pypi.python.org/packages/source/l/ltc_scrypt/ltc_scrypt-1.0.tar.gz
 
 from .auxpow import *
+from .mininode import (
+    CBlock, CBlockHeader, CTransaction, CTxIn, CTxOut,
+    COutPoint, ser_uint256, ser_string, uint256_from_compact,
+)
+from .script import CScript
 import ltc_scrypt
 import binascii
 
@@ -76,6 +81,52 @@ def mineScryptAux (node, chainid, ok):
   apow = computeAuxpowWithChainId (auxblock['hash'], target, chainid, ok)
   res = node.getauxblock (auxblock['hash'], apow)
   return res
+
+def mineSimpleEmptyAuxBlock(version, time, prevBlock, target, coinbasetx, ok=True):
+    # Construct the auxpow proven block
+    block = CAuxpowBlock()
+    block.nVersion = version
+    block.nTime = time
+    block.hashPrevBlock = prevBlock
+    block.nBits = target
+    block.vtx.append(coinbasetx)
+    block.hashMerkleRoot = block.calc_merkle_root()
+    block.calc_sha256()
+
+    # now that we have a hash, create the parent coinbase
+    mm_coinbase = struct.pack("<I", 0xfabe) + (b"m" * 2) + ser_uint256(block.sha256)
+    parent_coinbasetx = CTransaction()
+    parent_coinbasetx.vin.append(CTxIn(COutPoint(0, 0xffffffff), ser_string(mm_coinbase)), 0xffffffff)
+    parent_coinbasetx.vout.append(CTxOut(0, CScript([OP_TRUE])))
+    parent_coinbasetx.calc_sha256()
+
+    # create the parent block
+    parent_block = CBlock()
+    parent_block.nTime = time
+    parent_block.nBits = target
+    parent_block.vtx.append(parent_coinbasetx)
+    parent_block.hashMerkleRoot = parent_block.calc_merkle_root()
+
+    # mine the parent block
+    parent_blockhdr = mineScryptHeader(parent_block, target, ok)
+
+    # create auxdata - we can leave all the merkle branches empty in this case
+    auxdata = CAuxData()
+    auxdata.tx = parent_coinbasetx
+    auxdata.parent_blockhdr = parent_blockhdr
+    block.auxdata = auxdata
+
+    return block
+
+def mineScryptHeader(header, bits, ok):
+    """Mine a CBlockHeader with scrypt"""
+    target = uint256_from_compact(bits)
+    while True:
+        header.nNonce += 1
+        header.calc_sha256() #TODO: may want to fix in mininode - bit of a misnomer
+        if (ok and header.scrypt256 < target) or ((not ok) and header.scrypt256 > target):
+            break
+    return CBlockHeader(header)
 
 def mineScryptBlock (header, target, ok):
   """

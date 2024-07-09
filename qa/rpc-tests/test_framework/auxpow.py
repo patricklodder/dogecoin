@@ -8,6 +8,77 @@
 
 import binascii
 import hashlib
+from .mininode import (
+    CBlockHeader, CBlock, CTransaction, deser_uint256_vector, deser_uint256,
+    ser_uint256, ser_uint256_vector, deser_vector
+)
+
+class CAuxData(object):
+    def __init__(self, auxdata=None):
+        if auxdata is None:
+            self.tx = None
+            self.blockhash = None
+            self.index = 0
+            self.merkle_branch = []
+            self.chain_index = 0
+            self.chain_merkle_branch = []
+            self.parent_blockhdr = None
+        else:
+            self.tx = auxdata.tx
+            self.blockhash = auxdata.blockhash
+            self.index = auxdata.index
+            self.merkle_branch = auxdata.merkleBranch
+            self.chain_index = auxdata.chainIndex
+            self.chain_merkle_branch = auxdata.chainMerkleBranch
+            self.parent_blockhdr = auxdata.parentBlock
+
+    def deserialize(self, f):
+        self.tx = CTransaction()
+        self.tx.deserialize(f)
+        self.blockhash = deser_uint256(f)
+        self.index = struct.unpack("<I", f.read(4))[0]
+        self.merkle_branch = deser_uint256_vector(f)
+        self.chain_index = struct.unpack("<I", f.read(4))[0]
+        self.chain_merkle_branch = deser_uint256_vector(f)
+        self.parent_blockhdr = CBlockHeader()
+        self.parent_blockhdr.deserialize(f)
+
+    def serialize(self):
+        r = b""
+        r += self.tx.serialize()
+        r += ser_uint256(self.blockhash)
+        r += struct.pack("<I", self.index)
+        r += ser_uint256_vector(self.merkle_branch)
+        r += struct.pack("<I", self.chain_index)
+        r += ser_uint256_vector(self.chain_merkle_branch)
+        r += self.parent_blockhdr.serialize()
+        return r
+
+class CAuxpowBlock(CBlock):
+    def __init__(self, header=None, auxdata=None):
+        super(CBlock, self).__init__(header)
+        if self.is_auxpow():
+            assert auxdata is not None
+            self.auxdata = CAuxData(auxdata)
+
+    def is_auxpow(self):
+        return (self.version & 0xffff0000 == 0x0062) and (self.version & 0x000001000 == 0x0100)
+
+    def deserialize(self, f):
+        CBlockHeader.deserialize(self, f)
+        if self.is_auxpow():
+            self.auxdata = CAuxData()
+            self.auxdata.deserialize(f)
+        self.vtx = deser_vector(f, CTransaction)
+
+    def serialize(self):
+        r = b""
+        r += CBlockHeader.deserialize(self)
+        if self.is_auxpow():
+            r += self.auxdata.deserialize()
+        r += ser_vector(self.vtx)
+        return r
+
 
 def computeAuxpow (block, target, ok):
   """
