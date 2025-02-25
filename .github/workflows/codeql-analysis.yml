@@ -3,13 +3,14 @@ name: CodeQL
 
 on:
   push:
-    branches:
-      - '*-dev'
-      - '*-maint'
+    paths-ignore:
+      - '**/*.md'
+      - '**/*.txt'
+      - 'contrib/**'
+      - 'doc/**'
+      - 'share/**'
+      - 'qa/**'
   pull_request:
-    # The branches below must be a subset of the branches above
-    branches:
-      - '*-dev'
     paths-ignore:
       - '**/*.md'
       - '**/*.txt'
@@ -21,7 +22,8 @@ on:
 jobs:
   analyze:
     name: Analyze
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-24.04
+    container: ubuntu:20.04
     permissions:
       actions: read
       contents: read
@@ -40,7 +42,7 @@ jobs:
     - name: Update system
       run: |
         sudo apt-get update --yes
-        sudo apt-get install build-essential libtool autotools-dev automake pkg-config bsdmainutils --yes
+        sudo apt-get install build-essential libtool autotools-dev automake pkg-config bsdmainutils python3 --yes
 
     - name: Dependency cache
       uses: actions/cache@v4
