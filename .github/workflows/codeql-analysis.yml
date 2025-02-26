@@ -56,9 +56,9 @@ jobs:
 
     - name: Build depends
       run: |
-        pushd depends
+        cd depends
         make -j4 HOST=x86_64-pc-linux-gnu
-        popd
+        cd ..
 
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v3
