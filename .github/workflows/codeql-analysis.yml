@@ -41,8 +41,8 @@ jobs:
 
     - name: Update system
       run: |
-        sudo apt-get update --yes
-        sudo apt-get install build-essential libtool autotools-dev automake pkg-config bsdmainutils python3 --yes
+        apt-get -y update
+        apt-get -y install build-essential libtool autotools-dev automake pkg-config bsdmainutils python3
 
     - name: Dependency cache
       uses: actions/cache@v4
