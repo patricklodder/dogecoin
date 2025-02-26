@@ -41,6 +41,8 @@ jobs:
 
     - name: Update system
       run: |
+        ln -snf /usr/share/zoneinfo/Etc/UTC /etc/localtime
+        echo Etc/UTC > /etc/timezone
         apt-get -y update
         apt-get -y install build-essential libtool autotools-dev automake pkg-config bsdmainutils python3
 
