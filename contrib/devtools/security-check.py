@@ -10,6 +10,7 @@ Otherwise the exit status will be 1 and it will log which executables failed whi
 '''
 import sys
 from typing import List
+import types
 
 import lief #type:ignore
 
@@ -126,10 +127,20 @@ def check_PE_DYNAMIC_BASE(binary) -> bool:
 # in addition to DYNAMIC_BASE to have secure ASLR.
 def check_PE_HIGH_ENTROPY_VA(binary) -> bool:
     '''PIE: DllCharacteristics bit 0x20 signifies high-entropy ASLR'''
+    # Don't try to check for high entropy (64-bit) VA inside 32-bit binaries
+    if not binary.abstract.header.is_64:
+        print('Note: Skipping HIGH_ENTROPY_VA for 32-bit.')
+        return True
+    binary.concrete
     return lief.PE.DLL_CHARACTERISTICS.HIGH_ENTROPY_VA in binary.optional_header.dll_characteristics_lists
 
 def check_PE_RELOC_SECTION(binary) -> bool:
     '''Check for a reloc section. This is required for functional ASLR.'''
+    # Don't try to check for relocations inside 32-bit binaries
+    if not binary.abstract.header.is_64:
+        print('Note: Skipping RELOC_SECTION for 32-bit.')
+        return True
+    binary.concrete
     return binary.has_relocations
 
 def check_PE_control_flow(binary) -> bool:
@@ -204,13 +215,9 @@ BASE_ELF = [
 BASE_PE = [
     ('PIE', check_PIE),
     ('DYNAMIC_BASE', check_PE_DYNAMIC_BASE),
-    #('HIGH_ENTROPY_VA', check_PE_HIGH_ENTROPY_VA),
-    # Note: HIGH_ENTROPY_VA can be enabled when all issues with RELOC_SECTION
-    #       are solved.
+    ('HIGH_ENTROPY_VA', check_PE_HIGH_ENTROPY_VA),
     ('NX', check_NX),
-    #('RELOC_SECTION', check_PE_RELOC_SECTION),
-    # Note: RELOC_SECTION is newer than our source and currently doesn't pass
-    #       on cli tools and tests, but does work for dogecoind / dogecoin-qt
+    ('RELOC_SECTION', check_PE_RELOC_SECTION),
     #('CONTROL_FLOW', check_PE_control_flow),
     # Note: CONTROL_FLOW can be re-enabled when we build with gcc8 or higher
 ]
