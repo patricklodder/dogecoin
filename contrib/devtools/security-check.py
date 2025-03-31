@@ -158,6 +158,12 @@ def check_PE_control_flow(binary) -> bool:
         return True
     return False
 
+def check_PE_CANARY(binary) -> bool:
+    '''
+    Check for use of stack canary
+    '''
+    return binary.has_symbol('__stack_chk_fail')
+
 def check_MACHO_NOUNDEFS(binary) -> bool:
     '''
     Check for no undefined references.
@@ -218,6 +224,7 @@ BASE_PE = [
     ('HIGH_ENTROPY_VA', check_PE_HIGH_ENTROPY_VA),
     ('NX', check_NX),
     ('RELOC_SECTION', check_PE_RELOC_SECTION),
+    ('Canary', check_PE_CANARY),
     #('CONTROL_FLOW', check_PE_control_flow),
     # Note: CONTROL_FLOW can be re-enabled when we build with gcc8 or higher
 ]
